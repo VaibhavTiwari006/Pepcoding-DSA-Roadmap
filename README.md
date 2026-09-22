@@ -10,6 +10,12 @@
 > 
 > *Track all 777 Pepcoding video lectures, check off 62 topic milestones, and solve 550+ curated LeetCode problems directly with persistent client-side progress tracking.*
 
+<p align="center">
+  <a href="https://vaibhavtiwari006.github.io/Pepcoding-DSA-Roadmap/">
+    <img src="./assets/roadmap-architecture.jpg" alt="Master DSA Architecture Roadmap" width="800" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  </a>
+</p>
+
 ---
 
 ## 📺 Official Pepcoding YouTube Playlists
