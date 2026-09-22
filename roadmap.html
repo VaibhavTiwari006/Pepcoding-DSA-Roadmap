@@ -739,128 +739,125 @@ footer {
 }
 
 
-/* Practice Drawer Styling - Directly Visible Under Topics */
+/* Practice Drawer Styling — Collapsed by Default */
 .practice-drawer {
-  display: block;
-  margin-top: 12px;
+  display: none;
+  margin-top: 10px;
   padding: 14px 16px;
-  background: var(--bg-elevated);
+  background: rgba(22, 25, 36, 0.6);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
 }
-.practice-drawer.closed {
-  display: none !important;
+.practice-drawer.open {
+  display: block;
 }
 .practice-toggle-btn {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  margin-top: 10px;
-  background: rgba(88, 166, 255, 0.08);
-  border: 1px solid rgba(88, 166, 255, 0.3);
-  color: var(--rail);
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-size: 11.5px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
+  gap: 6px;
+  margin-top: 8px;
+  background: rgba(242, 169, 59, 0.06);
+  border: 1px solid rgba(242, 169, 59, 0.2);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
   user-select: none;
 }
 .practice-toggle-btn:hover {
-  background: rgba(88, 166, 255, 0.16);
-  border-color: var(--rail);
+  background: rgba(242, 169, 59, 0.12);
+  border-color: rgba(242, 169, 59, 0.4);
+  color: var(--rail);
 }
 .practice-toggle-btn .pt-arrow {
-  font-size: 10px;
+  font-size: 9px;
   transition: transform 0.2s ease;
   display: inline-block;
-}
-.practice-toggle-btn.closed .pt-arrow {
   transform: rotate(-90deg);
+}
+.practice-toggle-btn.open .pt-arrow {
+  transform: rotate(0deg);
 }
 
 .practice-drawer-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
   border-bottom: 1px solid var(--border);
 }
 .practice-drawer-title {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text);
-  font-family: 'Space Grotesk', sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.practice-drawer-stats {
   font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--text-muted);
   font-family: 'JetBrains Mono', monospace;
 }
+.practice-drawer-stats {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-family: 'JetBrains Mono', monospace;
+}
 .practice-group {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .practice-group:last-child {
   margin-bottom: 0;
 }
 .practice-group-title {
-  font-size: 11px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-family: 'JetBrains Mono', monospace;
 }
-.practice-group-title.easy { color: var(--done); }
-.practice-group-title.medium { color: var(--warn); }
-.practice-group-title.hard { color: var(--danger); }
+.practice-group-title.easy { color: var(--diff-easy); }
+.practice-group-title.medium { color: var(--diff-med); }
+.practice-group-title.hard { color: var(--diff-hard); }
 
 .practice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 4px;
 }
 .practice-item {
   display: flex;
   align-items: center;
-  gap: 9px;
-  background: var(--bg-station);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 7px 11px;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 8px;
   font-size: 12px;
-  transition: border-color 0.15s, background 0.15s;
+  transition: background 0.15s;
 }
 .practice-item:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border);
 }
 .practice-item.done {
-  opacity: 0.7;
-  background: rgba(63, 185, 80, 0.06);
-  border-color: rgba(63, 185, 80, 0.3);
+  opacity: 0.55;
 }
 .practice-item.done .practice-link {
   text-decoration: line-through;
-  color: var(--text-muted);
+  color: var(--text-faint);
 }
 .practice-checkbox {
   appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid var(--text-muted);
-  border-radius: 4px;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--text-faint);
+  border-radius: 3px;
   background: transparent;
   cursor: pointer;
   flex-shrink: 0;
@@ -875,31 +872,31 @@ footer {
   content: '✓';
   position: absolute;
   color: #000;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .practice-link {
-  color: var(--text);
+  color: var(--text-muted);
   text-decoration: none;
   flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 11.5px;
 }
 .practice-link:hover {
   color: var(--rail);
   text-decoration: underline;
 }
 .practice-platform-tag {
-  font-size: 9.5px;
-  padding: 1px 5px;
+  font-size: 9px;
+  padding: 1px 4px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text-faint);
   font-family: 'JetBrains Mono', monospace;
   text-transform: uppercase;
@@ -930,6 +927,13 @@ footer {
 
 <div class="wrap">
   
+    <header>
+      <p class="eyebrow">Pepcoding · Beginner to Advanced</p>
+      <h1>Master DSA Architecture</h1>
+      <p class="sub">A structured 15-phase roadmap covering 777 Pepcoding videos (L1+L2) with 550+ curated LeetCode practice problems mapped to each topic.</p>
+    </header>
+
+    <div class="stats">
       <div class="stat"><div class="num">777</div><div class="lbl">Pepcoding Videos (L1+L2)</div></div>
       <div class="stat"><div class="num" id="statTopics">62</div><div class="lbl">Topic Blocks</div></div>
       <div class="stat"><div class="num" id="statDone">0 / 62</div><div class="lbl">Topics Cleared</div></div>
@@ -4649,7 +4653,7 @@ function makeQuestionId(url) {
 
 let progress = {};
 let practiceProgress = {};
-let closedPracticeDrawers = new Set();
+let openPracticeDrawers = new Set();
 
 // Migration Map: old v2 slug suffixes to v3 stop IDs
 const V2_TO_V3_MAP = {
@@ -4923,24 +4927,18 @@ function renderRoadmap() {
           `;
         };
 
-        const isCollapsed = closedPracticeDrawers.has(id);
+        const isOpen = openPracticeDrawers.has(id);
 
         practiceHtml = `
-          <div class="practice-wrapper" style="margin-top: 10px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <button type="button" class="practice-toggle-btn ${isCollapsed ? 'closed' : ''}" data-stop-id="${id}">
-                <span class="pt-arrow">▾</span>
-                <span>🎯 Practice LeetCode Questions (${doneQ}/${totalQ} solved · ${eList.length}E · ${mList.length}M · ${hList.length}H)</span>
-              </button>
-            </div>
-            <div class="practice-drawer ${isCollapsed ? 'closed' : ''}" id="practice-drawer-${id}">
-              <div class="practice-drawer-header">
-                <span class="practice-drawer-title">📌 Kunal Kushwaha Assignments & Curated LeetCode Problems</span>
-                <span class="practice-drawer-stats">${doneQ} / ${totalQ} solved</span>
-              </div>
-              ${renderQGrid(eList, 'easy', 'Easy Questions')}
-              ${renderQGrid(mList, 'medium', 'Medium Questions')}
-              ${renderQGrid(hList, 'hard', 'Hard Questions')}
+          <div class="practice-wrapper" style="margin-top: 6px;">
+            <button type="button" class="practice-toggle-btn ${isOpen ? 'open' : ''}" data-stop-id="${id}">
+              <span class="pt-arrow">▾</span>
+              <span>Practice (${doneQ}/${totalQ} · ${eList.length}E ${mList.length}M ${hList.length}H)</span>
+            </button>
+            <div class="practice-drawer ${isOpen ? 'open' : ''}" id="practice-drawer-${id}">
+              ${renderQGrid(eList, 'easy', 'Easy')}
+              ${renderQGrid(mList, 'medium', 'Medium')}
+              ${renderQGrid(hList, 'hard', 'Hard')}
             </div>
           </div>
         `;
@@ -4979,7 +4977,17 @@ function renderRoadmap() {
   document.getElementById("statTopics").textContent = totalStops;
   document.getElementById("statDone").textContent = doneStops + " / " + totalStops;
   
-  // Wire checkbox events
+  // Update LeetCode solved count
+  const totalPractice = Object.values(practiceProgress).filter(Boolean).length;
+  let totalPracticeQ = 0;
+  DATA.forEach(ph => ph.stops.forEach(s => {
+    if (s.practice) {
+      totalPracticeQ += (s.practice.easy||[]).length + (s.practice.medium||[]).length + (s.practice.hard||[]).length;
+    }
+  }));
+  document.getElementById("statPracticeSolved").textContent = totalPractice + " / " + totalPracticeQ;
+
+  // Wire topic checkbox events
   document.querySelectorAll(".checkbox").forEach(cb => {
     cb.addEventListener("change", (e) => {
       const id = e.target.dataset.id;
@@ -4991,6 +4999,55 @@ function renderRoadmap() {
     });
   });
 
+  // Wire practice drawer toggle buttons
+  document.querySelectorAll(".practice-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const stopId = btn.dataset.stopId;
+      const drawer = document.getElementById("practice-drawer-" + stopId);
+      if (openPracticeDrawers.has(stopId)) {
+        openPracticeDrawers.delete(stopId);
+        btn.classList.remove("open");
+        if (drawer) drawer.classList.remove("open");
+      } else {
+        openPracticeDrawers.add(stopId);
+        btn.classList.add("open");
+        if (drawer) drawer.classList.add("open");
+      }
+    });
+  });
+
+  // Wire practice checkbox events
+  document.querySelectorAll(".practice-checkbox").forEach(cb => {
+    cb.addEventListener("change", (e) => {
+      e.stopPropagation();
+      const qid = e.target.dataset.qid;
+      practiceProgress[qid] = e.target.checked;
+      saveProgress();
+      // Update the item's done class
+      const item = e.target.closest(".practice-item");
+      if (item) item.classList.toggle("done", e.target.checked);
+      // Update the solved counter
+      const solved = Object.values(practiceProgress).filter(Boolean).length;
+      document.getElementById("statPracticeSolved").textContent = solved + " / " + totalPracticeQ;
+      // Update the toggle button text for this stop
+      const stopId = e.target.dataset.stopId;
+      const btn = document.querySelector(`.practice-toggle-btn[data-stop-id="${stopId}"]`);
+      if (btn) {
+        const wrapper = btn.closest(".practice-wrapper");
+        if (wrapper) {
+          const all = wrapper.querySelectorAll(".practice-checkbox");
+          const checked = wrapper.querySelectorAll(".practice-checkbox:checked");
+          const spans = btn.querySelectorAll("span");
+          if (spans.length > 1) {
+            const eCount = wrapper.querySelectorAll(".practice-group.easy .practice-checkbox") || {length:0};
+            spans[1].textContent = `Practice (${checked.length}/${all.length} · solved)`;
+          }
+        }
+      }
+    });
+  });
 
 }
 
@@ -5103,7 +5160,7 @@ document.getElementById("resetBtn").addEventListener("click", async () => {
   practiceProgress = {};
   await saveProgress();
   openPhases.clear();
-  closedPracticeDrawers.clear();
+  openPracticeDrawers.clear();
   renderRoadmap();
   showToast("System reset complete ✓");
 });
