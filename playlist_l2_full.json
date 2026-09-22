@@ -1,0 +1,1340 @@
+[
+  {
+    "index": 0,
+    "title": "How to Print Abbreviations using Recursion | Backtracking",
+    "videoId": "LliQjLnbhx8",
+    "lengthSeconds": 1120
+  },
+  {
+    "index": 1,
+    "title": "N Queens Problem using Backtracking | Branch and Bound Algorithm Explained",
+    "videoId": "yvt0emtFiIE",
+    "lengthSeconds": 1688
+  },
+  {
+    "index": 2,
+    "title": "How to Solve Maximum Score of Words Problem | Recursion and Backtracking",
+    "videoId": "XtmW3a8Q9M4",
+    "lengthSeconds": 787
+  },
+  {
+    "index": 3,
+    "title": "Game of Execution - Josephus Problem | Recursion & Backtracking",
+    "videoId": "dzYq5VEMZIg",
+    "lengthSeconds": 1039
+  },
+  {
+    "index": 4,
+    "title": "How to Print in Lexicographical Order using Recursion?? | Algorithms",
+    "videoId": "gRo86WqFYSE",
+    "lengthSeconds": 1148
+  },
+  {
+    "index": 5,
+    "title": "Gold Mine - II | Path with Maximum Gold | Recursion & Backtracking",
+    "videoId": "lNwXq3Ki32I",
+    "lengthSeconds": 1872
+  },
+  {
+    "index": 6,
+    "title": "How to Solve Sudoku using Backtracking | Recursion",
+    "videoId": "uyetDh-DyDg",
+    "lengthSeconds": 1878
+  },
+  {
+    "index": 7,
+    "title": "How to Solve Crossword Puzzle Using Recursion | Backtracking Algorithm",
+    "videoId": "fUAZS-sdP2Q",
+    "lengthSeconds": 2492
+  },
+  {
+    "index": 8,
+    "title": "How to Solve Cryptarithmetic Puzzle using Backtracking | Data Structure and Algorithms",
+    "videoId": "RG5rWV6in38",
+    "lengthSeconds": 1062
+  },
+  {
+    "index": 9,
+    "title": "Friends Pairing using Backtracking | Backtracking Problems in JAVA",
+    "videoId": "qv_1Pstbm-w",
+    "lengthSeconds": 2763
+  },
+  {
+    "index": 10,
+    "title": "Partition in K Subsets | Recursion & Backtracking | Code and Implementation",
+    "videoId": "TvvGj1FtHIk",
+    "lengthSeconds": 1787
+  },
+  {
+    "index": 11,
+    "title": "Palindromic Permutations of a String in JAVA | Recursion and Backtracking Algorithm",
+    "videoId": "DwdWafLsGm0",
+    "lengthSeconds": 1330
+  },
+  {
+    "index": 12,
+    "title": "Palindrome Partitioning of a String Recursive | Backtracking Algorithm in JAVA",
+    "videoId": "wvaYrOp94k0",
+    "lengthSeconds": 567
+  },
+  {
+    "index": 13,
+    "title": "Equal Sum Subsets Partition - Recursive | Subset Sum Problem | Backtracking in JAVA",
+    "videoId": "rszwy53vaP0",
+    "lengthSeconds": 1176
+  },
+  {
+    "index": 14,
+    "title": "Word Pattern Matching using Backtracking | Leetcode Solutions in JAVA",
+    "videoId": "aVMyXDuSLNM",
+    "lengthSeconds": 1135
+  },
+  {
+    "index": 15,
+    "title": "Word Break Problem using Backtracking | Word Break Solution in JAVA",
+    "videoId": "LmHWIsBQBU4",
+    "lengthSeconds": 460
+  },
+  {
+    "index": 16,
+    "title": "Remove Invalid Parentheses Explained using Stacks | Leetcode 301 (Valid Parentheses) Code in JAVA",
+    "videoId": "Cbbf5qe5stw",
+    "lengthSeconds": 1400
+  },
+  {
+    "index": 17,
+    "title": "Maximum Number after K Swaps | Maximum Swap Explained with Code using Backtracking",
+    "videoId": "5crucASFoA4",
+    "lengthSeconds": 712
+  },
+  {
+    "index": 18,
+    "title": "Minimum Subset Sum Difference Explained | Tug Of War | Recursion and Backtracking in JAVA",
+    "videoId": "Q1fLW_zQr3M",
+    "lengthSeconds": 772
+  },
+  {
+    "index": 19,
+    "title": "Print Permutations using Backtracking | Backtracking Interview Problems",
+    "videoId": "QKkHCS5bq0I",
+    "lengthSeconds": 982
+  },
+  {
+    "index": 20,
+    "title": "Combinations in JAVA Recursive | Recursion Interview Problems | Backtracking",
+    "videoId": "wOaxJAtJ2Mo",
+    "lengthSeconds": 1076
+  },
+  {
+    "index": 21,
+    "title": "How to Permute in JAVA - Part 2 | Permutations and Combinations Algorithm",
+    "videoId": "NWFpebVkmTI",
+    "lengthSeconds": 1640
+  },
+  {
+    "index": 22,
+    "title": "Combinations Algorithm in JAVA - Part 2 | Permutations and Combination Algorithm Explained",
+    "videoId": "f6cL-VMIfTY",
+    "lengthSeconds": 1308
+  },
+  {
+    "index": 23,
+    "title": "Permutations of a String Explained with Code | String Permutation Algorithm",
+    "videoId": "4-Makzrj5qM",
+    "lengthSeconds": 1186
+  },
+  {
+    "index": 24,
+    "title": "Permutations of a String - Part 2 | String Permutation Algorithm Explained with Code",
+    "videoId": "D7kSjpIVQFA",
+    "lengthSeconds": 1172
+  },
+  {
+    "index": 25,
+    "title": "Words K Selection - 1 | Select K Distinct Characters without Repetition using Backtracking",
+    "videoId": "PiwttDa5FMA",
+    "lengthSeconds": 617
+  },
+  {
+    "index": 26,
+    "title": "Words K Selection - 2 | Select K Distinct Characters with Repetition using Backtracking",
+    "videoId": "fy5mFaHVuRs",
+    "lengthSeconds": 467
+  },
+  {
+    "index": 27,
+    "title": "K Length Words - 1 | K Length Words of Distinct Characters | Backtracking Interview Questions",
+    "videoId": "ZmAoj7wpMvM",
+    "lengthSeconds": 792
+  },
+  {
+    "index": 28,
+    "title": "K Length Words - 2 | K Length Words of Distinct Characters | Backtracking Interview Questions",
+    "videoId": "_geihPcxPag",
+    "lengthSeconds": 550
+  },
+  {
+    "index": 29,
+    "title": "Queens Combinations - 1 | 2d as 2d - Box Chooses | Recursion Interview Question",
+    "videoId": "Ra_fCLyWtr0",
+    "lengthSeconds": 550
+  },
+  {
+    "index": 30,
+    "title": "Queens Permutation - 1 | 2d as 2d - Queen Chooses | Recursion Interview Questions",
+    "videoId": "mkl6KOwtdbk",
+    "lengthSeconds": 306
+  },
+  {
+    "index": 31,
+    "title": "Queens Permutation - 2 | 2d As 2d - Box Chooses | Recursion Interview Questions",
+    "videoId": "5ujm7QQUwhs",
+    "lengthSeconds": 540
+  },
+  {
+    "index": 32,
+    "title": "Queens Combination - 2 - Queen Chooses | Recursion Interview Questions",
+    "videoId": "zOmrEPnrrJQ",
+    "lengthSeconds": 757
+  },
+  {
+    "index": 33,
+    "title": "Queens Combination - 3 | 2d As 1d - Queen Chooses | Recursion Interview Questions",
+    "videoId": "35JK-scUhpw",
+    "lengthSeconds": 729
+  },
+  {
+    "index": 34,
+    "title": "N Queens Problem | Combination 2d as 1d - Queen Chooses | Backtracking Solution Explained with Code",
+    "videoId": "U0dg2X14gYc",
+    "lengthSeconds": 438
+  },
+  {
+    "index": 35,
+    "title": "N Queens Problem | Permutations 2d as 1d - Queen Chooses | Backtracking Solution Explained with Code",
+    "videoId": "BLy1wjhwHU8",
+    "lengthSeconds": 736
+  },
+  {
+    "index": 36,
+    "title": "N Knights Combinations - Knight Chooses | Recursion Interview Questions",
+    "videoId": "XSlMg_VUfwk",
+    "lengthSeconds": 527
+  },
+  {
+    "index": 37,
+    "title": "Coin Change Problem - Recursion - Part 1 | Coin Change Combination - 1 Explained with Code",
+    "videoId": "ZiwJdiSGXB4",
+    "lengthSeconds": 314
+  },
+  {
+    "index": 38,
+    "title": "Coin Change Problem - Recursion - Part 2 | Coin Change Combination - 2 Explained with Code",
+    "videoId": "onUoUZDtak8",
+    "lengthSeconds": 580
+  },
+  {
+    "index": 39,
+    "title": "Introduction to Bit Manipulation | Bit Manipulation Tutorials for Competitive Programming",
+    "videoId": "v62IKeJtj0k",
+    "lengthSeconds": 3516
+  },
+  {
+    "index": 40,
+    "title": "Right Most Set Bit (RSB) Mask | Bit Masking Tutorials | Bit Manipulation and Competitive Programming",
+    "videoId": "XcSr6TIMl7w",
+    "lengthSeconds": 633
+  },
+  {
+    "index": 41,
+    "title": "Kernighan's Algorithm | Count Set Bits in an Integer | Bit Manipulation and Competitive Programming",
+    "videoId": "I475waWiTK4",
+    "lengthSeconds": 313
+  },
+  {
+    "index": 42,
+    "title": "Josephus Problem Algorithm using Bit Manipulation | Bit Manipulation Interview Questions",
+    "videoId": "NjcMT9wZHV0",
+    "lengthSeconds": 1525
+  },
+  {
+    "index": 43,
+    "title": "Gray Code Explained using Recursion and Backtracking | Leetcode#89 Solution in JAVA",
+    "videoId": "KOD2BFauQbA",
+    "lengthSeconds": 504
+  },
+  {
+    "index": 44,
+    "title": "Minimum Number of Developers | Bit Manipulation | Data Structure and Algorithms in Java",
+    "videoId": "5gXNMGiqQbU",
+    "lengthSeconds": 955
+  },
+  {
+    "index": 45,
+    "title": "Number of Valid Words for Each Puzzle | Bit Manipulation | Leetcode Hard Solutions",
+    "videoId": "9jV0CC_C26s",
+    "lengthSeconds": 2286
+  },
+  {
+    "index": 46,
+    "title": "All Repeating Except Two | Two Unique Rest Twice | Bit Manipulation Interview Questions",
+    "videoId": "pnx5JA9LNM4",
+    "lengthSeconds": 1097
+  },
+  {
+    "index": 47,
+    "title": "Find Duplicate Number and Missing Number from 1 to N | One Duplicate One Missing | Bit Manipulation",
+    "videoId": "MvklwzVz654",
+    "lengthSeconds": 452
+  },
+  {
+    "index": 48,
+    "title": "Find element that appears once while all other elements appear twice | XOR Operator Implementation",
+    "videoId": "Ch1Mq58f3yQ",
+    "lengthSeconds": 371
+  },
+  {
+    "index": 49,
+    "title": "Triplets - 1 | Find Number of Triplets | Bit Manipulation Interview Questions",
+    "videoId": "sdJBPdoD3OY",
+    "lengthSeconds": 747
+  },
+  {
+    "index": 50,
+    "title": "Reduce a Number to 1 in Minimum Steps | Reduce N to 1 | Bit Manipulation Interview Problems",
+    "videoId": "pW5fvwnZ1TA",
+    "lengthSeconds": 1131
+  },
+  {
+    "index": 51,
+    "title": "Same Number of Set Bits as that of N | Must do Coding Question | Bit Manipulation",
+    "videoId": "DMTw6pP5zTg",
+    "lengthSeconds": 1750
+  },
+  {
+    "index": 52,
+    "title": "XOR of Sum of All Pairs in an Array | Bit Manipulation Interview Questions | Code and Implementation",
+    "videoId": "10sMnEraOBs",
+    "lengthSeconds": 366
+  },
+  {
+    "index": 53,
+    "title": "Print Abbreviations using Bit Manipulation | Bit Manipulation Interview Questions",
+    "videoId": "2F-c8F4TCOo",
+    "lengthSeconds": 853
+  },
+  {
+    "index": 54,
+    "title": "UTF - 8 Encoding Explained using Bit Manipulation | Bit Manipulation Interview Questions",
+    "videoId": "3zyxpFPKkEU",
+    "lengthSeconds": 1428
+  },
+  {
+    "index": 55,
+    "title": "Solve Sudoku using Bit Manipulation | Sudoku Solver in JAVA",
+    "videoId": "SXimkBvg50Q",
+    "lengthSeconds": 837
+  },
+  {
+    "index": 56,
+    "title": "N Queens Problem using Backtracking and Bit Manipulation | Must do Coding Questions",
+    "videoId": "7qWsFBBTFRE",
+    "lengthSeconds": 1384
+  },
+  {
+    "index": 57,
+    "title": "Find element that appears once where all others appear thrice | One Unique Rest Thrice",
+    "videoId": "3gJxLkPPW6M",
+    "lengthSeconds": 2645
+  },
+  {
+    "index": 58,
+    "title": "Flip Bits to convert A to B | Minimum Flips to make A equals B | Bit Manipulation",
+    "videoId": "YvYGhJjQPTI",
+    "lengthSeconds": 258
+  },
+  {
+    "index": 59,
+    "title": "Copy Set Bits in a Range | Toggle Bits in a Range | Bit Manipulation Interview Questions",
+    "videoId": "v7pUZw-ZOYU",
+    "lengthSeconds": 778
+  },
+  {
+    "index": 60,
+    "title": "Power of Two | Check if a number is Power of Two | Bit Manipulation Interview Questions",
+    "videoId": "I80Ovvi_nRU",
+    "lengthSeconds": 424
+  },
+  {
+    "index": 61,
+    "title": "Divide two Integers without using Multiplication and Division | Calculate 7n/8 | Bit Manipulation",
+    "videoId": "k9Yxy-NhSTA",
+    "lengthSeconds": 803
+  },
+  {
+    "index": 62,
+    "title": "Swap all Odd and Even Bits | Bit Manipulation for Competitive Programming",
+    "videoId": "GbH8PcqKosk",
+    "lengthSeconds": 594
+  },
+  {
+    "index": 63,
+    "title": "Sum of Bit Differences Among All Pairs | Bit Manipulation Interview Questions",
+    "videoId": "L_fIn5TM3mM",
+    "lengthSeconds": 703
+  },
+  {
+    "index": 64,
+    "title": "Check if Binary String is Divisible by 3 | Must do Coding Questions | Bit Manipulation Questions",
+    "videoId": "Sd2ZjG20iUA",
+    "lengthSeconds": 490
+  },
+  {
+    "index": 65,
+    "title": "Count Set Bits in First N natural numbers | Total Set Bits from 1 to N | Bit Manipulation",
+    "videoId": "g6OxU-hRGtY",
+    "lengthSeconds": 1041
+  },
+  {
+    "index": 66,
+    "title": "Longest Bitonic Subsequence | Dynamic Programming | Explanation with Code",
+    "videoId": "jdfpGSSyN2I",
+    "lengthSeconds": 1014
+  },
+  {
+    "index": 67,
+    "title": "Maximum Non-Overlapping Bridges | Building Bridges | Dynamic Programming",
+    "videoId": "o1h3aoeSTOU",
+    "lengthSeconds": 2315
+  },
+  {
+    "index": 68,
+    "title": "Russian Doll Envelopes Dynamic Programming | Leetcode Hard Solution with Code",
+    "videoId": "Mud_QjUwbw8",
+    "lengthSeconds": 625
+  },
+  {
+    "index": 69,
+    "title": "Count Palindromic Substrings Dynamic Programming | Leetcode#647 Solution in JAVA",
+    "videoId": "XmSOWnL6T_I",
+    "lengthSeconds": 1781
+  },
+  {
+    "index": 70,
+    "title": "Longest Palindromic Substring Dynamic Programming | Explanation with Code",
+    "videoId": "WpYHNHofwjc",
+    "lengthSeconds": 705
+  },
+  {
+    "index": 71,
+    "title": "Print All Minimum Cost Paths Dynamic Programming | Minimum Cost Path",
+    "videoId": "f8Vdifn2YjQ",
+    "lengthSeconds": 1704
+  },
+  {
+    "index": 72,
+    "title": "Print all Paths with Minimum Jumps Dynamic Programming | Jump Game - II Solution",
+    "videoId": "phgjL7SbsWs",
+    "lengthSeconds": 1495
+  },
+  {
+    "index": 73,
+    "title": "Count Distinct Subsequences Dynamic Programming | Leetcode Hard Solution",
+    "videoId": "9UEHPiK53BA",
+    "lengthSeconds": 1164
+  },
+  {
+    "index": 74,
+    "title": "Print All Longest Increasing Subsequences Dynamic Programming | Explanation with Code",
+    "videoId": "3mD20VSib5E",
+    "lengthSeconds": 1911
+  },
+  {
+    "index": 75,
+    "title": "Count Palindromic Subsequences Dynamic Programming  | Leetcode Hard Solutions",
+    "videoId": "YHSjvswCXC8",
+    "lengthSeconds": 2842
+  },
+  {
+    "index": 76,
+    "title": "Print Paths with Maximum Gold Dynamic Programming | Goldmine Problem",
+    "videoId": "mme6Tqj8tyY",
+    "lengthSeconds": 1697
+  },
+  {
+    "index": 77,
+    "title": "Print Subsets with Target Sum Dynamic Programming | Subset Sum Problem",
+    "videoId": "qtqMTgmDpQg",
+    "lengthSeconds": 2455
+  },
+  {
+    "index": 78,
+    "title": "Reverse Bits using Bit Manipulation | Leetcode 190 Solution",
+    "videoId": "TC7nCh1MZM8",
+    "lengthSeconds": 920
+  },
+  {
+    "index": 79,
+    "title": "Minimum XOR Pairs | Min XOR Value | Bit Manipulation",
+    "videoId": "OZ2jghS0t24",
+    "lengthSeconds": 1039
+  },
+  {
+    "index": 80,
+    "title": "Paths of 0-1 Knapsack Problem Dynamic Programming | 01 Knapsack",
+    "videoId": "YH6M9WFp02g",
+    "lengthSeconds": 1649
+  },
+  {
+    "index": 81,
+    "title": "Palindromic Binary Representation | N-th Palindromic Binary | Bit Manipulation",
+    "videoId": "QYoWR8hDCyQ",
+    "lengthSeconds": 2144
+  },
+  {
+    "index": 82,
+    "title": "Longest Palindromic Subsequence Dynamic Programming Explained with Code",
+    "videoId": "RiNzHfoA2Lo",
+    "lengthSeconds": 2466
+  },
+  {
+    "index": 83,
+    "title": "Longest Common Subsequence Dynamic Programming | Explanation with Code",
+    "videoId": "0Ql40Llp09E",
+    "lengthSeconds": 2250
+  },
+  {
+    "index": 84,
+    "title": "Wildcard Matching Dynamic Programming | Leetcode Hard Solutions",
+    "videoId": "NbgUZAoIz3g",
+    "lengthSeconds": 2377
+  },
+  {
+    "index": 85,
+    "title": "Regular Expression Matching Dynamic Programming | Leetcode Hard Solutions",
+    "videoId": "DJvw8jCmxUU",
+    "lengthSeconds": 3477
+  },
+  {
+    "index": 86,
+    "title": "Count Distinct Palindromic Subsequences Dynamic Programming | Leetcode Hard Solution",
+    "videoId": "fvYlinirmFg",
+    "lengthSeconds": 6014
+  },
+  {
+    "index": 87,
+    "title": "Catalan Numbers Dynamic Programming | Calculate the Nth Catalan Number",
+    "videoId": "eUw9A1wsFg8",
+    "lengthSeconds": 408
+  },
+  {
+    "index": 88,
+    "title": "Count Number of Binary Search Trees with N Nodes Dynamic Programming - Catalan Numbers",
+    "videoId": "H1qjjkm3P3c",
+    "lengthSeconds": 1354
+  },
+  {
+    "index": 89,
+    "title": "Counting Valleys And Mountains Dynamic Programming | Hackerrank Problem Explained with Code",
+    "videoId": "hM_FJnrP1kk",
+    "lengthSeconds": 1158
+  },
+  {
+    "index": 90,
+    "title": "Combinations of Balanced Parentheses Dynamic Programming | Count Valid Parentheses",
+    "videoId": "n-8R95-5MXw",
+    "lengthSeconds": 735
+  },
+  {
+    "index": 91,
+    "title": "Non Intersecting Chords in a Circle Dynamic Programming | Circle and Chords",
+    "videoId": "qgQg1BcCWBA",
+    "lengthSeconds": 1841
+  },
+  {
+    "index": 92,
+    "title": "Ways of Polygon Triangulation Dynamic Programming | Explained with Code",
+    "videoId": "jSGW3YKkyHQ",
+    "lengthSeconds": 1995
+  },
+  {
+    "index": 93,
+    "title": "Catalan Numbers Variation Explained | Dynamic Programming Interview Questions",
+    "videoId": "qqcN4ROOusM",
+    "lengthSeconds": 1784
+  },
+  {
+    "index": 94,
+    "title": "Rod Cutting Problem Dynamic Programming | Cutting Rod for Maximum Profit",
+    "videoId": "eQuJb5gBkkc",
+    "lengthSeconds": 4313
+  },
+  {
+    "index": 95,
+    "title": "Palindrome Partitioning with Minimum Cuts Dynamic Programming | Minimum Palindromic Cuts",
+    "videoId": "qmTtAbOTqcg",
+    "lengthSeconds": 3009
+  },
+  {
+    "index": 96,
+    "title": "Matrix Chain Multiplication Dynamic Programming",
+    "videoId": "pEYwLmGJcvs",
+    "lengthSeconds": 2416
+  },
+  {
+    "index": 97,
+    "title": "Boolean Parenthesization Dynamic Programming | Explained with Code",
+    "videoId": "JbRsM2X2_pg",
+    "lengthSeconds": 3113
+  },
+  {
+    "index": 98,
+    "title": "Optimal Binary Search Tree Dynamic Programming",
+    "videoId": "HnslzEs8dbY",
+    "lengthSeconds": 4487
+  },
+  {
+    "index": 99,
+    "title": "Perfect Squares Dynamic Programming | Leetcode 279 Solution in JAVA",
+    "videoId": "aZuQXkO0-XA",
+    "lengthSeconds": 761
+  },
+  {
+    "index": 100,
+    "title": "Kadane's Algorithm for Maximum Sum Subarray | Dynamic Programming",
+    "videoId": "VMtyGnNcdPw",
+    "lengthSeconds": 1139
+  },
+  {
+    "index": 101,
+    "title": "Letter Combinations of a Phone Number Dynamic Programming | Mobile Numeric Keypad Problem",
+    "videoId": "IN3uTs8afz4",
+    "lengthSeconds": 1871
+  },
+  {
+    "index": 102,
+    "title": "Longest Common Substring Dynamic Programming",
+    "videoId": "NvmJBCn4eQI",
+    "lengthSeconds": 1642
+  },
+  {
+    "index": 103,
+    "title": "K Concatenation Maximum Sum Dynamic Programming | Leetcode-1191 (Medium) Solution",
+    "videoId": "qnoOu5Usb4o",
+    "lengthSeconds": 1325
+  },
+  {
+    "index": 104,
+    "title": "Burst Balloon Dynamic Programming | Leetcode Hard Solutions",
+    "videoId": "YzvF8CqPafI",
+    "lengthSeconds": 3004
+  },
+  {
+    "index": 105,
+    "title": "Knights Probability in Chessboard Dynamic Programming | Leetcode-688 (Medium) Solution",
+    "videoId": "54nJhM2AZv4",
+    "lengthSeconds": 1289
+  },
+  {
+    "index": 106,
+    "title": "Introduction to Hashmaps and Heaps | Find Number of Employees under every Employee",
+    "videoId": "bit4Jn-ZoyQ",
+    "lengthSeconds": 1284
+  },
+  {
+    "index": 107,
+    "title": "Reconstruct Itinerary using Hashmaps | Find Itinerary from Tickets using Hashmaps",
+    "videoId": "4mi2rO4D_Xk",
+    "lengthSeconds": 653
+  },
+  {
+    "index": 108,
+    "title": "Check if Array Pairs are Divisible by K | Hashmap Interview Questions Explained",
+    "videoId": "BvKv-118twg",
+    "lengthSeconds": 1664
+  },
+  {
+    "index": 109,
+    "title": "Distinct Elements in Windows of Size K | Hashmaps Interview Questions",
+    "videoId": "x8O9XocEioI",
+    "lengthSeconds": 1107
+  },
+  {
+    "index": 110,
+    "title": "Largest Subarray with 0 Sum | Hashmap & Heaps | Data Structure & Algorithms",
+    "videoId": "_yGf2rxwZlA",
+    "lengthSeconds": 935
+  },
+  {
+    "index": 111,
+    "title": "Count of Zero Sum Subarray using Hashmaps | Hashmap Interview Questions",
+    "videoId": "C9-n_H7dsvU",
+    "lengthSeconds": 705
+  },
+  {
+    "index": 112,
+    "title": "Minimum Window Substring (Leetcode Hard) | Hashmap Interview Questions",
+    "videoId": "e1HlptlipB0",
+    "lengthSeconds": 1788
+  },
+  {
+    "index": 113,
+    "title": "Minimum Window Substring - II using Hashmaps | Hashmaps Interview Questions",
+    "videoId": "pbUNTDdxomI",
+    "lengthSeconds": 942
+  },
+  {
+    "index": 114,
+    "title": "Longest Substring without Repeating Characters (Leetcode Medium) | Hashmap Interview Questions",
+    "videoId": "9Kc0eZBGL1U",
+    "lengthSeconds": 754
+  },
+  {
+    "index": 115,
+    "title": "Count Substrings without Repeating Characters | Hashmap Interview Questions",
+    "videoId": "Auk0E3E8G7c",
+    "lengthSeconds": 1298
+  },
+  {
+    "index": 116,
+    "title": "Longest Substring With Exactly K Distinct Characters | Hashmap Interview Questions",
+    "videoId": "SIh3RfFPQwU",
+    "lengthSeconds": 1076
+  },
+  {
+    "index": 117,
+    "title": "Count Substrings with K Distinct Characters | Hashmap Interview Questions",
+    "videoId": "CBSeilNvZHs",
+    "lengthSeconds": 2090
+  },
+  {
+    "index": 118,
+    "title": "Count of Equivalent Subarrays | Hashmap Interview Questions",
+    "videoId": "ceRJzjBrhPU",
+    "lengthSeconds": 987
+  },
+  {
+    "index": 119,
+    "title": "Maximum Consecutive Ones - 1 (Leetcode Medium) | Hashmap Interview Questions",
+    "videoId": "QPfalDbqa4A",
+    "lengthSeconds": 655
+  },
+  {
+    "index": 120,
+    "title": "Maximum Consecutive One's - 2 (Leetcode Medium) | Hashmap Interview Question",
+    "videoId": "ix_TazzqHn0",
+    "lengthSeconds": 704
+  },
+  {
+    "index": 121,
+    "title": "Maximum Difference of Zeros & Ones in Binary String in O(n) Time | Dynamic Programming",
+    "videoId": "_k_Codwq1ls",
+    "lengthSeconds": 851
+  },
+  {
+    "index": 122,
+    "title": "Maximum Sum Subarray with at least Size K | Dynamic Programming",
+    "videoId": "OodoQ95se20",
+    "lengthSeconds": 2493
+  },
+  {
+    "index": 123,
+    "title": "Optimal Strategy for a Game Dynamic Programming",
+    "videoId": "ww4V7vRIzSk",
+    "lengthSeconds": 1869
+  },
+  {
+    "index": 124,
+    "title": "Egg Dropping Problem Dynamic Programming | Leetcode Hard Solutions",
+    "videoId": "UvksR0hR9nA",
+    "lengthSeconds": 2937
+  },
+  {
+    "index": 125,
+    "title": "Length of Largest Subarray with Contiguous Elements | Hashmap Interviews Questions Playlist",
+    "videoId": "37MdIo-MaSU",
+    "lengthSeconds": 1136
+  },
+  {
+    "index": 126,
+    "title": "Longest Substring with at most K Unique Characters | Hashmap Interview Questions Playlist",
+    "videoId": "qOPxRziTxEQ",
+    "lengthSeconds": 805
+  },
+  {
+    "index": 127,
+    "title": "Count of Substrings with at-most K Distinct Characters | Hashmap Interview Questions Playlist",
+    "videoId": "shsYUyF7pEs",
+    "lengthSeconds": 878
+  },
+  {
+    "index": 128,
+    "title": "Subarray Sum Equals K | Count Subarrays with Sum Equals K | Hashmap Interview Questions Playlist",
+    "videoId": "20v8zSo2v18",
+    "lengthSeconds": 792
+  },
+  {
+    "index": 129,
+    "title": "Find All Anagrams in a String (Leetcode Medium) | Hashmap Interview Questions Playlist",
+    "videoId": "slDyFUnGtoU",
+    "lengthSeconds": 1250
+  },
+  {
+    "index": 130,
+    "title": "Check if two Strings are K Anagrams | Hashmap Interview Questions Playlist",
+    "videoId": "VyQbl13RGiw",
+    "lengthSeconds": 696
+  },
+  {
+    "index": 131,
+    "title": "Find Anagrams Mappings using Hashmaps | Hashmap Interview Questions Playlist",
+    "videoId": "jBkTf43X198",
+    "lengthSeconds": 790
+  },
+  {
+    "index": 132,
+    "title": "Valid Anagrams - Algorithm Explained in JAVA | Hashmap Interview Questions Playlist",
+    "videoId": "m7kLirMTp04",
+    "lengthSeconds": 225
+  },
+  {
+    "index": 133,
+    "title": "Group Anagrams Explained | Hashmap Interview Questions Playlist",
+    "videoId": "NNBQik4phMI",
+    "lengthSeconds": 549
+  },
+  {
+    "index": 134,
+    "title": "Isomorphic Strings Leetcode Solution",
+    "videoId": "6Qkail843d8",
+    "lengthSeconds": 508
+  },
+  {
+    "index": 135,
+    "title": "Word Pattern (Leetcode) Explained | Hashmap Interview Questions Playlist",
+    "videoId": "L-Kw6unCGQ4",
+    "lengthSeconds": 480
+  },
+  {
+    "index": 136,
+    "title": "Subarrays Sums Divisible by K (Leetcode 974) Algorithm Explained",
+    "videoId": "QM0klnvTQzk",
+    "lengthSeconds": 778
+  },
+  {
+    "index": 137,
+    "title": "Contiguous Array (Leetcode 525) Solution | Longest Subarray with Equal 0's and 1's",
+    "videoId": "1WugaISSWx8",
+    "lengthSeconds": 505
+  },
+  {
+    "index": 138,
+    "title": "Count of Subarrays with Equal 0 and 1 | Hashmaps Interview Question Playlist",
+    "videoId": "svMdY6wlQ6I",
+    "lengthSeconds": 411
+  },
+  {
+    "index": 139,
+    "title": "Longest Subarray with Sum Divisible by K | Hashmaps Interview Question Playlist",
+    "videoId": "GrV3MTR_Uk0",
+    "lengthSeconds": 1330
+  },
+  {
+    "index": 140,
+    "title": "Longest Subarray with Equal 0s 1s and 2s | Hashmap Interview Questions Playlist",
+    "videoId": "MRoWBJvJeLQ",
+    "lengthSeconds": 826
+  },
+  {
+    "index": 141,
+    "title": "Count Of Subarrays With Equal 0's 1's and 2's | Hashmap Interview Questions Playlist",
+    "videoId": "fPR4C822JOM",
+    "lengthSeconds": 629
+  },
+  {
+    "index": 142,
+    "title": "Longest Repeating Subsequence | Advanced Dynamic Programming",
+    "videoId": "oL7GCrcdaJI",
+    "lengthSeconds": 1131
+  },
+  {
+    "index": 143,
+    "title": "Minimum ASCII Delete Sum for Two Strings Dynamic Programming | Leetcode-712 Solution",
+    "videoId": "GPePWKCEy24",
+    "lengthSeconds": 3263
+  },
+  {
+    "index": 144,
+    "title": "Minimum Cost to Make Strings Identical",
+    "videoId": "a1bWbgt5geU",
+    "lengthSeconds": 1018
+  },
+  {
+    "index": 145,
+    "title": "Pairs with Equal Sum | Hashmap Interview Questions Playlsit",
+    "videoId": "11U8TjquNjY",
+    "lengthSeconds": 298
+  },
+  {
+    "index": 146,
+    "title": "Fraction to Recurring Decimal (Leetcode 166) Solution | Hashmap Interview Question Playlist",
+    "videoId": "2cRS9dNa780",
+    "lengthSeconds": 2103
+  },
+  {
+    "index": 147,
+    "title": "Rabbits in Forest (Leetcode 781) | Hashmap Interview Question Playlist",
+    "videoId": "9mEUIdP4ytw",
+    "lengthSeconds": 1822
+  },
+  {
+    "index": 148,
+    "title": "Task Completion",
+    "videoId": "bHI30gMf-R4",
+    "lengthSeconds": 452
+  },
+  {
+    "index": 149,
+    "title": "Pairs With Given Sum in Two Sorted Matrices",
+    "videoId": "LuonxZFwG90",
+    "lengthSeconds": 674
+  },
+  {
+    "index": 150,
+    "title": "Arithmetic Slices 2",
+    "videoId": "XjLT4TaXsgw",
+    "lengthSeconds": 2433
+  },
+  {
+    "index": 151,
+    "title": "Highway Billboard Problem Dynamic Programming",
+    "videoId": "SiGqwJOvflE",
+    "lengthSeconds": 2293
+  },
+  {
+    "index": 152,
+    "title": "Temple Offerings",
+    "videoId": "q40s16m5FD0",
+    "lengthSeconds": 1168
+  },
+  {
+    "index": 153,
+    "title": "Double Pair Array | Hashmaps  and Heaps",
+    "videoId": "ZOITpH3RDAk",
+    "lengthSeconds": 3039
+  },
+  {
+    "index": 154,
+    "title": "Quadruple Sum | Hashmap and Heaps",
+    "videoId": "Wj79ILvJ3Qc",
+    "lengthSeconds": 2346
+  },
+  {
+    "index": 155,
+    "title": "Quadruple sum Method 2 | Hashmaps and Heaps",
+    "videoId": "wF2DMGm00Ps",
+    "lengthSeconds": 647
+  },
+  {
+    "index": 156,
+    "title": "Quadruplet Sum II HashMap and Heap | Leetcode 454. 4sum ii Solution",
+    "videoId": "gwcrPfwqCRw",
+    "lengthSeconds": 722
+  },
+  {
+    "index": 157,
+    "title": "Pairs With Given Sum In Two Sorted Matrices Using HashMap and Heap",
+    "videoId": "aiHU8W6ppgE",
+    "lengthSeconds": 755
+  },
+  {
+    "index": 158,
+    "title": "First Non Repeating Character | Hashmaps and Heaps",
+    "videoId": "i_u8_ZSAsNc",
+    "lengthSeconds": 424
+  },
+  {
+    "index": 159,
+    "title": "Pairs With Given Sum in Two Sorted Matrices | Hashmaps and Heaps",
+    "videoId": "XKDow8asvnk",
+    "lengthSeconds": 1607
+  },
+  {
+    "index": 160,
+    "title": "Powerful Numbers | Hashmaps and Heaps",
+    "videoId": "PniLCiboQ8E",
+    "lengthSeconds": 1204
+  },
+  {
+    "index": 161,
+    "title": "Square Root Decomposition | Competitive Programming",
+    "videoId": "K54R2D9bilQ",
+    "lengthSeconds": 2358
+  },
+  {
+    "index": 162,
+    "title": "Sqrt decomposition point update | Competitive Programming",
+    "videoId": "yP48ylKOsA8",
+    "lengthSeconds": 593
+  },
+  {
+    "index": 163,
+    "title": "Can Prefix sum beat SQRT Decomposition!? | Competitive Programming",
+    "videoId": "c2uBLEJmE0U",
+    "lengthSeconds": 384
+  },
+  {
+    "index": 164,
+    "title": "Cameras In Binary Tree | Leetcode 968 Binary Tree Cameras",
+    "videoId": "uoFrIIrp5_g",
+    "lengthSeconds": 1337
+  },
+  {
+    "index": 165,
+    "title": "Addition Of Two LinkedList Without Extra Space | Leetcode 445. Leetcode Add Two Numbers II",
+    "videoId": "pmS2GAlRNNk",
+    "lengthSeconds": 1062
+  },
+  {
+    "index": 166,
+    "title": "Subtraction Of Two LinkedList Without Extra Space",
+    "videoId": "U5Ix-rscbl4",
+    "lengthSeconds": 1210
+  },
+  {
+    "index": 167,
+    "title": "Is Binary Tree A BST Using Inorder Property | Leetcode 98. Validate Binary Search Tree Solution",
+    "videoId": "klXjnz8zn2E",
+    "lengthSeconds": 1204
+  },
+  {
+    "index": 168,
+    "title": "Bellman ford | Advanced Graphs",
+    "videoId": "IjEX4rgxsvI",
+    "lengthSeconds": 1709
+  },
+  {
+    "index": 169,
+    "title": "Prim's vs Dijkstra's | Advanced Graphs",
+    "videoId": "f__RNJ1IAvY",
+    "lengthSeconds": 306
+  },
+  {
+    "index": 170,
+    "title": "Negative Weight Cycle Detection | Advanced Graphs",
+    "videoId": "dwcNHh2aHzo",
+    "lengthSeconds": 510
+  },
+  {
+    "index": 171,
+    "title": "0-1 BFS | Advanced graphs",
+    "videoId": "Xqq7uELiYnE",
+    "lengthSeconds": 1162
+  },
+  {
+    "index": 172,
+    "title": "Kahn's Algorithm | Advanced Graphs",
+    "videoId": "hM7-4viROWo",
+    "lengthSeconds": 978
+  },
+  {
+    "index": 173,
+    "title": "Construct BinaryTree From PostOrder and InOrder Traversal | Leetcode 106 Solution",
+    "videoId": "Lc3RBGtyn7M",
+    "lengthSeconds": 2023
+  },
+  {
+    "index": 174,
+    "title": "Construct BinaryTree From PreOrder and InOrder Traversal | Leetcode 105 Solution",
+    "videoId": "oAbSNJ35qAs",
+    "lengthSeconds": 2421
+  },
+  {
+    "index": 175,
+    "title": "Construct Binary Search Tree FromInOrder Traversal",
+    "videoId": "UAsLKuEMhsQ",
+    "lengthSeconds": 792
+  },
+  {
+    "index": 176,
+    "title": "Kosaraju Algorithm ( Strongly Connected Component) | graphs",
+    "videoId": "aATzrfIbl6k",
+    "lengthSeconds": 1723
+  },
+  {
+    "index": 177,
+    "title": "Construct Binary Search Tree From preOrder Traversal | Leetcode 1008 Solution",
+    "videoId": "Bexswo4pqZQ",
+    "lengthSeconds": 1291
+  },
+  {
+    "index": 178,
+    "title": "Construct BST From postOrder Traversal",
+    "videoId": "KsGXE7_y2Nw",
+    "lengthSeconds": 868
+  },
+  {
+    "index": 179,
+    "title": "Construct Binary Search Tree From LevelOrder Traversal",
+    "videoId": "8w_NSKo9e74",
+    "lengthSeconds": 1642
+  },
+  {
+    "index": 180,
+    "title": "Mother Vertex |  Advanced Graphs",
+    "videoId": "gNn0L18DUvg",
+    "lengthSeconds": 1100
+  },
+  {
+    "index": 181,
+    "title": "Is Cycle Present In LinkedList | Leetcode 141 Linked List Cycle Solution",
+    "videoId": "vkyE6HbTJg0",
+    "lengthSeconds": 886
+  },
+  {
+    "index": 182,
+    "title": "Intersection Node In Two LinkedList Using Floyd Cycle Method | Leetcode 160 Solution",
+    "videoId": "lAi11qfSsTM",
+    "lengthSeconds": 781
+  },
+  {
+    "index": 183,
+    "title": "Intersection Node In Two LinkedList Using Difference Method | Leetcode 160 Solution",
+    "videoId": "G3-DhRFnUEA",
+    "lengthSeconds": 789
+  },
+  {
+    "index": 184,
+    "title": "Cycle Node In Linked List | Leetcode 142 Linked List Cycle II Solution",
+    "videoId": "1O3q70OAPlQ",
+    "lengthSeconds": 1782
+  },
+  {
+    "index": 185,
+    "title": "Remove Duplicates From Sorted LinkedList Using addLast Method | Leetcode 83 Solution",
+    "videoId": "kzWfyDcQW30",
+    "lengthSeconds": 429
+  },
+  {
+    "index": 186,
+    "title": "Remove Duplicates From Sorted LinkedList | Leetcode 83 Solution",
+    "videoId": "GgLRB2V9R3o",
+    "lengthSeconds": 581
+  },
+  {
+    "index": 187,
+    "title": "Remove All Duplicates From Sorted LinkedList | Leetcode 82 Solution in Hindi",
+    "videoId": "7PGsMXlMzGA",
+    "lengthSeconds": 1077
+  },
+  {
+    "index": 188,
+    "title": "Left View Of BinaryTree | GeeForGeeks solution in Hindi",
+    "videoId": "QTWQSgD9HJ8",
+    "lengthSeconds": 1000
+  },
+  {
+    "index": 189,
+    "title": "Copy List With Random Pointers Without Using Extra Space | Leetcode 138.",
+    "videoId": "IGWJg9wDaF0",
+    "lengthSeconds": 1378
+  },
+  {
+    "index": 190,
+    "title": "Mathematical Proof of Detection of Cycle in A LinkedList | In Hindi",
+    "videoId": "dpqpgnTHiLs",
+    "lengthSeconds": 1260
+  },
+  {
+    "index": 191,
+    "title": "Top View of Binary Tree | GeeForGeeks solution in Hindi",
+    "videoId": "DhgD8dyp8RM",
+    "lengthSeconds": 1117
+  },
+  {
+    "index": 192,
+    "title": "Diagonal Order Of BinaryTree | GeeForGeeks solution in Hindi",
+    "videoId": "cvK3Sb6zJ1k",
+    "lengthSeconds": 1225
+  },
+  {
+    "index": 193,
+    "title": "Diagonal Order (Anti-Clock Wise) Of BinaryTree | GeeForGeeks solution in Hindi",
+    "videoId": "BZ49ZTWUbmg",
+    "lengthSeconds": 830
+  },
+  {
+    "index": 194,
+    "title": "Vertical Order Sum Using BFS | GeeForGeeks solution in Hindi",
+    "videoId": "zw0AvtuYMQg",
+    "lengthSeconds": 1143
+  },
+  {
+    "index": 195,
+    "title": "Vertical Order Sum Using Recursion Method 2 | GeeForGeeks solution in Hindi",
+    "videoId": "3N4PXGyfYiI",
+    "lengthSeconds": 1224
+  },
+  {
+    "index": 196,
+    "title": "Vertical Order Of Binary Tree II Using 2 Queue Method | Leetcode 987 Solution In Hindi",
+    "videoId": "8o-0CxZHNdQ",
+    "lengthSeconds": 3604
+  },
+  {
+    "index": 197,
+    "title": "Why O(NLogN)? Time Complexity Of Vertical Order Of Binary Tree II | Leetcode 987 Solution In Hindi",
+    "videoId": "KU2aFq6AsFA",
+    "lengthSeconds": 1612
+  },
+  {
+    "index": 198,
+    "title": "Serailize and Deserialize of Binary Tree Part 1 | Leetcode 297 Solution In Hindi",
+    "videoId": "qzdTHpuP434",
+    "lengthSeconds": 793
+  },
+  {
+    "index": 199,
+    "title": "Serailize and Deserialize of Binary Tree Part 2 | Leetcode 297 Solution In Hindi",
+    "videoId": "T2-dVDWLQtE",
+    "lengthSeconds": 1248
+  },
+  {
+    "index": 200,
+    "title": "Segregate 01 Node of LinkedList Over Swapping Nodes | GeeksForGeeks Solution In Hindi",
+    "videoId": "j_w83pJ6Px0",
+    "lengthSeconds": 990
+  },
+  {
+    "index": 201,
+    "title": "Segregate 012 Node of LinkedList Over Swapping Nodes | GeeksForGeeks Solution In Hindi",
+    "videoId": "VLhnTzNuntQ",
+    "lengthSeconds": 1145
+  },
+  {
+    "index": 202,
+    "title": "Segregate Node of LinkedList Over last Index | GeeksForGeeks Solution In Hindi",
+    "videoId": "R9ak6JgWMAw",
+    "lengthSeconds": 1739
+  },
+  {
+    "index": 203,
+    "title": "Segregate Node of LinkedList Over Pivot Index | GeeksForGeeks Solution In Hindi",
+    "videoId": "sJhUy4ixASE",
+    "lengthSeconds": 1936
+  },
+  {
+    "index": 204,
+    "title": "Intro Of Doubly LinkedList and Benefits Over Single Linked List |  in Hindi",
+    "videoId": "opDe7VBUk3U",
+    "lengthSeconds": 725
+  },
+  {
+    "index": 205,
+    "title": "Add First in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "3awBtfh1eAo",
+    "lengthSeconds": 772
+  },
+  {
+    "index": 206,
+    "title": "Add Last in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "bMXgF_tUMHE",
+    "lengthSeconds": 772
+  },
+  {
+    "index": 207,
+    "title": "Remove First In Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "CWmo8t4h6a0",
+    "lengthSeconds": 546
+  },
+  {
+    "index": 208,
+    "title": "Remove Last In Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "iqe6qrKTyAc",
+    "lengthSeconds": 352
+  },
+  {
+    "index": 209,
+    "title": "Get First and Last In Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "HIJBH1iDX_U",
+    "lengthSeconds": 316
+  },
+  {
+    "index": 210,
+    "title": "Add At in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "NVizD5mtfYE",
+    "lengthSeconds": 1356
+  },
+  {
+    "index": 211,
+    "title": "Get At In Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "QOHrdI41VsI",
+    "lengthSeconds": 494
+  },
+  {
+    "index": 212,
+    "title": "Remove At in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "AIC5d4gWFH4",
+    "lengthSeconds": 1093
+  },
+  {
+    "index": 213,
+    "title": "Intuition Of Threaded Binary Tree | Morris Traversal Intutution | In Hindi",
+    "videoId": "viegWtuH0uI",
+    "lengthSeconds": 830
+  },
+  {
+    "index": 214,
+    "title": "Diagonal Order Sum Using Shadow Technique | GeeksForGeeks Solution In Hindi",
+    "videoId": "7jfyD_3rlos",
+    "lengthSeconds": 1379
+  },
+  {
+    "index": 215,
+    "title": "Add Last in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "abgIlwPV3jA",
+    "lengthSeconds": 441
+  },
+  {
+    "index": 216,
+    "title": "Is Binary Tree A BST Using Morris Traversal | Using O(1) Space | Leetcode 98 Solution in Hindi",
+    "videoId": "HynyqbY-mPM",
+    "lengthSeconds": 1677
+  },
+  {
+    "index": 217,
+    "title": "Maximum Length of Repeated Subarray | Dynamic Programming | Leetcode 718",
+    "videoId": "Zg3HBicw4LU",
+    "lengthSeconds": 640
+  },
+  {
+    "index": 218,
+    "title": "Minimum Insertions To Make Palindrome | Dynamic Programming",
+    "videoId": "IP4iqrh0mQk",
+    "lengthSeconds": 1126
+  },
+  {
+    "index": 219,
+    "title": "Node To Root Path Binary Tree | Heap Mover Method | Pepcoding Solution in Hindi",
+    "videoId": "ZEJiMWBATZE",
+    "lengthSeconds": 1048
+  },
+  {
+    "index": 220,
+    "title": "Display Forward and Backward in Doubly Linked List | Pepcoding Solution in Hindi",
+    "videoId": "rBl9To_35IM",
+    "lengthSeconds": 412
+  },
+  {
+    "index": 221,
+    "title": "Burning Tree 2",
+    "videoId": "Uxb4REGHJgQ",
+    "lengthSeconds": 1318
+  },
+  {
+    "index": 222,
+    "title": "Maximum Width Of Binary Tree",
+    "videoId": "R9qiY7OK9JQ",
+    "lengthSeconds": 1317
+  }
+]

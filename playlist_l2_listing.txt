@@ -1,0 +1,223 @@
+V001 [18:40] How to Print Abbreviations using Recursion | Backtracking
+V002 [28:08] N Queens Problem using Backtracking | Branch and Bound Algorithm Explained
+V003 [13:07] How to Solve Maximum Score of Words Problem | Recursion and Backtracking
+V004 [17:19] Game of Execution - Josephus Problem | Recursion & Backtracking
+V005 [19:08] How to Print in Lexicographical Order using Recursion?? | Algorithms
+V006 [31:12] Gold Mine - II | Path with Maximum Gold | Recursion & Backtracking
+V007 [31:18] How to Solve Sudoku using Backtracking | Recursion
+V008 [41:32] How to Solve Crossword Puzzle Using Recursion | Backtracking Algorithm
+V009 [17:42] How to Solve Cryptarithmetic Puzzle using Backtracking | Data Structure and Algorithms
+V010 [46:03] Friends Pairing using Backtracking | Backtracking Problems in JAVA
+V011 [29:47] Partition in K Subsets | Recursion & Backtracking | Code and Implementation
+V012 [22:10] Palindromic Permutations of a String in JAVA | Recursion and Backtracking Algorithm
+V013 [ 9:27] Palindrome Partitioning of a String Recursive | Backtracking Algorithm in JAVA
+V014 [19:36] Equal Sum Subsets Partition - Recursive | Subset Sum Problem | Backtracking in JAVA
+V015 [18:55] Word Pattern Matching using Backtracking | Leetcode Solutions in JAVA
+V016 [ 7:40] Word Break Problem using Backtracking | Word Break Solution in JAVA
+V017 [23:20] Remove Invalid Parentheses Explained using Stacks | Leetcode 301 (Valid Parentheses) Code in JAVA
+V018 [11:52] Maximum Number after K Swaps | Maximum Swap Explained with Code using Backtracking
+V019 [12:52] Minimum Subset Sum Difference Explained | Tug Of War | Recursion and Backtracking in JAVA
+V020 [16:22] Print Permutations using Backtracking | Backtracking Interview Problems
+V021 [17:56] Combinations in JAVA Recursive | Recursion Interview Problems | Backtracking
+V022 [27:20] How to Permute in JAVA - Part 2 | Permutations and Combinations Algorithm
+V023 [21:48] Combinations Algorithm in JAVA - Part 2 | Permutations and Combination Algorithm Explained
+V024 [19:46] Permutations of a String Explained with Code | String Permutation Algorithm
+V025 [19:32] Permutations of a String - Part 2 | String Permutation Algorithm Explained with Code
+V026 [10:17] Words K Selection - 1 | Select K Distinct Characters without Repetition using Backtracking
+V027 [ 7:47] Words K Selection - 2 | Select K Distinct Characters with Repetition using Backtracking
+V028 [13:12] K Length Words - 1 | K Length Words of Distinct Characters | Backtracking Interview Questions
+V029 [ 9:10] K Length Words - 2 | K Length Words of Distinct Characters | Backtracking Interview Questions
+V030 [ 9:10] Queens Combinations - 1 | 2d as 2d - Box Chooses | Recursion Interview Question
+V031 [ 5:06] Queens Permutation - 1 | 2d as 2d - Queen Chooses | Recursion Interview Questions
+V032 [ 9:00] Queens Permutation - 2 | 2d As 2d - Box Chooses | Recursion Interview Questions
+V033 [12:37] Queens Combination - 2 - Queen Chooses | Recursion Interview Questions
+V034 [12:09] Queens Combination - 3 | 2d As 1d - Queen Chooses | Recursion Interview Questions
+V035 [ 7:18] N Queens Problem | Combination 2d as 1d - Queen Chooses | Backtracking Solution Explained with Code
+V036 [12:16] N Queens Problem | Permutations 2d as 1d - Queen Chooses | Backtracking Solution Explained with Code
+V037 [ 8:47] N Knights Combinations - Knight Chooses | Recursion Interview Questions
+V038 [ 5:14] Coin Change Problem - Recursion - Part 1 | Coin Change Combination - 1 Explained with Code
+V039 [ 9:40] Coin Change Problem - Recursion - Part 2 | Coin Change Combination - 2 Explained with Code
+V040 [58:36] Introduction to Bit Manipulation | Bit Manipulation Tutorials for Competitive Programming
+V041 [10:33] Right Most Set Bit (RSB) Mask | Bit Masking Tutorials | Bit Manipulation and Competitive Programming
+V042 [ 5:13] Kernighan's Algorithm | Count Set Bits in an Integer | Bit Manipulation and Competitive Programming
+V043 [25:25] Josephus Problem Algorithm using Bit Manipulation | Bit Manipulation Interview Questions
+V044 [ 8:24] Gray Code Explained using Recursion and Backtracking | Leetcode#89 Solution in JAVA
+V045 [15:55] Minimum Number of Developers | Bit Manipulation | Data Structure and Algorithms in Java
+V046 [38:06] Number of Valid Words for Each Puzzle | Bit Manipulation | Leetcode Hard Solutions
+V047 [18:17] All Repeating Except Two | Two Unique Rest Twice | Bit Manipulation Interview Questions
+V048 [ 7:32] Find Duplicate Number and Missing Number from 1 to N | One Duplicate One Missing | Bit Manipulation
+V049 [ 6:11] Find element that appears once while all other elements appear twice | XOR Operator Implementation
+V050 [12:27] Triplets - 1 | Find Number of Triplets | Bit Manipulation Interview Questions
+V051 [18:51] Reduce a Number to 1 in Minimum Steps | Reduce N to 1 | Bit Manipulation Interview Problems
+V052 [29:10] Same Number of Set Bits as that of N | Must do Coding Question | Bit Manipulation
+V053 [ 6:06] XOR of Sum of All Pairs in an Array | Bit Manipulation Interview Questions | Code and Implementation
+V054 [14:13] Print Abbreviations using Bit Manipulation | Bit Manipulation Interview Questions
+V055 [23:48] UTF - 8 Encoding Explained using Bit Manipulation | Bit Manipulation Interview Questions
+V056 [13:57] Solve Sudoku using Bit Manipulation | Sudoku Solver in JAVA
+V057 [23:04] N Queens Problem using Backtracking and Bit Manipulation | Must do Coding Questions
+V058 [44:05] Find element that appears once where all others appear thrice | One Unique Rest Thrice
+V059 [ 4:18] Flip Bits to convert A to B | Minimum Flips to make A equals B | Bit Manipulation
+V060 [12:58] Copy Set Bits in a Range | Toggle Bits in a Range | Bit Manipulation Interview Questions
+V061 [ 7:04] Power of Two | Check if a number is Power of Two | Bit Manipulation Interview Questions
+V062 [13:23] Divide two Integers without using Multiplication and Division | Calculate 7n/8 | Bit Manipulation
+V063 [ 9:54] Swap all Odd and Even Bits | Bit Manipulation for Competitive Programming
+V064 [11:43] Sum of Bit Differences Among All Pairs | Bit Manipulation Interview Questions
+V065 [ 8:10] Check if Binary String is Divisible by 3 | Must do Coding Questions | Bit Manipulation Questions
+V066 [17:21] Count Set Bits in First N natural numbers | Total Set Bits from 1 to N | Bit Manipulation
+V067 [16:54] Longest Bitonic Subsequence | Dynamic Programming | Explanation with Code
+V068 [38:35] Maximum Non-Overlapping Bridges | Building Bridges | Dynamic Programming
+V069 [10:25] Russian Doll Envelopes Dynamic Programming | Leetcode Hard Solution with Code
+V070 [29:41] Count Palindromic Substrings Dynamic Programming | Leetcode#647 Solution in JAVA
+V071 [11:45] Longest Palindromic Substring Dynamic Programming | Explanation with Code
+V072 [28:24] Print All Minimum Cost Paths Dynamic Programming | Minimum Cost Path
+V073 [24:55] Print all Paths with Minimum Jumps Dynamic Programming | Jump Game - II Solution
+V074 [19:24] Count Distinct Subsequences Dynamic Programming | Leetcode Hard Solution
+V075 [31:51] Print All Longest Increasing Subsequences Dynamic Programming | Explanation with Code
+V076 [47:22] Count Palindromic Subsequences Dynamic Programming  | Leetcode Hard Solutions
+V077 [28:17] Print Paths with Maximum Gold Dynamic Programming | Goldmine Problem
+V078 [40:55] Print Subsets with Target Sum Dynamic Programming | Subset Sum Problem
+V079 [15:20] Reverse Bits using Bit Manipulation | Leetcode 190 Solution
+V080 [17:19] Minimum XOR Pairs | Min XOR Value | Bit Manipulation
+V081 [27:29] Paths of 0-1 Knapsack Problem Dynamic Programming | 01 Knapsack
+V082 [35:44] Palindromic Binary Representation | N-th Palindromic Binary | Bit Manipulation
+V083 [41:06] Longest Palindromic Subsequence Dynamic Programming Explained with Code
+V084 [37:30] Longest Common Subsequence Dynamic Programming | Explanation with Code
+V085 [39:37] Wildcard Matching Dynamic Programming | Leetcode Hard Solutions
+V086 [57:57] Regular Expression Matching Dynamic Programming | Leetcode Hard Solutions
+V087 [100:14] Count Distinct Palindromic Subsequences Dynamic Programming | Leetcode Hard Solution
+V088 [ 6:48] Catalan Numbers Dynamic Programming | Calculate the Nth Catalan Number
+V089 [22:34] Count Number of Binary Search Trees with N Nodes Dynamic Programming - Catalan Numbers
+V090 [19:18] Counting Valleys And Mountains Dynamic Programming | Hackerrank Problem Explained with Code
+V091 [12:15] Combinations of Balanced Parentheses Dynamic Programming | Count Valid Parentheses
+V092 [30:41] Non Intersecting Chords in a Circle Dynamic Programming | Circle and Chords
+V093 [33:15] Ways of Polygon Triangulation Dynamic Programming | Explained with Code
+V094 [29:44] Catalan Numbers Variation Explained | Dynamic Programming Interview Questions
+V095 [71:53] Rod Cutting Problem Dynamic Programming | Cutting Rod for Maximum Profit
+V096 [50:09] Palindrome Partitioning with Minimum Cuts Dynamic Programming | Minimum Palindromic Cuts
+V097 [40:16] Matrix Chain Multiplication Dynamic Programming
+V098 [51:53] Boolean Parenthesization Dynamic Programming | Explained with Code
+V099 [74:47] Optimal Binary Search Tree Dynamic Programming
+V100 [12:41] Perfect Squares Dynamic Programming | Leetcode 279 Solution in JAVA
+V101 [18:59] Kadane's Algorithm for Maximum Sum Subarray | Dynamic Programming
+V102 [31:11] Letter Combinations of a Phone Number Dynamic Programming | Mobile Numeric Keypad Problem
+V103 [27:22] Longest Common Substring Dynamic Programming
+V104 [22:05] K Concatenation Maximum Sum Dynamic Programming | Leetcode-1191 (Medium) Solution
+V105 [50:04] Burst Balloon Dynamic Programming | Leetcode Hard Solutions
+V106 [21:29] Knights Probability in Chessboard Dynamic Programming | Leetcode-688 (Medium) Solution
+V107 [21:24] Introduction to Hashmaps and Heaps | Find Number of Employees under every Employee
+V108 [10:53] Reconstruct Itinerary using Hashmaps | Find Itinerary from Tickets using Hashmaps
+V109 [27:44] Check if Array Pairs are Divisible by K | Hashmap Interview Questions Explained
+V110 [18:27] Distinct Elements in Windows of Size K | Hashmaps Interview Questions
+V111 [15:35] Largest Subarray with 0 Sum | Hashmap & Heaps | Data Structure & Algorithms
+V112 [11:45] Count of Zero Sum Subarray using Hashmaps | Hashmap Interview Questions
+V113 [29:48] Minimum Window Substring (Leetcode Hard) | Hashmap Interview Questions
+V114 [15:42] Minimum Window Substring - II using Hashmaps | Hashmaps Interview Questions
+V115 [12:34] Longest Substring without Repeating Characters (Leetcode Medium) | Hashmap Interview Questions
+V116 [21:38] Count Substrings without Repeating Characters | Hashmap Interview Questions
+V117 [17:56] Longest Substring With Exactly K Distinct Characters | Hashmap Interview Questions
+V118 [34:50] Count Substrings with K Distinct Characters | Hashmap Interview Questions
+V119 [16:27] Count of Equivalent Subarrays | Hashmap Interview Questions
+V120 [10:55] Maximum Consecutive Ones - 1 (Leetcode Medium) | Hashmap Interview Questions
+V121 [11:44] Maximum Consecutive One's - 2 (Leetcode Medium) | Hashmap Interview Question
+V122 [14:11] Maximum Difference of Zeros & Ones in Binary String in O(n) Time | Dynamic Programming
+V123 [41:33] Maximum Sum Subarray with at least Size K | Dynamic Programming
+V124 [31:09] Optimal Strategy for a Game Dynamic Programming
+V125 [48:57] Egg Dropping Problem Dynamic Programming | Leetcode Hard Solutions
+V126 [18:56] Length of Largest Subarray with Contiguous Elements | Hashmap Interviews Questions Playlist
+V127 [13:25] Longest Substring with at most K Unique Characters | Hashmap Interview Questions Playlist
+V128 [14:38] Count of Substrings with at-most K Distinct Characters | Hashmap Interview Questions Playlist
+V129 [13:12] Subarray Sum Equals K | Count Subarrays with Sum Equals K | Hashmap Interview Questions Playlist
+V130 [20:50] Find All Anagrams in a String (Leetcode Medium) | Hashmap Interview Questions Playlist
+V131 [11:36] Check if two Strings are K Anagrams | Hashmap Interview Questions Playlist
+V132 [13:10] Find Anagrams Mappings using Hashmaps | Hashmap Interview Questions Playlist
+V133 [ 3:45] Valid Anagrams - Algorithm Explained in JAVA | Hashmap Interview Questions Playlist
+V134 [ 9:09] Group Anagrams Explained | Hashmap Interview Questions Playlist
+V135 [ 8:28] Isomorphic Strings Leetcode Solution
+V136 [ 8:00] Word Pattern (Leetcode) Explained | Hashmap Interview Questions Playlist
+V137 [12:58] Subarrays Sums Divisible by K (Leetcode 974) Algorithm Explained
+V138 [ 8:25] Contiguous Array (Leetcode 525) Solution | Longest Subarray with Equal 0's and 1's
+V139 [ 6:51] Count of Subarrays with Equal 0 and 1 | Hashmaps Interview Question Playlist
+V140 [22:10] Longest Subarray with Sum Divisible by K | Hashmaps Interview Question Playlist
+V141 [13:46] Longest Subarray with Equal 0s 1s and 2s | Hashmap Interview Questions Playlist
+V142 [10:29] Count Of Subarrays With Equal 0's 1's and 2's | Hashmap Interview Questions Playlist
+V143 [18:51] Longest Repeating Subsequence | Advanced Dynamic Programming
+V144 [54:23] Minimum ASCII Delete Sum for Two Strings Dynamic Programming | Leetcode-712 Solution
+V145 [16:58] Minimum Cost to Make Strings Identical
+V146 [ 4:58] Pairs with Equal Sum | Hashmap Interview Questions Playlsit
+V147 [35:03] Fraction to Recurring Decimal (Leetcode 166) Solution | Hashmap Interview Question Playlist
+V148 [30:22] Rabbits in Forest (Leetcode 781) | Hashmap Interview Question Playlist
+V149 [ 7:32] Task Completion
+V150 [11:14] Pairs With Given Sum in Two Sorted Matrices
+V151 [40:33] Arithmetic Slices 2
+V152 [38:13] Highway Billboard Problem Dynamic Programming
+V153 [19:28] Temple Offerings
+V154 [50:39] Double Pair Array | Hashmaps  and Heaps
+V155 [39:06] Quadruple Sum | Hashmap and Heaps
+V156 [10:47] Quadruple sum Method 2 | Hashmaps and Heaps
+V157 [12:02] Quadruplet Sum II HashMap and Heap | Leetcode 454. 4sum ii Solution
+V158 [12:35] Pairs With Given Sum In Two Sorted Matrices Using HashMap and Heap
+V159 [ 7:04] First Non Repeating Character | Hashmaps and Heaps
+V160 [26:47] Pairs With Given Sum in Two Sorted Matrices | Hashmaps and Heaps
+V161 [20:04] Powerful Numbers | Hashmaps and Heaps
+V162 [39:18] Square Root Decomposition | Competitive Programming
+V163 [ 9:53] Sqrt decomposition point update | Competitive Programming
+V164 [ 6:24] Can Prefix sum beat SQRT Decomposition!? | Competitive Programming
+V165 [22:17] Cameras In Binary Tree | Leetcode 968 Binary Tree Cameras
+V166 [17:42] Addition Of Two LinkedList Without Extra Space | Leetcode 445. Leetcode Add Two Numbers II
+V167 [20:10] Subtraction Of Two LinkedList Without Extra Space
+V168 [20:04] Is Binary Tree A BST Using Inorder Property | Leetcode 98. Validate Binary Search Tree Solution
+V169 [28:29] Bellman ford | Advanced Graphs
+V170 [ 5:06] Prim's vs Dijkstra's | Advanced Graphs
+V171 [ 8:30] Negative Weight Cycle Detection | Advanced Graphs
+V172 [19:22] 0-1 BFS | Advanced graphs
+V173 [16:18] Kahn's Algorithm | Advanced Graphs
+V174 [33:43] Construct BinaryTree From PostOrder and InOrder Traversal | Leetcode 106 Solution
+V175 [40:21] Construct BinaryTree From PreOrder and InOrder Traversal | Leetcode 105 Solution
+V176 [13:12] Construct Binary Search Tree FromInOrder Traversal
+V177 [28:43] Kosaraju Algorithm ( Strongly Connected Component) | graphs
+V178 [21:31] Construct Binary Search Tree From preOrder Traversal | Leetcode 1008 Solution
+V179 [14:28] Construct BST From postOrder Traversal
+V180 [27:22] Construct Binary Search Tree From LevelOrder Traversal
+V181 [18:20] Mother Vertex |  Advanced Graphs
+V182 [14:46] Is Cycle Present In LinkedList | Leetcode 141 Linked List Cycle Solution
+V183 [13:01] Intersection Node In Two LinkedList Using Floyd Cycle Method | Leetcode 160 Solution
+V184 [13:09] Intersection Node In Two LinkedList Using Difference Method | Leetcode 160 Solution
+V185 [29:42] Cycle Node In Linked List | Leetcode 142 Linked List Cycle II Solution
+V186 [ 7:09] Remove Duplicates From Sorted LinkedList Using addLast Method | Leetcode 83 Solution
+V187 [ 9:41] Remove Duplicates From Sorted LinkedList | Leetcode 83 Solution
+V188 [17:57] Remove All Duplicates From Sorted LinkedList | Leetcode 82 Solution in Hindi
+V189 [16:40] Left View Of BinaryTree | GeeForGeeks solution in Hindi
+V190 [22:58] Copy List With Random Pointers Without Using Extra Space | Leetcode 138.
+V191 [21:00] Mathematical Proof of Detection of Cycle in A LinkedList | In Hindi
+V192 [18:37] Top View of Binary Tree | GeeForGeeks solution in Hindi
+V193 [20:25] Diagonal Order Of BinaryTree | GeeForGeeks solution in Hindi
+V194 [13:50] Diagonal Order (Anti-Clock Wise) Of BinaryTree | GeeForGeeks solution in Hindi
+V195 [19:03] Vertical Order Sum Using BFS | GeeForGeeks solution in Hindi
+V196 [20:24] Vertical Order Sum Using Recursion Method 2 | GeeForGeeks solution in Hindi
+V197 [60:04] Vertical Order Of Binary Tree II Using 2 Queue Method | Leetcode 987 Solution In Hindi
+V198 [26:52] Why O(NLogN)? Time Complexity Of Vertical Order Of Binary Tree II | Leetcode 987 Solution In Hindi
+V199 [13:13] Serailize and Deserialize of Binary Tree Part 1 | Leetcode 297 Solution In Hindi
+V200 [20:48] Serailize and Deserialize of Binary Tree Part 2 | Leetcode 297 Solution In Hindi
+V201 [16:30] Segregate 01 Node of LinkedList Over Swapping Nodes | GeeksForGeeks Solution In Hindi
+V202 [19:05] Segregate 012 Node of LinkedList Over Swapping Nodes | GeeksForGeeks Solution In Hindi
+V203 [28:59] Segregate Node of LinkedList Over last Index | GeeksForGeeks Solution In Hindi
+V204 [32:16] Segregate Node of LinkedList Over Pivot Index | GeeksForGeeks Solution In Hindi
+V205 [12:05] Intro Of Doubly LinkedList and Benefits Over Single Linked List |  in Hindi
+V206 [12:52] Add First in Doubly Linked List | Pepcoding Solution in Hindi
+V207 [12:52] Add Last in Doubly Linked List | Pepcoding Solution in Hindi
+V208 [ 9:06] Remove First In Doubly Linked List | Pepcoding Solution in Hindi
+V209 [ 5:52] Remove Last In Doubly Linked List | Pepcoding Solution in Hindi
+V210 [ 5:16] Get First and Last In Doubly Linked List | Pepcoding Solution in Hindi
+V211 [22:36] Add At in Doubly Linked List | Pepcoding Solution in Hindi
+V212 [ 8:14] Get At In Doubly Linked List | Pepcoding Solution in Hindi
+V213 [18:13] Remove At in Doubly Linked List | Pepcoding Solution in Hindi
+V214 [13:50] Intuition Of Threaded Binary Tree | Morris Traversal Intutution | In Hindi
+V215 [22:59] Diagonal Order Sum Using Shadow Technique | GeeksForGeeks Solution In Hindi
+V216 [ 7:21] Add Last in Doubly Linked List | Pepcoding Solution in Hindi
+V217 [27:57] Is Binary Tree A BST Using Morris Traversal | Using O(1) Space | Leetcode 98 Solution in Hindi
+V218 [10:40] Maximum Length of Repeated Subarray | Dynamic Programming | Leetcode 718
+V219 [18:46] Minimum Insertions To Make Palindrome | Dynamic Programming
+V220 [17:28] Node To Root Path Binary Tree | Heap Mover Method | Pepcoding Solution in Hindi
+V221 [ 6:52] Display Forward and Backward in Doubly Linked List | Pepcoding Solution in Hindi
+V222 [21:58] Burning Tree 2
+V223 [21:57] Maximum Width Of Binary Tree

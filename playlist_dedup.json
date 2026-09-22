@@ -1,0 +1,3326 @@
+[
+  {
+    "index": 0,
+    "title": "Introduction to Java Foundation | Basic Data Structures | Java Foundation Course | Pepcoding",
+    "videoId": "F8xQ5joLlD0",
+    "lengthSeconds": 570
+  },
+  {
+    "index": 1,
+    "title": "How to Print Output in Java | Java Foundation Course | \"Hello World\" | Lecture -1",
+    "videoId": "WxsPr2ojbiE",
+    "lengthSeconds": 510
+  },
+  {
+    "index": 2,
+    "title": "How to Print Z - Question | Java Foundation Course | Lecture 2",
+    "videoId": "_Mj-Pe86Zt8",
+    "lengthSeconds": 80
+  },
+  {
+    "index": 3,
+    "title": "How to Print Z - Solution Video | Java Foundation Course | Lecture 3",
+    "videoId": "7l0XEm3cQpw",
+    "lengthSeconds": 158
+  },
+  {
+    "index": 4,
+    "title": "Variables in Java | Java Foundation Course | Lecture 4",
+    "videoId": "hipkIs4gBkw",
+    "lengthSeconds": 891
+  },
+  {
+    "index": 5,
+    "title": "Conditional Statements | If, Else if and Else | Java Foundation Course | Lecture 5",
+    "videoId": "lEj9QtrreZo",
+    "lengthSeconds": 705
+  },
+  {
+    "index": 6,
+    "title": "Conditionals - Question | Grading System | Java Foundation Course | Lecture 6",
+    "videoId": "zCC3QcXKM3o",
+    "lengthSeconds": 113
+  },
+  {
+    "index": 7,
+    "title": "Conditionals - Solution | Grading System | Java Foundation Course | Lecture 7",
+    "videoId": "AHuh0LDSsUY",
+    "lengthSeconds": 212
+  },
+  {
+    "index": 8,
+    "title": "Loops | Java Foundation Course | Lecture 8",
+    "videoId": "27Aa9X5g0tY",
+    "lengthSeconds": 632
+  },
+  {
+    "index": 9,
+    "title": "Take Input | Java Foundation Course | Lecture 9",
+    "videoId": "1eiyukDzfTs",
+    "lengthSeconds": 498
+  },
+  {
+    "index": 10,
+    "title": "Is a number Prime? - Question | Java Foundation Course | Lecture 10",
+    "videoId": "3bCf5xSVkbo",
+    "lengthSeconds": 145
+  },
+  {
+    "index": 11,
+    "title": "Is a number Prime? - Solution | Java Foundation Course | Lecture 11",
+    "videoId": "HXSfAyjWM8A",
+    "lengthSeconds": 1100
+  },
+  {
+    "index": 12,
+    "title": "Print all Prime Numbers till N - Question | Java Foundation Course | Lecture 12",
+    "videoId": "sVdGn8xfCCM",
+    "lengthSeconds": 85
+  },
+  {
+    "index": 13,
+    "title": "Print all Prime Numbers till N - Solution | Java Foundation Course | Lecture 13",
+    "videoId": "YOmq-Jr3QIk",
+    "lengthSeconds": 377
+  },
+  {
+    "index": 14,
+    "title": "Print all Fibonacci Numbers till N - Question | Java Foundation Course | Lecture 14",
+    "videoId": "JbLEpRy_vTk",
+    "lengthSeconds": 88
+  },
+  {
+    "index": 15,
+    "title": "Print all Fibonacci Numbers till N - Solution | Java Foundation Course | Lecture 15",
+    "videoId": "P07sxSfcF40",
+    "lengthSeconds": 511
+  },
+  {
+    "index": 16,
+    "title": "Count Digits in a Number - Question | Java Foundation Course | Lecture 16",
+    "videoId": "4wtESDtEBp4",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 17,
+    "title": "Count Digits in a Number - Solution | Java Foundation Course | Lecture 17",
+    "videoId": "Ue3MTpyPHoU",
+    "lengthSeconds": 199
+  },
+  {
+    "index": 18,
+    "title": "Digits of a number - Question | Java Foundation Course | Lecture 18",
+    "videoId": "wq-Cp3kl1nI",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 19,
+    "title": "Digits of a number - Solution | Java Foundation Course | Lecture 19",
+    "videoId": "gZp776a-pbQ",
+    "lengthSeconds": 560
+  },
+  {
+    "index": 20,
+    "title": "Reverse a number - Question | Java Foundation Course | Lecture 20",
+    "videoId": "uYOIb1-47qw",
+    "lengthSeconds": 36
+  },
+  {
+    "index": 21,
+    "title": "Reverse a number - Solution | Java Foundation Course | Lecture 21",
+    "videoId": "D_yKIOnhMRc",
+    "lengthSeconds": 156
+  },
+  {
+    "index": 22,
+    "title": "Inverse of a number - Question | Java Foundation Course | Lecture 22",
+    "videoId": "dbk42TKwk4M",
+    "lengthSeconds": 260
+  },
+  {
+    "index": 23,
+    "title": "Inverse of a number - Solution | Java Foundation Course | Lecture 23",
+    "videoId": "O7PlWc9lOzg",
+    "lengthSeconds": 905
+  },
+  {
+    "index": 24,
+    "title": "Rotate a number - Question | Java Foundation Course | Lecture 24",
+    "videoId": "ysMHtDIlU0c",
+    "lengthSeconds": 240
+  },
+  {
+    "index": 25,
+    "title": "Rotate a number - Solution | Java Foundation Course | Lecture 25",
+    "videoId": "lt8oCGqYMGg",
+    "lengthSeconds": 625
+  },
+  {
+    "index": 26,
+    "title": "GCD and LCM - Question | Java Foundation Course | Lecture 26",
+    "videoId": "8RlrYFljNJI",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 27,
+    "title": "GCD and LCM - Solution | Java Foundation Course | Lecture 27",
+    "videoId": "ZtDeDD1VYLk",
+    "lengthSeconds": 469
+  },
+  {
+    "index": 28,
+    "title": "Prime Factorization - Question | Java Foundation Course | Lecture 28",
+    "videoId": "P97Ms8kSzjg",
+    "lengthSeconds": 70
+  },
+  {
+    "index": 29,
+    "title": "Prime Factorization - Solution | Java Foundation Course | Lecture 29",
+    "videoId": "5gFC-ayyQMk",
+    "lengthSeconds": 480
+  },
+  {
+    "index": 30,
+    "title": "Pythagorean Triplets - Question | Java Foundation Course",
+    "videoId": "HjfQtaJaWP0",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 31,
+    "title": "Pythagorean Triplets - Solution | Java Foundation Course",
+    "videoId": "w4bRrZCEz6o",
+    "lengthSeconds": 318
+  },
+  {
+    "index": 32,
+    "title": "Benjamin Bulbs - Question | Java Foundation Course",
+    "videoId": "_F7ejdDCpyg",
+    "lengthSeconds": 94
+  },
+  {
+    "index": 33,
+    "title": "Benjamin Bulbs - Solution | Java Foundation Course",
+    "videoId": "7IbWTFOUP1U",
+    "lengthSeconds": 507
+  },
+  {
+    "index": 34,
+    "title": "Pattern-1 | Question | Java Foundation Course",
+    "videoId": "3OUOKD-wj0Q",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 35,
+    "title": "Pattern-1 | Solution | Java Foundation Course",
+    "videoId": "GSqrux5dtiA",
+    "lengthSeconds": 910
+  },
+  {
+    "index": 36,
+    "title": "Pattern-2 | Question | Java Foundation Course",
+    "videoId": "Y-AePs3E7FU",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 37,
+    "title": "Pattern-2 | Solution | Java Foundation Course",
+    "videoId": "7dxaR4q8SIU",
+    "lengthSeconds": 528
+  },
+  {
+    "index": 38,
+    "title": "Pattern-3 | Question | Java Foundation Course",
+    "videoId": "ArnoqgUbN8I",
+    "lengthSeconds": 30
+  },
+  {
+    "index": 39,
+    "title": "Pattern-3 | Solution | Java Foundation Course",
+    "videoId": "4QJQOVswBIc",
+    "lengthSeconds": 573
+  },
+  {
+    "index": 40,
+    "title": "Pattern-4 | Question | Java Foundation Course",
+    "videoId": "Hf821tK1hIc",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 41,
+    "title": "Pattern-4 | Solution | Java Foundation Course",
+    "videoId": "_xlkKJyNmuc",
+    "lengthSeconds": 461
+  },
+  {
+    "index": 42,
+    "title": "Pattern-5 | Question | Java Foundation Course",
+    "videoId": "uKND5Sc2QzQ",
+    "lengthSeconds": 24
+  },
+  {
+    "index": 43,
+    "title": "Pattern-5 | Solution | Java Foundation Course",
+    "videoId": "hGWoXqF1qC8",
+    "lengthSeconds": 523
+  },
+  {
+    "index": 44,
+    "title": "Pattern-6 | Question | Java Foundation Course",
+    "videoId": "o4lZ5M87m7o",
+    "lengthSeconds": 84
+  },
+  {
+    "index": 45,
+    "title": "Pattern-6 | Solution | Java Foundation Course",
+    "videoId": "26K9TDemyqI",
+    "lengthSeconds": 372
+  },
+  {
+    "index": 46,
+    "title": "Pattern-7 | Question | Java Foundation Course",
+    "videoId": "MX5x9oco8H8",
+    "lengthSeconds": 23
+  },
+  {
+    "index": 47,
+    "title": "Pattern-7 | Solution | Java Foundation Course",
+    "videoId": "ewBilX1an5A",
+    "lengthSeconds": 309
+  },
+  {
+    "index": 48,
+    "title": "Pattern-8 | Question | Java Foundation Course",
+    "videoId": "f5DrvVWSDgY",
+    "lengthSeconds": 22
+  },
+  {
+    "index": 49,
+    "title": "Pattern-8 | Solution | Java Foundation Course",
+    "videoId": "D5a13WBbee0",
+    "lengthSeconds": 236
+  },
+  {
+    "index": 50,
+    "title": "Pattern-9 | Question | Java Foundation Course",
+    "videoId": "zcoVmVMIymQ",
+    "lengthSeconds": 23
+  },
+  {
+    "index": 51,
+    "title": "Pattern-9 | Solution | Java Foundation Course",
+    "videoId": "Ul2CgihEzp0",
+    "lengthSeconds": 153
+  },
+  {
+    "index": 52,
+    "title": "Pattern-10 | Question | Java Foundation Course",
+    "videoId": "X90L33S2xk0",
+    "lengthSeconds": 64
+  },
+  {
+    "index": 53,
+    "title": "Pattern-10 | Solution | Java Foundation Course",
+    "videoId": "8ccsrxrXCmk",
+    "lengthSeconds": 584
+  },
+  {
+    "index": 54,
+    "title": "Pattern-11 | Question | Java Foundation Course",
+    "videoId": "1AELjQJeeOw",
+    "lengthSeconds": 31
+  },
+  {
+    "index": 55,
+    "title": "Pattern-11 | Solution | Java Foundation Course",
+    "videoId": "Yqq4GUPvWQM",
+    "lengthSeconds": 369
+  },
+  {
+    "index": 56,
+    "title": "Pattern-12 | Question | Java Foundation Course",
+    "videoId": "W5jFT6sjpyU",
+    "lengthSeconds": 28
+  },
+  {
+    "index": 57,
+    "title": "Pattern-12 | Solution | Java Foundation Course",
+    "videoId": "XzIM_xS9bgM",
+    "lengthSeconds": 186
+  },
+  {
+    "index": 58,
+    "title": "Pattern 13 | Question | Java Foundation Course",
+    "videoId": "zAnV4KZ6uDk",
+    "lengthSeconds": 45
+  },
+  {
+    "index": 59,
+    "title": "Pattern-13 | Solution | Java Foundation Course",
+    "videoId": "8Cyb3X5j1Rw",
+    "lengthSeconds": 686
+  },
+  {
+    "index": 60,
+    "title": "Pattern-14 | Question | Java Foundation Course",
+    "videoId": "uPBV9nTNLW0",
+    "lengthSeconds": 25
+  },
+  {
+    "index": 61,
+    "title": "Pattern-14 | Solution | Java Foundation Course",
+    "videoId": "HrpR_v-JRVE",
+    "lengthSeconds": 122
+  },
+  {
+    "index": 62,
+    "title": "Pattern-15 | Question | Java Foundation Course",
+    "videoId": "TFfzfdGNsV0",
+    "lengthSeconds": 245
+  },
+  {
+    "index": 63,
+    "title": "Pattern-15 | Solution | Java Foundation Course",
+    "videoId": "lKhGlVXdD2c",
+    "lengthSeconds": 644
+  },
+  {
+    "index": 64,
+    "title": "Pattern-16 | Question | Java Foundation Course",
+    "videoId": "qtWOvVRMHuM",
+    "lengthSeconds": 107
+  },
+  {
+    "index": 65,
+    "title": "Pattern-16 | Solution | Java Foundation Course",
+    "videoId": "qcQyMI1OSyg",
+    "lengthSeconds": 661
+  },
+  {
+    "index": 66,
+    "title": "Pattern-17 | Question | Java Foundation Course",
+    "videoId": "kmqISkLQlMI",
+    "lengthSeconds": 77
+  },
+  {
+    "index": 67,
+    "title": "Pattern-17 | Solution | Java Foundation Course",
+    "videoId": "MhXDyhmClMg",
+    "lengthSeconds": 368
+  },
+  {
+    "index": 68,
+    "title": "Pattern-18 | Question | Java Foundation Course",
+    "videoId": "f91AwaEd2EQ",
+    "lengthSeconds": 69
+  },
+  {
+    "index": 69,
+    "title": "Pattern-18 | Solution | Java Foundation Course",
+    "videoId": "y-b-8ddRFR4",
+    "lengthSeconds": 417
+  },
+  {
+    "index": 70,
+    "title": "Pattern-19 | Question | Java Foundation Course",
+    "videoId": "9KlKv54QI9c",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 71,
+    "title": "Pattern-19 | Solution | Java Foundation Course",
+    "videoId": "SHaqp8vqzxg",
+    "lengthSeconds": 855
+  },
+  {
+    "index": 72,
+    "title": "Pattern-20 | Question | Java Foundation Course",
+    "videoId": "JRjdGPn2Qz0",
+    "lengthSeconds": 16
+  },
+  {
+    "index": 73,
+    "title": "Pattern-20 | Solution | Java Foundation Course",
+    "videoId": "xvXhZ0k1fYo",
+    "lengthSeconds": 246
+  },
+  {
+    "index": 74,
+    "title": "Introduction to Functions",
+    "videoId": "tXbgyBCLteM",
+    "lengthSeconds": 1168
+  },
+  {
+    "index": 75,
+    "title": "Digits Frequency | Question",
+    "videoId": "TJvWrEMuO5k",
+    "lengthSeconds": 28
+  },
+  {
+    "index": 76,
+    "title": "Digits Frequency | Solution",
+    "videoId": "U3VZNsMJpD4",
+    "lengthSeconds": 229
+  },
+  {
+    "index": 77,
+    "title": "Introduction to Number System",
+    "videoId": "JadYRRWY8Go",
+    "lengthSeconds": 718
+  },
+  {
+    "index": 78,
+    "title": "Decimal to any Base | Question",
+    "videoId": "N6TpoQemKF4",
+    "lengthSeconds": 48
+  },
+  {
+    "index": 79,
+    "title": "Decimal to any Base | Solution",
+    "videoId": "lOsmPMihcTM",
+    "lengthSeconds": 754
+  },
+  {
+    "index": 80,
+    "title": "Any base to decimal | Question",
+    "videoId": "FybIe62OI6M",
+    "lengthSeconds": 61
+  },
+  {
+    "index": 81,
+    "title": "Any base to Decimal | Solution",
+    "videoId": "F0aTGc2vS5s",
+    "lengthSeconds": 368
+  },
+  {
+    "index": 82,
+    "title": "Any base to any base | Question",
+    "videoId": "2-d3DcBFzug",
+    "lengthSeconds": 37
+  },
+  {
+    "index": 83,
+    "title": "Any base to any base | Solution",
+    "videoId": "LJ697zHLL0M",
+    "lengthSeconds": 213
+  },
+  {
+    "index": 84,
+    "title": "Any base addition | Question",
+    "videoId": "LmQeZ74pT_c",
+    "lengthSeconds": 212
+  },
+  {
+    "index": 85,
+    "title": "Any base Addition | Solution",
+    "videoId": "YVpTjZRShqo",
+    "lengthSeconds": 791
+  },
+  {
+    "index": 86,
+    "title": "Any base subtraction | Question",
+    "videoId": "J4mKYhm5r-A",
+    "lengthSeconds": 114
+  },
+  {
+    "index": 87,
+    "title": "Any base subtraction | Solution",
+    "videoId": "TJtXba11yNU",
+    "lengthSeconds": 582
+  },
+  {
+    "index": 88,
+    "title": "Any base multiplication | Question",
+    "videoId": "gB7H8BQ1s1w",
+    "lengthSeconds": 170
+  },
+  {
+    "index": 89,
+    "title": "Any base multiplication | Solution",
+    "videoId": "_jcwos0_pSg",
+    "lengthSeconds": 537
+  },
+  {
+    "index": 90,
+    "title": "Introduction to Arrays",
+    "videoId": "RdcvXoM3ZYM",
+    "lengthSeconds": 381
+  },
+  {
+    "index": 91,
+    "title": "Arrays - Memory",
+    "videoId": "QolHb2UaFJc",
+    "lengthSeconds": 908
+  },
+  {
+    "index": 92,
+    "title": "Span of an Array | Question",
+    "videoId": "8erugyv3WDA",
+    "lengthSeconds": 57
+  },
+  {
+    "index": 93,
+    "title": "Span of an Array | Solution",
+    "videoId": "1SsXm5TI8W4",
+    "lengthSeconds": 345
+  },
+  {
+    "index": 94,
+    "title": "Find Element in Array | Question",
+    "videoId": "awuSQW2F0AM",
+    "lengthSeconds": 69
+  },
+  {
+    "index": 95,
+    "title": "Find element in an Array | Solution",
+    "videoId": "3AcyounXhfg",
+    "lengthSeconds": 233
+  },
+  {
+    "index": 96,
+    "title": "Bar Chart | Question",
+    "videoId": "85gIj4eBdBA",
+    "lengthSeconds": 54
+  },
+  {
+    "index": 97,
+    "title": "Bar Chart | Solution",
+    "videoId": "L-0IxqvYQKs",
+    "lengthSeconds": 456
+  },
+  {
+    "index": 98,
+    "title": "Sum of two arrays | Question",
+    "videoId": "aSb29e8OoZs",
+    "lengthSeconds": 78
+  },
+  {
+    "index": 99,
+    "title": "Sum of two arrays | Solution",
+    "videoId": "BzJK1zNXwcU",
+    "lengthSeconds": 683
+  },
+  {
+    "index": 100,
+    "title": "Difference of two arrays | Question",
+    "videoId": "LQom9iFG1F0",
+    "lengthSeconds": 84
+  },
+  {
+    "index": 101,
+    "title": "Difference of two arrays | Solution",
+    "videoId": "jKyuWD8XKjw",
+    "lengthSeconds": 956
+  },
+  {
+    "index": 102,
+    "title": "Introduction to Stacks and its usage",
+    "videoId": "Fu03UXZgI9s",
+    "lengthSeconds": 691
+  },
+  {
+    "index": 103,
+    "title": "Duplicate Brackets | Question",
+    "videoId": "4eSFaEOa-l0",
+    "lengthSeconds": 153
+  },
+  {
+    "index": 104,
+    "title": "Duplicate Brackets | Solution",
+    "videoId": "aMPXhEdpXFA",
+    "lengthSeconds": 492
+  },
+  {
+    "index": 105,
+    "title": "Balanced Brackets | Question",
+    "videoId": "p-RbQyQevTQ",
+    "lengthSeconds": 158
+  },
+  {
+    "index": 106,
+    "title": "Balanced Brackets | Solution",
+    "videoId": "uuE2pEjLiEI",
+    "lengthSeconds": 753
+  },
+  {
+    "index": 107,
+    "title": "Next Greater Element on the Right | Question",
+    "videoId": "Zy9XnXw8E7U",
+    "lengthSeconds": 134
+  },
+  {
+    "index": 108,
+    "title": "Next Greater element on the right | Solution",
+    "videoId": "rSf9vPtKcmI",
+    "lengthSeconds": 987
+  },
+  {
+    "index": 109,
+    "title": "Next Greater Element on the Right | Alternative Solution",
+    "videoId": "XP8iEi9Aa8c",
+    "lengthSeconds": 819
+  },
+  {
+    "index": 110,
+    "title": "Stock Span | Question",
+    "videoId": "kCAMWbTCO1c",
+    "lengthSeconds": 181
+  },
+  {
+    "index": 111,
+    "title": "Stock Span | Solution",
+    "videoId": "0BsPlzqksZQ",
+    "lengthSeconds": 389
+  },
+  {
+    "index": 112,
+    "title": "Largest Area Histogram | Question",
+    "videoId": "m01ubOp-FMg",
+    "lengthSeconds": 153
+  },
+  {
+    "index": 113,
+    "title": "Largest Area Histogram | Solution",
+    "videoId": "0do2734xhnU",
+    "lengthSeconds": 1205
+  },
+  {
+    "index": 114,
+    "title": "Sliding Window Maximum | Question",
+    "videoId": "nKXUyUC3BNA",
+    "lengthSeconds": 119
+  },
+  {
+    "index": 115,
+    "title": "Sliding Window Maximum | Solution",
+    "videoId": "tCVOQX3lWeI",
+    "lengthSeconds": 1275
+  },
+  {
+    "index": 116,
+    "title": "Infix Evaluation | Question",
+    "videoId": "cv_kPZnMxdA",
+    "lengthSeconds": 124
+  },
+  {
+    "index": 117,
+    "title": "Infix Evaluation | Solution",
+    "videoId": "IY0nZLEg6MA",
+    "lengthSeconds": 1383
+  },
+  {
+    "index": 118,
+    "title": "Infix Conversions | Questions",
+    "videoId": "Nfui0rgbQe8",
+    "lengthSeconds": 1010
+  },
+  {
+    "index": 119,
+    "title": "Infix Conversions | Solution",
+    "videoId": "f29emeUcw6c",
+    "lengthSeconds": 1316
+  },
+  {
+    "index": 120,
+    "title": "Postfix Evaluations and Conversions | Questions",
+    "videoId": "qusuduyQm8k",
+    "lengthSeconds": 412
+  },
+  {
+    "index": 121,
+    "title": "Postfix Expressions | Solution",
+    "videoId": "BlNXOtll7jo",
+    "lengthSeconds": 623
+  },
+  {
+    "index": 122,
+    "title": "Prefix Evaluations and Conversion | Question",
+    "videoId": "YmdDsEZ9paw",
+    "lengthSeconds": 300
+  },
+  {
+    "index": 123,
+    "title": "Prefix Evaluation and Conversion | Solution",
+    "videoId": "Q-Nw-dTApjk",
+    "lengthSeconds": 594
+  },
+  {
+    "index": 124,
+    "title": "Celebrity Problem | Question",
+    "videoId": "iHM1FPLGcsU",
+    "lengthSeconds": 199
+  },
+  {
+    "index": 125,
+    "title": "Celebrity Problem | Solution",
+    "videoId": "CiiXBvrX-5A",
+    "lengthSeconds": 713
+  },
+  {
+    "index": 126,
+    "title": "Merge Overlapping Intervals | Question",
+    "videoId": "XsOI7fpx8IY",
+    "lengthSeconds": 170
+  },
+  {
+    "index": 127,
+    "title": "Merge Overlapping Intervals | Solution",
+    "videoId": "QlaDyZTCAbM",
+    "lengthSeconds": 852
+  },
+  {
+    "index": 128,
+    "title": "Smallest number following Pattern | Questions",
+    "videoId": "4_0l-QydwzI",
+    "lengthSeconds": 152
+  },
+  {
+    "index": 129,
+    "title": "Smallest number following Pattern | Solution",
+    "videoId": "GOCbsY7Arw4",
+    "lengthSeconds": 1297
+  },
+  {
+    "index": 130,
+    "title": "OOP's - Classes and Objects",
+    "videoId": "TTE-CIBFL9w",
+    "lengthSeconds": 554
+  },
+  {
+    "index": 131,
+    "title": "OOP's | Swap Game 1",
+    "videoId": "6qSBKZeG2NI",
+    "lengthSeconds": 250
+  },
+  {
+    "index": 132,
+    "title": "OOP's | Swap Game 2",
+    "videoId": "-k8VdIqzepA",
+    "lengthSeconds": 256
+  },
+  {
+    "index": 133,
+    "title": "OOP's | Swap Game 2",
+    "videoId": "-k8VdIqzepA",
+    "lengthSeconds": 256
+  },
+  {
+    "index": 134,
+    "title": "OOP's | Swap Game 3",
+    "videoId": "GLkE2wSNiYM",
+    "lengthSeconds": 322
+  },
+  {
+    "index": 135,
+    "title": "OOP's | Constructors and This",
+    "videoId": "YpwUNCNAxo8",
+    "lengthSeconds": 665
+  },
+  {
+    "index": 136,
+    "title": "Build Normal Stack | Question",
+    "videoId": "54al81dc_EE",
+    "lengthSeconds": 123
+  },
+  {
+    "index": 137,
+    "title": "Build Normal Stack | Solution",
+    "videoId": "vp9BhLtT7CY",
+    "lengthSeconds": 371
+  },
+  {
+    "index": 138,
+    "title": "Build Dynamic Stack | Question",
+    "videoId": "DaKNuSxraS4",
+    "lengthSeconds": 88
+  },
+  {
+    "index": 139,
+    "title": "Build Dynamic Stack | Solution",
+    "videoId": "WuykwrJtZw8",
+    "lengthSeconds": 174
+  },
+  {
+    "index": 140,
+    "title": "Minimum Stack - 1 | Question",
+    "videoId": "NslJ5PXAM4Q",
+    "lengthSeconds": 65
+  },
+  {
+    "index": 141,
+    "title": "Minimum Stack - 1 | Solution",
+    "videoId": "4bjCEJmiPZA",
+    "lengthSeconds": 254
+  },
+  {
+    "index": 142,
+    "title": "Minimum Stack - 2 | Question",
+    "videoId": "BhYvZ4kVaug",
+    "lengthSeconds": 81
+  },
+  {
+    "index": 143,
+    "title": "Minimum Stack - 2 | Solution",
+    "videoId": "Trz7JM610Uc",
+    "lengthSeconds": 1441
+  },
+  {
+    "index": 144,
+    "title": "Queues | Introduction and Usage",
+    "videoId": "8IECyHndytk",
+    "lengthSeconds": 431
+  },
+  {
+    "index": 145,
+    "title": "Build Normal Queue | Question",
+    "videoId": "NdaEQPlH1vE",
+    "lengthSeconds": 135
+  },
+  {
+    "index": 146,
+    "title": "Build Normal Queue | Solution",
+    "videoId": "0Aa04cB0bFQ",
+    "lengthSeconds": 1074
+  },
+  {
+    "index": 147,
+    "title": "Build Dynamic Queue | Question",
+    "videoId": "gluUcS0Rue8",
+    "lengthSeconds": 63
+  },
+  {
+    "index": 148,
+    "title": "Build Dynamic Queue | Solution",
+    "videoId": "fnaL-RyK0m0",
+    "lengthSeconds": 156
+  },
+  {
+    "index": 149,
+    "title": "Linked Lists | Introduction",
+    "videoId": "GVwbTCnZ5kk",
+    "lengthSeconds": 322
+  },
+  {
+    "index": 150,
+    "title": "Data Members of a Linked List",
+    "videoId": "EFgLdaBSpSw",
+    "lengthSeconds": 190
+  },
+  {
+    "index": 151,
+    "title": "Add Last in Linked List | Question",
+    "videoId": "r9FxRiIZhK4",
+    "lengthSeconds": 107
+  },
+  {
+    "index": 152,
+    "title": "Add Last in Linked List | Solution",
+    "videoId": "fjjORH3nWy4",
+    "lengthSeconds": 276
+  },
+  {
+    "index": 153,
+    "title": "Display and Size of Linked List | Solution",
+    "videoId": "3yK7SkmdZrE",
+    "lengthSeconds": 170
+  },
+  {
+    "index": 154,
+    "title": "Remove First from Linked List | Question",
+    "videoId": "3za9tOwFyCY",
+    "lengthSeconds": 32
+  },
+  {
+    "index": 155,
+    "title": "Remove First in Linked List | Solution",
+    "videoId": "QyfG6meLJBQ",
+    "lengthSeconds": 206
+  },
+  {
+    "index": 156,
+    "title": "Get Value in Linked List | Question",
+    "videoId": "t99GFv9vKZ0",
+    "lengthSeconds": 85
+  },
+  {
+    "index": 157,
+    "title": "Get Value in Linked List | Solution",
+    "videoId": "MGwnkGap5s8",
+    "lengthSeconds": 183
+  },
+  {
+    "index": 158,
+    "title": "Add First in Linked List | Question",
+    "videoId": "qsz2QlQpFg4",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 159,
+    "title": "Add First in Linked List | Solution",
+    "videoId": "DfP-tb68t20",
+    "lengthSeconds": 207
+  },
+  {
+    "index": 160,
+    "title": "Add at Index in Linked List | Question",
+    "videoId": "ObCDzE-eAgA",
+    "lengthSeconds": 97
+  },
+  {
+    "index": 161,
+    "title": "Add at Index in Linked List | Solution",
+    "videoId": "n9E27Z4zjpk",
+    "lengthSeconds": 307
+  },
+  {
+    "index": 162,
+    "title": "Remove Last in Linked List | Question",
+    "videoId": "67s3iHctemA",
+    "lengthSeconds": 78
+  },
+  {
+    "index": 163,
+    "title": "Remove Last in Linked List | Solution",
+    "videoId": "WTG87ZABrtY",
+    "lengthSeconds": 143
+  },
+  {
+    "index": 164,
+    "title": "Remove at Index in Linked List | Question",
+    "videoId": "yQSgxX50kHs",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 165,
+    "title": "Remove at Index in Linked List | Solution",
+    "videoId": "tYKLCwlx4Lk",
+    "lengthSeconds": 210
+  },
+  {
+    "index": 166,
+    "title": "Reverse a Linked List - Data Iterative | Question",
+    "videoId": "CPSwsBabT-A",
+    "lengthSeconds": 73
+  },
+  {
+    "index": 167,
+    "title": "Reverse a Linked List - Data Iterative | Solution",
+    "videoId": "yRKvWfbSNM8",
+    "lengthSeconds": 152
+  },
+  {
+    "index": 168,
+    "title": "Reverse a Linked List - Pointer Iterative | Question",
+    "videoId": "iAEvqhaeD88",
+    "lengthSeconds": 102
+  },
+  {
+    "index": 169,
+    "title": "Reverse a Linked List - Pointer Iterative | Solution",
+    "videoId": "p4hDCrwSQJM",
+    "lengthSeconds": 152
+  },
+  {
+    "index": 170,
+    "title": "Linked List to Stack Adapter | Question",
+    "videoId": "cOspdnSyOms",
+    "lengthSeconds": 45
+  },
+  {
+    "index": 171,
+    "title": "Linked List to Stack Adapter | Solution",
+    "videoId": "9x2Xbl4Y04U",
+    "lengthSeconds": 410
+  },
+  {
+    "index": 172,
+    "title": "Linked List to Queue Adapter | Question",
+    "videoId": "BzeEZZTsNKA",
+    "lengthSeconds": 52
+  },
+  {
+    "index": 173,
+    "title": "Linked List to Queue Adapter | Solution",
+    "videoId": "0XIbegDY_8k",
+    "lengthSeconds": 196
+  },
+  {
+    "index": 174,
+    "title": "Kth element from the end in Linked List | Question",
+    "videoId": "cEJoiG9Gn_k",
+    "lengthSeconds": 68
+  },
+  {
+    "index": 175,
+    "title": "Kth element from the end in Linked List | Solution",
+    "videoId": "ZVtJu3DpZHU",
+    "lengthSeconds": 153
+  },
+  {
+    "index": 176,
+    "title": "Middle of Linked List | Question",
+    "videoId": "zj94Y_wjAWs",
+    "lengthSeconds": 53
+  },
+  {
+    "index": 177,
+    "title": "Middle of a Linked List | Solution",
+    "videoId": "jEfzUFcgGkk",
+    "lengthSeconds": 143
+  },
+  {
+    "index": 178,
+    "title": "Merge two sorted Linked List | Question",
+    "videoId": "Svex7W3CYpQ",
+    "lengthSeconds": 74
+  },
+  {
+    "index": 179,
+    "title": "Merge two sorted Linked List | Solution",
+    "videoId": "6vFEuO1pfJA",
+    "lengthSeconds": 228
+  },
+  {
+    "index": 180,
+    "title": "Merge Sort a Linked List | Question",
+    "videoId": "DEvWhHgBjL0",
+    "lengthSeconds": 285
+  },
+  {
+    "index": 181,
+    "title": "Merge Sort a Linked List | Solution",
+    "videoId": "ClLO6kFF6gs",
+    "lengthSeconds": 572
+  },
+  {
+    "index": 182,
+    "title": "Remove duplicates in a sorted Linked List | Question",
+    "videoId": "T4Od7rqE2BM",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 183,
+    "title": "Remove duplicates from a sorted Linked List | Solution",
+    "videoId": "ErSDF5IM1fo",
+    "lengthSeconds": 382
+  },
+  {
+    "index": 184,
+    "title": "Odd Even List | Question",
+    "videoId": "58o1--_XGC4",
+    "lengthSeconds": 53
+  },
+  {
+    "index": 185,
+    "title": "Odd Even List | Solution",
+    "videoId": "calrG6RJ9qI",
+    "lengthSeconds": 420
+  },
+  {
+    "index": 186,
+    "title": "K Reverse in Linked List | Question",
+    "videoId": "Ko3DktYG4zs",
+    "lengthSeconds": 53
+  },
+  {
+    "index": 187,
+    "title": "K Reverse in Linked List| Solution",
+    "videoId": "jhm2pYGFIos",
+    "lengthSeconds": 399
+  },
+  {
+    "index": 188,
+    "title": "Display Reverse Linked List - Recursive | Question",
+    "videoId": "TsqoueS_zWE",
+    "lengthSeconds": 56
+  },
+  {
+    "index": 189,
+    "title": "Display Reverse Linked List - Recursive | Solution",
+    "videoId": "kgmHuB6w0PM",
+    "lengthSeconds": 181
+  },
+  {
+    "index": 190,
+    "title": "Reverse Linked List using Pointer - Recursive | Question",
+    "videoId": "Gj2y4GDLGf4",
+    "lengthSeconds": 109
+  },
+  {
+    "index": 191,
+    "title": "Reverse a Linked List using Pointers - Recursive | Solution",
+    "videoId": "q9PE0PjVHIo",
+    "lengthSeconds": 291
+  },
+  {
+    "index": 192,
+    "title": "Queue to Stack Adapter - Pop Efficient | Question",
+    "videoId": "4uHZxkUw-F4",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 193,
+    "title": "Queue to Stack Adapter - Pop Efficient | Solution",
+    "videoId": "bJpPuLMiUgA",
+    "lengthSeconds": 328
+  },
+  {
+    "index": 194,
+    "title": "Queue to Stack Adapter - Push Efficient | Question",
+    "videoId": "BLrkF4-3zZ4",
+    "lengthSeconds": 52
+  },
+  {
+    "index": 195,
+    "title": "Queue to Stack Adapter - Push Efficient | Solution",
+    "videoId": "o_NEL0agPGg",
+    "lengthSeconds": 384
+  },
+  {
+    "index": 196,
+    "title": "Stack to Queue Adapter - Remove Efficient | Question",
+    "videoId": "tL1G0YX0ZZM",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 197,
+    "title": "Stack to Queue Adapter - Remove Efficient | Solution",
+    "videoId": "J8EejK8zvw8",
+    "lengthSeconds": 257
+  },
+  {
+    "index": 198,
+    "title": "Stack to Queue Adapter - Add Efficient | Question",
+    "videoId": "YKjh6ggBy-Q",
+    "lengthSeconds": 47
+  },
+  {
+    "index": 199,
+    "title": "Stack to Queue Adapter - Add Efficient | Solution",
+    "videoId": "EbMCOZzpRpw",
+    "lengthSeconds": 311
+  },
+  {
+    "index": 200,
+    "title": "Two Stacks in an Array - Question",
+    "videoId": "HK9ZRogP_98",
+    "lengthSeconds": 117
+  },
+  {
+    "index": 201,
+    "title": "Two stack in an Array | Solution",
+    "videoId": "S4mBBDfvWCE",
+    "lengthSeconds": 355
+  },
+  {
+    "index": 202,
+    "title": "Reverse a Linked List - Data Recursive | Question",
+    "videoId": "KxPm5kb6D2c",
+    "lengthSeconds": 64
+  },
+  {
+    "index": 203,
+    "title": "Reverse a Linked List - Data Recursive | Question",
+    "videoId": "KxPm5kb6D2c",
+    "lengthSeconds": 64
+  },
+  {
+    "index": 204,
+    "title": "Reverse a Linked List - Data Recursive | Solution",
+    "videoId": "aL3l2-S9koY",
+    "lengthSeconds": 1013
+  },
+  {
+    "index": 205,
+    "title": "Is a Linked List Palindrome | Question",
+    "videoId": "JkC0dl0TrPI",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 206,
+    "title": "Is a Linked List Palindrome | Solution",
+    "videoId": "p-g75-QgTI0",
+    "lengthSeconds": 809
+  },
+  {
+    "index": 207,
+    "title": "Is a Linked List Palindrome | Solution",
+    "videoId": "p-g75-QgTI0",
+    "lengthSeconds": 809
+  },
+  {
+    "index": 208,
+    "title": "Fold a Linked List | Question",
+    "videoId": "qMFOU84GGW4",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 209,
+    "title": "Fold a Linked List | Question",
+    "videoId": "qMFOU84GGW4",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 210,
+    "title": "Fold a Linked List | Solution",
+    "videoId": "U4M9O8UxB6I",
+    "lengthSeconds": 1125
+  },
+  {
+    "index": 211,
+    "title": "Add two Linked Lists | Question",
+    "videoId": "EmlJIS1K7tk",
+    "lengthSeconds": 124
+  },
+  {
+    "index": 212,
+    "title": "Add two Linked Lists | Question",
+    "videoId": "EmlJIS1K7tk",
+    "lengthSeconds": 124
+  },
+  {
+    "index": 213,
+    "title": "Generic Tree - Introduction and Data Members",
+    "videoId": "MhpRvvdRBqY",
+    "lengthSeconds": 303
+  },
+  {
+    "index": 214,
+    "title": "Generic Tree - Introduction and Data Members",
+    "videoId": "MhpRvvdRBqY",
+    "lengthSeconds": 303
+  },
+  {
+    "index": 215,
+    "title": "Size of a Generic Tree | Question",
+    "videoId": "TLWt90wcFIM",
+    "lengthSeconds": 38
+  },
+  {
+    "index": 216,
+    "title": "Add two Linked Lists | Solution",
+    "videoId": "tK4eez3syAQ",
+    "lengthSeconds": 946
+  },
+  {
+    "index": 217,
+    "title": "Add two Linked Lists | Solution",
+    "videoId": "tK4eez3syAQ",
+    "lengthSeconds": 946
+  },
+  {
+    "index": 218,
+    "title": "Intersection point of Linked List | Question",
+    "videoId": "ZpMQ-Zn6yLc",
+    "lengthSeconds": 58
+  },
+  {
+    "index": 219,
+    "title": "Intersection point of Linked List | Question",
+    "videoId": "ZpMQ-Zn6yLc",
+    "lengthSeconds": 58
+  },
+  {
+    "index": 220,
+    "title": "Intersection point of Linked List | Solution",
+    "videoId": "B4aqNarb0QQ",
+    "lengthSeconds": 182
+  },
+  {
+    "index": 221,
+    "title": "Intersection point of Linked List | Solution",
+    "videoId": "B4aqNarb0QQ",
+    "lengthSeconds": 182
+  },
+  {
+    "index": 222,
+    "title": "Intersection point of Linked List | Solution",
+    "videoId": "B4aqNarb0QQ",
+    "lengthSeconds": 182
+  },
+  {
+    "index": 223,
+    "title": "Generic Tree - Constructor",
+    "videoId": "9Oi3WamOCPo",
+    "lengthSeconds": 580
+  },
+  {
+    "index": 224,
+    "title": "Generic Tree - Constructor",
+    "videoId": "9Oi3WamOCPo",
+    "lengthSeconds": 580
+  },
+  {
+    "index": 225,
+    "title": "Generic Tree - Constructor",
+    "videoId": "9Oi3WamOCPo",
+    "lengthSeconds": 580
+  },
+  {
+    "index": 226,
+    "title": "Display a Generic Tree",
+    "videoId": "3xovYxKCgBQ",
+    "lengthSeconds": 1041
+  },
+  {
+    "index": 227,
+    "title": "Size of a Generic Tree | Solution",
+    "videoId": "epQq3XWitxA",
+    "lengthSeconds": 448
+  },
+  {
+    "index": 228,
+    "title": "Size of a Generic Tree | Solution",
+    "videoId": "epQq3XWitxA",
+    "lengthSeconds": 448
+  },
+  {
+    "index": 229,
+    "title": "Maximum in a Generic Tree | Question",
+    "videoId": "FqONnzlCSWQ",
+    "lengthSeconds": 22
+  },
+  {
+    "index": 230,
+    "title": "Maximum in a Generic Tree | Solution",
+    "videoId": "eJnf0QBg64g",
+    "lengthSeconds": 706
+  },
+  {
+    "index": 231,
+    "title": "Maximum in a Generic Tree | Solution",
+    "videoId": "eJnf0QBg64g",
+    "lengthSeconds": 706
+  },
+  {
+    "index": 232,
+    "title": "Height of a Generic Tree | Question",
+    "videoId": "Vm5ubT7aPmI",
+    "lengthSeconds": 103
+  },
+  {
+    "index": 233,
+    "title": "Height of a Generic Tree | Question",
+    "videoId": "Vm5ubT7aPmI",
+    "lengthSeconds": 103
+  },
+  {
+    "index": 234,
+    "title": "Height of a Generic Tree | Solution",
+    "videoId": "duRYlVs72js",
+    "lengthSeconds": 555
+  },
+  {
+    "index": 235,
+    "title": "Traversal in Generic Tree | Question",
+    "videoId": "kL6tIGhVW1k",
+    "lengthSeconds": 138
+  },
+  {
+    "index": 236,
+    "title": "Traversal in Generic Tree | Question",
+    "videoId": "kL6tIGhVW1k",
+    "lengthSeconds": 138
+  },
+  {
+    "index": 237,
+    "title": "Traversals in a Generic Tree | Solution",
+    "videoId": "YnufWAWOfI8",
+    "lengthSeconds": 813
+  },
+  {
+    "index": 238,
+    "title": "Traversals in a Generic Tree | Solution",
+    "videoId": "YnufWAWOfI8",
+    "lengthSeconds": 813
+  },
+  {
+    "index": 239,
+    "title": "Level Order Traversal in a Generic Tree | Question",
+    "videoId": "ZHdnMxqgQOM",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 240,
+    "title": "Level Order Traversal in a Generic Tree | Question",
+    "videoId": "ZHdnMxqgQOM",
+    "lengthSeconds": 33
+  },
+  {
+    "index": 241,
+    "title": "Level order traversal in Generic Tree | Solution",
+    "videoId": "TUxo5YpKvxw",
+    "lengthSeconds": 251
+  },
+  {
+    "index": 242,
+    "title": "Level order traversal in Generic Tree | Solution",
+    "videoId": "TUxo5YpKvxw",
+    "lengthSeconds": 251
+  },
+  {
+    "index": 243,
+    "title": "Level Order Linewise in Generic Tree | Question",
+    "videoId": "t4ts_6m4z68",
+    "lengthSeconds": 57
+  },
+  {
+    "index": 244,
+    "title": "Level Order Linewise in Generic Tree | Solution",
+    "videoId": "amG7xun8k4w",
+    "lengthSeconds": 250
+  },
+  {
+    "index": 245,
+    "title": "Level Order Linewise - Zig Zag | Question",
+    "videoId": "Yde0l3q-qJs",
+    "lengthSeconds": 57
+  },
+  {
+    "index": 246,
+    "title": "Level Order Linewise - Zig Zag | Question",
+    "videoId": "Yde0l3q-qJs",
+    "lengthSeconds": 57
+  },
+  {
+    "index": 247,
+    "title": "Level Order line wise - Zig Zag | Solution",
+    "videoId": "eDdPZ05y4Os",
+    "lengthSeconds": 542
+  },
+  {
+    "index": 248,
+    "title": "Level Order line wise - Zig Zag | Solution",
+    "videoId": "eDdPZ05y4Os",
+    "lengthSeconds": 542
+  },
+  {
+    "index": 249,
+    "title": "Level Order Traversals - More Approaches",
+    "videoId": "NuASXwfaFaY",
+    "lengthSeconds": 1374
+  },
+  {
+    "index": 250,
+    "title": "Level Order Traversals - More Approaches",
+    "videoId": "NuASXwfaFaY",
+    "lengthSeconds": 1374
+  },
+  {
+    "index": 251,
+    "title": "Mirror a Generic Tree | Question",
+    "videoId": "CjtGTcG-fUU",
+    "lengthSeconds": 71
+  },
+  {
+    "index": 252,
+    "title": "Mirror a Generic Tree | Solution",
+    "videoId": "PDjTi3WGSNA",
+    "lengthSeconds": 425
+  },
+  {
+    "index": 253,
+    "title": "Mirror a Generic Tree | Solution",
+    "videoId": "PDjTi3WGSNA",
+    "lengthSeconds": 425
+  },
+  {
+    "index": 254,
+    "title": "Remove Leaves from a Generic Trees | Question",
+    "videoId": "EqhPE8tJ-K8",
+    "lengthSeconds": 45
+  },
+  {
+    "index": 255,
+    "title": "Removes leaves from a Generic Tree | Solution",
+    "videoId": "0PBC_EEBHGg",
+    "lengthSeconds": 662
+  },
+  {
+    "index": 256,
+    "title": "Removes leaves from a Generic Tree | Solution",
+    "videoId": "0PBC_EEBHGg",
+    "lengthSeconds": 662
+  },
+  {
+    "index": 257,
+    "title": "Linearize a Generic Tree | Question",
+    "videoId": "SuPnlZacta0",
+    "lengthSeconds": 100
+  },
+  {
+    "index": 258,
+    "title": "Linearize a Generic Tree | Solution",
+    "videoId": "TKZEBXtzKSM",
+    "lengthSeconds": 516
+  },
+  {
+    "index": 259,
+    "title": "Linearize a Generic Tree | Solution",
+    "videoId": "TKZEBXtzKSM",
+    "lengthSeconds": 516
+  },
+  {
+    "index": 260,
+    "title": "Linearize a Generic Tree | Efficient Approach",
+    "videoId": "D5RYXVgJ5NM",
+    "lengthSeconds": 474
+  },
+  {
+    "index": 261,
+    "title": "Linearize a Generic Tree | Efficient Approach",
+    "videoId": "D5RYXVgJ5NM",
+    "lengthSeconds": 474
+  },
+  {
+    "index": 262,
+    "title": "Linearize a Generic Tree | Efficient Approach",
+    "videoId": "D5RYXVgJ5NM",
+    "lengthSeconds": 474
+  },
+  {
+    "index": 263,
+    "title": "Find an element in a Generic Tree | Question",
+    "videoId": "H65rNN3TJkE",
+    "lengthSeconds": 35
+  },
+  {
+    "index": 264,
+    "title": "Find an element in Generic Tree | Solution",
+    "videoId": "dWri78Z4khs",
+    "lengthSeconds": 380
+  },
+  {
+    "index": 265,
+    "title": "Find an element in Generic Tree | Solution",
+    "videoId": "dWri78Z4khs",
+    "lengthSeconds": 380
+  },
+  {
+    "index": 266,
+    "title": "Node to Root Path | Question",
+    "videoId": "5r6yB_muOj4",
+    "lengthSeconds": 47
+  },
+  {
+    "index": 267,
+    "title": "Node to Root Path | Question",
+    "videoId": "5r6yB_muOj4",
+    "lengthSeconds": 47
+  },
+  {
+    "index": 268,
+    "title": "Node to Root Path | Solution",
+    "videoId": "oEBwL5pHzTs",
+    "lengthSeconds": 414
+  },
+  {
+    "index": 269,
+    "title": "Node to Root Path | Solution",
+    "videoId": "oEBwL5pHzTs",
+    "lengthSeconds": 414
+  },
+  {
+    "index": 270,
+    "title": "Lowest Common Ancestor | Question",
+    "videoId": "5xlRdBskWJE",
+    "lengthSeconds": 51
+  },
+  {
+    "index": 271,
+    "title": "Lowest Common Ancestor | Solution",
+    "videoId": "w8rr1AYMlfw",
+    "lengthSeconds": 250
+  },
+  {
+    "index": 272,
+    "title": "Lowest Common Ancestor | Solution",
+    "videoId": "w8rr1AYMlfw",
+    "lengthSeconds": 250
+  },
+  {
+    "index": 273,
+    "title": "Distance between Nodes in Generic Tree | Question",
+    "videoId": "1raYelrrhFM",
+    "lengthSeconds": 45
+  },
+  {
+    "index": 274,
+    "title": "Distance between nodes | Solution",
+    "videoId": "5N5tpizDXys",
+    "lengthSeconds": 221
+  },
+  {
+    "index": 275,
+    "title": "Distance between nodes | Solution",
+    "videoId": "5N5tpizDXys",
+    "lengthSeconds": 221
+  },
+  {
+    "index": 276,
+    "title": "Distance between nodes | Solution",
+    "videoId": "5N5tpizDXys",
+    "lengthSeconds": 221
+  },
+  {
+    "index": 277,
+    "title": "Are Trees Similar in Shape | Question",
+    "videoId": "rumfdyFR-_A",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 278,
+    "title": "Are Trees Similar in Shape | Solution",
+    "videoId": "y_PIhsd9vt0",
+    "lengthSeconds": 473
+  },
+  {
+    "index": 279,
+    "title": "Are Trees Similar in Shape | Solution",
+    "videoId": "y_PIhsd9vt0",
+    "lengthSeconds": 473
+  },
+  {
+    "index": 280,
+    "title": "Are Trees Mirror in Shape | Question",
+    "videoId": "GfEQs3qhMws",
+    "lengthSeconds": 120
+  },
+  {
+    "index": 281,
+    "title": "Are Trees Mirror in Shape | Solution",
+    "videoId": "v2MqQoma9uc",
+    "lengthSeconds": 593
+  },
+  {
+    "index": 282,
+    "title": "Are Trees Mirror in Shape | Solution",
+    "videoId": "v2MqQoma9uc",
+    "lengthSeconds": 593
+  },
+  {
+    "index": 283,
+    "title": "Is Generic Tree Symmetric | Question",
+    "videoId": "ewEAjK83ZVM",
+    "lengthSeconds": 96
+  },
+  {
+    "index": 284,
+    "title": "Is Generic Tree Symmetric | Question",
+    "videoId": "ewEAjK83ZVM",
+    "lengthSeconds": 96
+  },
+  {
+    "index": 285,
+    "title": "Is Generic Tree Symmetric | Solution",
+    "videoId": "gn2ApElF2i0",
+    "lengthSeconds": 503
+  },
+  {
+    "index": 286,
+    "title": "Is Generic Tree Symmetric | Solution",
+    "videoId": "gn2ApElF2i0",
+    "lengthSeconds": 503
+  },
+  {
+    "index": 287,
+    "title": "Generic Tree - Multisolver",
+    "videoId": "cBQs7kqK_Dw",
+    "lengthSeconds": 830
+  },
+  {
+    "index": 288,
+    "title": "Generic Tree - Multisolver",
+    "videoId": "cBQs7kqK_Dw",
+    "lengthSeconds": 830
+  },
+  {
+    "index": 289,
+    "title": "Predecessor and Successor of an element | Question",
+    "videoId": "vfNlLP-oOUg",
+    "lengthSeconds": 130
+  },
+  {
+    "index": 290,
+    "title": "Predecessor and Successor of an element | Solution",
+    "videoId": "lXL9xs0G8Uo",
+    "lengthSeconds": 439
+  },
+  {
+    "index": 291,
+    "title": "Predecessor and Successor of an element | Solution",
+    "videoId": "lXL9xs0G8Uo",
+    "lengthSeconds": 439
+  },
+  {
+    "index": 292,
+    "title": "Predecessor and Successor of an element | Solution",
+    "videoId": "lXL9xs0G8Uo",
+    "lengthSeconds": 439
+  },
+  {
+    "index": 293,
+    "title": "Ceil and Floor | Question",
+    "videoId": "m__4qg_G_gs",
+    "lengthSeconds": 121
+  },
+  {
+    "index": 294,
+    "title": "Ceil and Floor | Solution",
+    "videoId": "I1rAT8hRnWI",
+    "lengthSeconds": 251
+  },
+  {
+    "index": 295,
+    "title": "Ceil and Floor | Solution",
+    "videoId": "I1rAT8hRnWI",
+    "lengthSeconds": 251
+  },
+  {
+    "index": 296,
+    "title": "Kth Largest Element | Question",
+    "videoId": "7Vi6GkgtWpg",
+    "lengthSeconds": 39
+  },
+  {
+    "index": 297,
+    "title": "Kth Largest Element | Solution",
+    "videoId": "DmAGEAeYhJs",
+    "lengthSeconds": 244
+  },
+  {
+    "index": 298,
+    "title": "Node with Maximum Subtree Sum | Question",
+    "videoId": "TKqOZ3tp1D8",
+    "lengthSeconds": 147
+  },
+  {
+    "index": 299,
+    "title": "Node with Maximum Subtree Sum | Solution",
+    "videoId": "tDx3PPwgSxs",
+    "lengthSeconds": 607
+  },
+  {
+    "index": 300,
+    "title": "Node with Maximum Subtree Sum | Solution",
+    "videoId": "tDx3PPwgSxs",
+    "lengthSeconds": 607
+  },
+  {
+    "index": 301,
+    "title": "Node with Maximum Subtree Sum | Solution",
+    "videoId": "tDx3PPwgSxs",
+    "lengthSeconds": 607
+  },
+  {
+    "index": 302,
+    "title": "Diameter of Generic Tree | Question",
+    "videoId": "_LVi8UWDCh8",
+    "lengthSeconds": 81
+  },
+  {
+    "index": 303,
+    "title": "Diameter of Generic Tree | Question",
+    "videoId": "_LVi8UWDCh8",
+    "lengthSeconds": 81
+  },
+  {
+    "index": 304,
+    "title": "Diameter of a Generic Tree | Solution",
+    "videoId": "GIA2cZgOdwg",
+    "lengthSeconds": 1086
+  },
+  {
+    "index": 305,
+    "title": "Diameter of a Generic Tree | Solution",
+    "videoId": "GIA2cZgOdwg",
+    "lengthSeconds": 1086
+  },
+  {
+    "index": 306,
+    "title": "Iterative Pre-order and Post-order Traversal | Question",
+    "videoId": "CiOS8EczYB4",
+    "lengthSeconds": 92
+  },
+  {
+    "index": 307,
+    "title": "Iterative Pre-order and Post-order | Solution",
+    "videoId": "5ry6gRrzPqc",
+    "lengthSeconds": 972
+  },
+  {
+    "index": 308,
+    "title": "Iterative Pre-order and Post-order | Solution",
+    "videoId": "5ry6gRrzPqc",
+    "lengthSeconds": 972
+  },
+  {
+    "index": 309,
+    "title": "Iterable and Iterator",
+    "videoId": "t4IKNhNBTdo",
+    "lengthSeconds": 2352
+  },
+  {
+    "index": 310,
+    "title": "Introduction to Binary Trees | Data Structures and Algorithms",
+    "videoId": "W8xT5SkuV3w",
+    "lengthSeconds": 240
+  },
+  {
+    "index": 311,
+    "title": "Introduction to Binary Trees | Data Structures and Algorithms",
+    "videoId": "W8xT5SkuV3w",
+    "lengthSeconds": 240
+  },
+  {
+    "index": 312,
+    "title": "Introduction to Binary Trees | Data Structures and Algorithms",
+    "videoId": "W8xT5SkuV3w",
+    "lengthSeconds": 240
+  },
+  {
+    "index": 313,
+    "title": "Binary Tree - Constructor | Data Structure and Algorithms in Java",
+    "videoId": "XV1ADVV6FbQ",
+    "lengthSeconds": 989
+  },
+  {
+    "index": 314,
+    "title": "Display a Binary Tree | Data Structures and Algorithms in JAVA",
+    "videoId": "sYU6AnSJyjo",
+    "lengthSeconds": 617
+  },
+  {
+    "index": 315,
+    "title": "Size, Sum, Max and Height of a Binary Tree | Question | Data Structures and Algorithms in JAVA",
+    "videoId": "I3D3p1TG1uE",
+    "lengthSeconds": 59
+  },
+  {
+    "index": 316,
+    "title": "Size, Sum, Max and Height in a Binary Tree | Solution | Data Structures and Algorithms in JAVA",
+    "videoId": "Y7fg3QS6u6w",
+    "lengthSeconds": 1255
+  },
+  {
+    "index": 317,
+    "title": "Traversals in a Binary Tree | Data Structures and Algorithms in JAVA",
+    "videoId": "BuVNOAh33No",
+    "lengthSeconds": 1060
+  },
+  {
+    "index": 318,
+    "title": "Level Order Traversal in a Binary Tree | Question | Data Structure and Algorithms | Java and C++",
+    "videoId": "u0maCj0o_LY",
+    "lengthSeconds": 46
+  },
+  {
+    "index": 319,
+    "title": "Level Order Traversal in Binary Tree | Solution | Data Structure and Algorithms | Java and C++",
+    "videoId": "U7rLw0jXI0E",
+    "lengthSeconds": 247
+  },
+  {
+    "index": 320,
+    "title": "Iterative Pre, Post and In-Order Traversal in Binary Tree | Data Structure and Algorithms | JAVA",
+    "videoId": "d97z0fGBjpE",
+    "lengthSeconds": 128
+  },
+  {
+    "index": 321,
+    "title": "Iterative Pre, Post and In-order traversal in Binary Tree | Solution | Data Structures and Algorithm",
+    "videoId": "12aMTS0L6WI",
+    "lengthSeconds": 596
+  },
+  {
+    "index": 322,
+    "title": "Iterative Pre, Post and In-order traversal in Binary Tree | Solution | Data Structures and Algorithm",
+    "videoId": "12aMTS0L6WI",
+    "lengthSeconds": 596
+  },
+  {
+    "index": 323,
+    "title": "Node to Root Path | Question | Data Structures and Algorithms | JAVA and C++",
+    "videoId": "p_8c3QYbDJ8",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 324,
+    "title": "Node to Root Path | Solution | Data Structures and Algorithms | JAVA and C++",
+    "videoId": "1Kyc-zQS7eQ",
+    "lengthSeconds": 571
+  },
+  {
+    "index": 325,
+    "title": "Print K Levels Down | Question | Data Structure and Algorithms | Binary Tree in JAVA",
+    "videoId": "DAY337wWbHY",
+    "lengthSeconds": 42
+  },
+  {
+    "index": 326,
+    "title": "Print K Levels Down | Solution | Data Structure and Algorithms in JAVA | Binary Trees",
+    "videoId": "KvcfuGcdDMg",
+    "lengthSeconds": 117
+  },
+  {
+    "index": 327,
+    "title": "Print Nodes K Level Far | Question | Binary Tree in JAVA | Data Structure and Algorithms",
+    "videoId": "cH8gtWOrTGY",
+    "lengthSeconds": 180
+  },
+  {
+    "index": 328,
+    "title": "Print Nodes K Level Far | Solution | Binary Tree in JAVA | Data Structure and Algorithms",
+    "videoId": "B89In5BctFA",
+    "lengthSeconds": 856
+  },
+  {
+    "index": 329,
+    "title": "Path to Leaf from Root | Question | Binary Tree in JAVA | Data Structures and Algorithms",
+    "videoId": "OMKPbSdYSPE",
+    "lengthSeconds": 55
+  },
+  {
+    "index": 330,
+    "title": "Path to Leaf from Root | Solution | Binary tree in JAVA | Data Structures and Algorithms",
+    "videoId": "A6Z5YvsrDtg",
+    "lengthSeconds": 257
+  },
+  {
+    "index": 331,
+    "title": "Transform to Left Cloned Tree | Question | Binary Tree in JAVA | Data Structures and Algorithms",
+    "videoId": "jEYKDu4iyik",
+    "lengthSeconds": 75
+  },
+  {
+    "index": 332,
+    "title": "Transform to Left Cloned Tree | Solution | Binary Tree in JAVA | Data Structures and Algorithms",
+    "videoId": "TO7trQloRXc",
+    "lengthSeconds": 844
+  },
+  {
+    "index": 333,
+    "title": "Transform Back from a Left Cloned Tree | Question | Binary Tree in JAVA Data Structure and Algorithm",
+    "videoId": "YCd-jyAF0CM",
+    "lengthSeconds": 57
+  },
+  {
+    "index": 334,
+    "title": "Transform Back from a Left Cloned Tree | Solution | Binary Tree | Data Structure and Algorithm",
+    "videoId": "AvXVChZoZkU",
+    "lengthSeconds": 660
+  },
+  {
+    "index": 335,
+    "title": "Print Single Child Nodes | Question | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "EF3F-8jBQWQ",
+    "lengthSeconds": 61
+  },
+  {
+    "index": 336,
+    "title": "Print Single Child Nodes | Solution | Binary Trees | Data Structures and Algorithms in JAVA",
+    "videoId": "VMJCFRWvb9Q",
+    "lengthSeconds": 166
+  },
+  {
+    "index": 337,
+    "title": "Remove Leaves | Question | Binary Tree | Data Structures and Algorithms in JAVA",
+    "videoId": "CkooURhePkg",
+    "lengthSeconds": 37
+  },
+  {
+    "index": 338,
+    "title": "Remove Leaves | Solution | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "x_0KUwgdm1c",
+    "lengthSeconds": 354
+  },
+  {
+    "index": 339,
+    "title": "Diameter of a Binary Tree | Question | Binary Trees in JAVA | Data Structure and Algorithms",
+    "videoId": "aULnlLj1LmU",
+    "lengthSeconds": 85
+  },
+  {
+    "index": 340,
+    "title": "Diameter of a Binary Tree | Solution | Binary Tree | Data Structures and Algorithms in JAVA",
+    "videoId": "S0Bwgtn32uI",
+    "lengthSeconds": 2109
+  },
+  {
+    "index": 341,
+    "title": "Introduction to 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "aN9zP9M_FZ8",
+    "lengthSeconds": 630
+  },
+  {
+    "index": 342,
+    "title": "Matrix Multiplication - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "eLIT5fnKmMI",
+    "lengthSeconds": 188
+  },
+  {
+    "index": 343,
+    "title": "Matrix Multiplication - Solution | 2-D Arrays | Data Structure and Algorithms in JAVA",
+    "videoId": "0dGuTLr6xT4",
+    "lengthSeconds": 632
+  },
+  {
+    "index": 344,
+    "title": "Wave Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "nUUc9DKTBdY",
+    "lengthSeconds": 75
+  },
+  {
+    "index": 345,
+    "title": "Wave Traversal - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "_olQ9Rrnm_c",
+    "lengthSeconds": 305
+  },
+  {
+    "index": 346,
+    "title": "Spiral Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "UPEZBPh1UcU",
+    "lengthSeconds": 123
+  },
+  {
+    "index": 347,
+    "title": "Exit Point of a Matrix - Question | 2-D Arrays | Data Structure and Algorithms in JAVA",
+    "videoId": "FnywCfCcMRk",
+    "lengthSeconds": 117
+  },
+  {
+    "index": 348,
+    "title": "Exit Point of a Matrix - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "FUBlb360kqU",
+    "lengthSeconds": 1036
+  },
+  {
+    "index": 349,
+    "title": "Rotate by 90 degree - Question | 2-D Arrays | Data Structure and Algorithms in JAVA",
+    "videoId": "0qj4kRcuKqo",
+    "lengthSeconds": 65
+  },
+  {
+    "index": 350,
+    "title": "Rotate by 90 degree - Solution | 2-D Arrays | Data Structure and Algorithms in JAVA",
+    "videoId": "SoxrXQbhCPI",
+    "lengthSeconds": 660
+  },
+  {
+    "index": 351,
+    "title": "Shell Rotate - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "Eu1XAfmnGZ4",
+    "lengthSeconds": 183
+  },
+  {
+    "index": 352,
+    "title": "Shell Rotate - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "atMK9aA-s7Y",
+    "lengthSeconds": 1797
+  },
+  {
+    "index": 353,
+    "title": "Diagonal Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "rydBe9U-RtY",
+    "lengthSeconds": 50
+  },
+  {
+    "index": 354,
+    "title": "Diagonal Traversal - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "lvRdFCMD_Ew",
+    "lengthSeconds": 354
+  },
+  {
+    "index": 355,
+    "title": "Saddle Point - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "xt0Og8YaON4",
+    "lengthSeconds": 34
+  },
+  {
+    "index": 356,
+    "title": "Saddle Point - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "6YIWq2JGzEQ",
+    "lengthSeconds": 526
+  },
+  {
+    "index": 357,
+    "title": "Search in sorted 2-D Array - Question | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "N1RyGhXJ7Zc",
+    "lengthSeconds": 48
+  },
+  {
+    "index": 358,
+    "title": "Search in a sorted 2-D Array - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "5vP0-g94xEA",
+    "lengthSeconds": 282
+  },
+  {
+    "index": 359,
+    "title": "Reverse an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "RJITdlWR1-g",
+    "lengthSeconds": 69
+  },
+  {
+    "index": 360,
+    "title": "Reverse an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "CuvSfyO5iRU",
+    "lengthSeconds": 161
+  },
+  {
+    "index": 361,
+    "title": "Rotate an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "ZictKDbUWak",
+    "lengthSeconds": 200
+  },
+  {
+    "index": 362,
+    "title": "Rotate an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "8RErc0VXAo8",
+    "lengthSeconds": 564
+  },
+  {
+    "index": 363,
+    "title": "Inverse of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "TCDPgRgCNr0",
+    "lengthSeconds": 66
+  },
+  {
+    "index": 364,
+    "title": "Inverse of an Array - Solution | Functions and Array | Data Structures and Algorithms in JAVA",
+    "videoId": "1NvhnN56NKc",
+    "lengthSeconds": 167
+  },
+  {
+    "index": 365,
+    "title": "Subarrays of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "YrE8E1J_rp4",
+    "lengthSeconds": 104
+  },
+  {
+    "index": 366,
+    "title": "Subarrays of an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "lUdWGkCUD54",
+    "lengthSeconds": 237
+  },
+  {
+    "index": 367,
+    "title": "Subsets of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "vk8sfizNtsY",
+    "lengthSeconds": 95
+  },
+  {
+    "index": 368,
+    "title": "Subsets of an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "iKSI_9NHR1M",
+    "lengthSeconds": 632
+  },
+  {
+    "index": 369,
+    "title": "Binary Search Algorithm | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "j6BgMBIOCLQ",
+    "lengthSeconds": 583
+  },
+  {
+    "index": 370,
+    "title": "Ceil and Floor - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "kQx7nvN_8e4",
+    "lengthSeconds": 60
+  },
+  {
+    "index": 371,
+    "title": "Ceil and Floor - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "qaQRRWXgFIQ",
+    "lengthSeconds": 409
+  },
+  {
+    "index": 372,
+    "title": "First and Last Index - Question | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "PFaoQ72ziNk",
+    "lengthSeconds": 73
+  },
+  {
+    "index": 373,
+    "title": "First and Last Index - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA",
+    "videoId": "9NXZccIWNqU",
+    "lengthSeconds": 631
+  },
+  {
+    "index": 374,
+    "title": "Introduction to Recursion - How Recursion Works | Print Decreasing using Recursion",
+    "videoId": "5Q5ed7PWJ8I",
+    "lengthSeconds": 1190
+  },
+  {
+    "index": 375,
+    "title": "Recursion Motion - Basics of Recursion | Print Increasing using Recursion",
+    "videoId": "Y5IobAWmfjQ",
+    "lengthSeconds": 628
+  },
+  {
+    "index": 376,
+    "title": "Basics of Recursion | Print Decreasing Increasing Numbers using Recursion",
+    "videoId": "V-WSKmGTWxk",
+    "lengthSeconds": 74
+  },
+  {
+    "index": 377,
+    "title": "Recursion Basics | Print Decreasing Increasing Solution using Recursion",
+    "videoId": "BWr4zBiRtJY",
+    "lengthSeconds": 426
+  },
+  {
+    "index": 378,
+    "title": "Factorial - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "zEwwEQi9FAc",
+    "lengthSeconds": 34
+  },
+  {
+    "index": 379,
+    "title": "Recursion Basics | Factorial of a number using Recursion in JAVA",
+    "videoId": "m4rdYPuisKc",
+    "lengthSeconds": 373
+  },
+  {
+    "index": 380,
+    "title": "Calculate Power (x,n) using Recursion - Solution | Recursion in JAVA",
+    "videoId": "EohIyWnQYBY",
+    "lengthSeconds": 361
+  },
+  {
+    "index": 381,
+    "title": "Calculate Power using Recursion (Logarithmic) | Recursion in JAVA",
+    "videoId": "O84uumjBOMY",
+    "lengthSeconds": 834
+  },
+  {
+    "index": 382,
+    "title": "Print Zig-Zag | Recursion for Beginners | Algorithms in JAVA",
+    "videoId": "R7qja_gZrvI",
+    "lengthSeconds": 1800
+  },
+  {
+    "index": 383,
+    "title": "Tower of Hanoi - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "uwrc4H3yaJ4",
+    "lengthSeconds": 233
+  },
+  {
+    "index": 384,
+    "title": "Tower of Hanoi solved using Recursion | Recursion Euler Tree in JAVA",
+    "videoId": "QDBrZFROuA0",
+    "lengthSeconds": 1581
+  },
+  {
+    "index": 385,
+    "title": "Display an Array - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "MOFUK3PyOPw",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 386,
+    "title": "Display Array Elements using Recursion | Algorithms in JAVA | Recursion Playlist",
+    "videoId": "SeU9D35MsK8",
+    "lengthSeconds": 396
+  },
+  {
+    "index": 387,
+    "title": "Display Array in Reverse - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "_O6geLdoSV4",
+    "lengthSeconds": 24
+  },
+  {
+    "index": 388,
+    "title": "Display Array in Reverse using Recursion | Algorithms in JAVA | Recursion Playlist",
+    "videoId": "SJrfxaYBEFU",
+    "lengthSeconds": 358
+  },
+  {
+    "index": 389,
+    "title": "Maximum of an Array - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "obrreX-sQWo",
+    "lengthSeconds": 24
+  },
+  {
+    "index": 390,
+    "title": "Find Maximum of an Array using Recursion | Algorithms in JAVA",
+    "videoId": "XpUiZg9YZQg",
+    "lengthSeconds": 577
+  },
+  {
+    "index": 391,
+    "title": "First Index of occurrence - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "OD39jBFjgdI",
+    "lengthSeconds": 51
+  },
+  {
+    "index": 392,
+    "title": "First Index of Occurrence in Array using Recursion | Algorithms in JAVA",
+    "videoId": "TU0xUG9eO3Y",
+    "lengthSeconds": 921
+  },
+  {
+    "index": 393,
+    "title": "Last Index of Occurrence - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "xttMLI4Kb3k",
+    "lengthSeconds": 874
+  },
+  {
+    "index": 394,
+    "title": "Last Index of Occurrence - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "qr984qKJf4Y",
+    "lengthSeconds": 49
+  },
+  {
+    "index": 395,
+    "title": "All Indices in Array - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "bQkwHBaNioE",
+    "lengthSeconds": 934
+  },
+  {
+    "index": 396,
+    "title": "All Indices in Array - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "TYIZmI5FesU",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 397,
+    "title": "Get Subsequence - Introduction to Arraylists | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "Sa5PmCFF_zI",
+    "lengthSeconds": 1870
+  },
+  {
+    "index": 398,
+    "title": "Get Keypad Combination - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "97mF4juql6g",
+    "lengthSeconds": 183
+  },
+  {
+    "index": 399,
+    "title": "Get Keypad Combination - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "3fjt19bjs3A",
+    "lengthSeconds": 1447
+  },
+  {
+    "index": 400,
+    "title": "Get Stairs Path - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "hMJAlbJIS7E",
+    "lengthSeconds": 1727
+  },
+  {
+    "index": 401,
+    "title": "Get Stairs Path - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "W6cT68K7Hls",
+    "lengthSeconds": 72
+  },
+  {
+    "index": 402,
+    "title": "Get Maze Paths - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "ox3TswFFKDI",
+    "lengthSeconds": 172
+  },
+  {
+    "index": 403,
+    "title": "Get Maze Paths - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "7i41gZLXe5k",
+    "lengthSeconds": 1051
+  },
+  {
+    "index": 404,
+    "title": "Get Maze Paths with Jump - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "F6T3tD8Pw20",
+    "lengthSeconds": 116
+  },
+  {
+    "index": 405,
+    "title": "Get Maze Paths with Jump - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "VaGBRiSdtFI",
+    "lengthSeconds": 809
+  },
+  {
+    "index": 406,
+    "title": "Print Subsequence | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "Ke8TPhHdHMw",
+    "lengthSeconds": 1052
+  },
+  {
+    "index": 407,
+    "title": "Print Keypad Combination - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "4yMtvToiJE0",
+    "lengthSeconds": 807
+  },
+  {
+    "index": 408,
+    "title": "Print Stair Paths - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "JxIoGHzzoW8",
+    "lengthSeconds": 77
+  },
+  {
+    "index": 409,
+    "title": "Print Stair Paths - Solution | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "NEuYcztalew",
+    "lengthSeconds": 589
+  },
+  {
+    "index": 410,
+    "title": "Print Maze Paths - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "TcCyI-eJMmY",
+    "lengthSeconds": 69
+  },
+  {
+    "index": 411,
+    "title": "Print Maze Paths - Solution | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "MHtAA5UE-6Y",
+    "lengthSeconds": 652
+  },
+  {
+    "index": 412,
+    "title": "Print Maze Path with Jumps - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "LgFl0hsyWP8",
+    "lengthSeconds": 154
+  },
+  {
+    "index": 413,
+    "title": "Print Maze Paths with Jumps - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "zri_tftYphE",
+    "lengthSeconds": 473
+  },
+  {
+    "index": 414,
+    "title": "Print Permutations - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "K5xJXbnYMBc",
+    "lengthSeconds": 155
+  },
+  {
+    "index": 415,
+    "title": "Print Permutations - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "sPAT_DbvDj0",
+    "lengthSeconds": 437
+  },
+  {
+    "index": 416,
+    "title": "Print Encodings - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "jUo0Qis4FKU",
+    "lengthSeconds": 279
+  },
+  {
+    "index": 417,
+    "title": "Print Encodings - Solution | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "2ClSccwnq1Y",
+    "lengthSeconds": 750
+  },
+  {
+    "index": 418,
+    "title": "Flood Fill - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "FkkgY7qQF_s",
+    "lengthSeconds": 214
+  },
+  {
+    "index": 419,
+    "title": "Flood Fill - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "R1URUB6_y2k",
+    "lengthSeconds": 2484
+  },
+  {
+    "index": 420,
+    "title": "Target Sum Subsets - Question | Recursion | Data Structure and Algorithms in JAVA",
+    "videoId": "zNxDJJW40_k",
+    "lengthSeconds": 59
+  },
+  {
+    "index": 421,
+    "title": "Target Sum Subsets - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "HGDmj5NrrjM",
+    "lengthSeconds": 457
+  },
+  {
+    "index": 422,
+    "title": "N Queens - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "prZJ0hA43NU",
+    "lengthSeconds": 162
+  },
+  {
+    "index": 423,
+    "title": "N Queens - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "05y82cP3bJo",
+    "lengthSeconds": 1808
+  },
+  {
+    "index": 424,
+    "title": "Knights Tour - Question | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "EgoKDqfpbMg",
+    "lengthSeconds": 241
+  },
+  {
+    "index": 425,
+    "title": "Knights Tour - Solution | Recursion | Data Structures and Algorithms in JAVA",
+    "videoId": "SP880DBRJ_8",
+    "lengthSeconds": 826
+  },
+  {
+    "index": 426,
+    "title": "Introduction to Dynamic Programming (DP) | Memoization in Dynamic Programming Algorithm",
+    "videoId": "94dfRrDANRY",
+    "lengthSeconds": 1531
+  },
+  {
+    "index": 427,
+    "title": "Climbing Stairs - Dynamic Programming using Tabulation | Recursive Staircase Problem",
+    "videoId": "A6mOASLl2Dg",
+    "lengthSeconds": 1159
+  },
+  {
+    "index": 428,
+    "title": "Climbing Stairs with Jumps using Dynamic Programming | Recursive Staircase Problem",
+    "videoId": "uNqoQ0sNZCM",
+    "lengthSeconds": 711
+  },
+  {
+    "index": 429,
+    "title": "Climb Stairs with Minimum Moves - Question | Dynamic Programming | Data Structure and Algorithms",
+    "videoId": "d42uDPBOXSw",
+    "lengthSeconds": 102
+  },
+  {
+    "index": 430,
+    "title": "Climbing Stairs with Minimum Moves | Dynamic Programming Problem Explained",
+    "videoId": "Zobz9BXpwYE",
+    "lengthSeconds": 1148
+  },
+  {
+    "index": 431,
+    "title": "Tilt of Binary Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "CVXfXjuBM8I",
+    "lengthSeconds": 121
+  },
+  {
+    "index": 432,
+    "title": "Tilt of a Binary Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "gK95sG7Dm-w",
+    "lengthSeconds": 493
+  },
+  {
+    "index": 433,
+    "title": "Is a tree Binary Search Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "MLWawOETrF8",
+    "lengthSeconds": 106
+  },
+  {
+    "index": 434,
+    "title": "Is a tree Binary Search Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "kMrbTnd5W9U",
+    "lengthSeconds": 1769
+  },
+  {
+    "index": 435,
+    "title": "Balanced Binary Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "9X1TYiipolA",
+    "lengthSeconds": 177
+  },
+  {
+    "index": 436,
+    "title": "Balanced Binary Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "lUDgp2D6sf8",
+    "lengthSeconds": 611
+  },
+  {
+    "index": 437,
+    "title": "Largest BST Subtree - Question | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "6KeiEYyPOPA",
+    "lengthSeconds": 177
+  },
+  {
+    "index": 438,
+    "title": "Largest BST Subtree - Solution | Binary Trees | Data Structure and Algorithms in JAVA",
+    "videoId": "UGsJz8fSYp0",
+    "lengthSeconds": 1689
+  },
+  {
+    "index": 439,
+    "title": "Minimum Cost Path - Question | Dynamic Programming Leetcode #64",
+    "videoId": "D-0souJUBMU",
+    "lengthSeconds": 146
+  },
+  {
+    "index": 440,
+    "title": "Minimum Cost Path Dynamic Programming Explained with Code | Leetcode #64",
+    "videoId": "BzTIOsC0xWM",
+    "lengthSeconds": 1015
+  },
+  {
+    "index": 441,
+    "title": "Path with Maximum Gold - Dynamic Programming | Goldmine Problem Explained",
+    "videoId": "hs0lilfJ7C0",
+    "lengthSeconds": 866
+  },
+  {
+    "index": 442,
+    "title": "Goldmine - Question | Dynamic Programming | Data Structure and Algorithms in JAVA",
+    "videoId": "5KdvH15NJjc",
+    "lengthSeconds": 89
+  },
+  {
+    "index": 443,
+    "title": "Introduction to Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "wE5nFfdr7Ls",
+    "lengthSeconds": 219
+  },
+  {
+    "index": 444,
+    "title": "Constructor of BST | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "yGrs-VuPCYg",
+    "lengthSeconds": 432
+  },
+  {
+    "index": 445,
+    "title": "Size, Sum, Max & Min in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "-Zv2m-dLhpM",
+    "lengthSeconds": 28
+  },
+  {
+    "index": 446,
+    "title": "How to Add Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "5SSAtwG9IBM",
+    "lengthSeconds": 28
+  },
+  {
+    "index": 447,
+    "title": "How to Add Node in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "lraQt-zHOHk",
+    "lengthSeconds": 209
+  },
+  {
+    "index": 448,
+    "title": "How to Remove Node in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "5_AZcOOc-kM",
+    "lengthSeconds": 557
+  },
+  {
+    "index": 449,
+    "title": "Replace Sum of Larger in BST - Question | Binary Search Tree| Data Structure and Algorithms in JAVA",
+    "videoId": "0lMnG_9wcsU",
+    "lengthSeconds": 73
+  },
+  {
+    "index": 450,
+    "title": "Replace Sum of Larger in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "MLff3CxNVTc",
+    "lengthSeconds": 222
+  },
+  {
+    "index": 451,
+    "title": "How to find LCA in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "f7AsXoVNJlQ",
+    "lengthSeconds": 62
+  },
+  {
+    "index": 452,
+    "title": "How to find LCA in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "5E3MeajU9XQ",
+    "lengthSeconds": 228
+  },
+  {
+    "index": 453,
+    "title": "How to print in range in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "PqXPLZS_yx4",
+    "lengthSeconds": 40
+  },
+  {
+    "index": 454,
+    "title": "How to Print in range in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "NEJUsqEFOI4",
+    "lengthSeconds": 281
+  },
+  {
+    "index": 455,
+    "title": "Target Sum Pair in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "FH7gpdOgc88",
+    "lengthSeconds": 62
+  },
+  {
+    "index": 456,
+    "title": "Target Sum Pair in BST - Solution |Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "ouuGHu9Sjhg",
+    "lengthSeconds": 246
+  },
+  {
+    "index": 457,
+    "title": "Target Sum Pair in BST - More Approaches | Binary Search Tree | Data Structure and Algorithms",
+    "videoId": "iK2VFYxFC4o",
+    "lengthSeconds": 1502
+  },
+  {
+    "index": 458,
+    "title": "How to Remove Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "3_7me98ivvw",
+    "lengthSeconds": 111
+  },
+  {
+    "index": 459,
+    "title": "Introduction To Hashmap | Hashmap and Heaps | Data Structure and Algorithms in JAVA",
+    "videoId": "ukTRZD-WJH4",
+    "lengthSeconds": 525
+  },
+  {
+    "index": 460,
+    "title": "Highest Frequency Character - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "o_21yt_tgHk",
+    "lengthSeconds": 34
+  },
+  {
+    "index": 461,
+    "title": "Highest Frequency Character - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "ea8L1x_JSvM",
+    "lengthSeconds": 276
+  },
+  {
+    "index": 462,
+    "title": "Get Common Element 1 - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "KruULhITtk4",
+    "lengthSeconds": 59
+  },
+  {
+    "index": 463,
+    "title": "Get Common Element 2 - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "hBX47E5WDIA",
+    "lengthSeconds": 52
+  },
+  {
+    "index": 464,
+    "title": "Get Common Element 2 - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "jMwLFkI2Zbc",
+    "lengthSeconds": 209
+  },
+  {
+    "index": 465,
+    "title": "Longest Consecutive Sequence - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "YWXbu5uyGXs",
+    "lengthSeconds": 864
+  },
+  {
+    "index": 466,
+    "title": "Size, Sum, Max and Min in BST -Solution | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "vKYXLYAWHA0",
+    "lengthSeconds": 346
+  },
+  {
+    "index": 467,
+    "title": "Introduction to Heaps | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "eSwIfy2xJ1g",
+    "lengthSeconds": 293
+  },
+  {
+    "index": 468,
+    "title": "How to find K Largest Elements in an Array - Question | Hashmap and Heap | DS and Algorithms in JAVA",
+    "videoId": "MJBYYuWK0LM",
+    "lengthSeconds": 43
+  },
+  {
+    "index": 469,
+    "title": "How to find K Largest Elements in an Array - Solution | Hashmap and Heap | DS and Algorithms in JAVA",
+    "videoId": "taL2G6jDLog",
+    "lengthSeconds": 208
+  },
+  {
+    "index": 470,
+    "title": "How to Sort a nearly Sorted Array - Question | Hashmap and Heap | D S and Algorithms in JAVA",
+    "videoId": "1I2uRpdbiK0",
+    "lengthSeconds": 124
+  },
+  {
+    "index": 471,
+    "title": "How to Sort a nearly Sorted Array - Solution | Hashmap and Heap | D S and Algorithms in JAVA",
+    "videoId": "pptk8cUHHUg",
+    "lengthSeconds": 415
+  },
+  {
+    "index": 472,
+    "title": "Median Priority Queue - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "3k7tAOLBhK0",
+    "lengthSeconds": 139
+  },
+  {
+    "index": 473,
+    "title": "Median Priority Queue - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "dshWERdcAdg",
+    "lengthSeconds": 1033
+  },
+  {
+    "index": 474,
+    "title": "Merge K sorted Lists - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "k_3hDj23DuE",
+    "lengthSeconds": 45
+  },
+  {
+    "index": 475,
+    "title": "Merge K sorted Lists - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "E5WSILx1q0Q",
+    "lengthSeconds": 1241
+  },
+  {
+    "index": 476,
+    "title": "Write Priority Queue using Heap- Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "qroD9lvgGQ4",
+    "lengthSeconds": 350
+  },
+  {
+    "index": 477,
+    "title": "Write Priority Queue using Heap- Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "RIjxT24gUv4",
+    "lengthSeconds": 1909
+  },
+  {
+    "index": 478,
+    "title": "Target Sum Subsets - Question | Dynamic Programming | Data Structure and Algorithms in JAVA",
+    "videoId": "CqEsqfidKi0",
+    "lengthSeconds": 170
+  },
+  {
+    "index": 479,
+    "title": "Target Sum Subsets Dynamic Programming | Subset Sum Problem",
+    "videoId": "tRpkluGqINc",
+    "lengthSeconds": 1760
+  },
+  {
+    "index": 480,
+    "title": "Coin Change Combination - Question | Dynamic Programming | Data Structure and Algorithms in JAVA",
+    "videoId": "Ph1EB07Q4pA",
+    "lengthSeconds": 75
+  },
+  {
+    "index": 481,
+    "title": "Coin Change Combination Problem Dynamic Programming Explained | Coin Change Minimum Number of Coins",
+    "videoId": "l_nR5X9VmaI",
+    "lengthSeconds": 1312
+  },
+  {
+    "index": 482,
+    "title": "Coin Change Permutations Problem Dynamic Programming | Total Number of Ways to Get Amount",
+    "videoId": "yc0LunmJA1A",
+    "lengthSeconds": 1454
+  },
+  {
+    "index": 483,
+    "title": "Coin Change Problems Analysis | Leetcode 322 v/s 518 Explained | Dynamic Programming In-Depth",
+    "videoId": "JyyS9mlMcr4",
+    "lengthSeconds": 1778
+  },
+  {
+    "index": 484,
+    "title": "0-1 Knapsack Problem Dynamic Programming Solved with Code | Dynamic Programming Interview Questions",
+    "videoId": "bUSaenttI24",
+    "lengthSeconds": 1747
+  },
+  {
+    "index": 485,
+    "title": "Unbounded Knapsack using Dynamic Programming Explained with Code",
+    "videoId": "jgps7MXtKRQ",
+    "lengthSeconds": 1672
+  },
+  {
+    "index": 486,
+    "title": "Count Binary Strings | Binary Strings with no consecutive 0's | Dynamic Programming",
+    "videoId": "nqrXHJWMeBc",
+    "lengthSeconds": 1043
+  },
+  {
+    "index": 487,
+    "title": "Arrange Buildings Dynamic Programming | Dynamic Programming Tutorials with Code",
+    "videoId": "0nF-BMYy7tc",
+    "lengthSeconds": 649
+  },
+  {
+    "index": 488,
+    "title": "Decode Ways Dynamic Programming | Total Ways to Decode a String | Count Encodings",
+    "videoId": "jFZmBQ569So",
+    "lengthSeconds": 1905
+  },
+  {
+    "index": 489,
+    "title": "Count Subsequences of form A^i B^j C^k | Count A+ B+ C+ Subsequences Dynamic Programming",
+    "videoId": "IV9pbZsi5cc",
+    "lengthSeconds": 915
+  },
+  {
+    "index": 490,
+    "title": "How to implement Hashmap in Java | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "2ijH5vcKIxQ",
+    "lengthSeconds": 2640
+  },
+  {
+    "index": 491,
+    "title": "Constructor for Linear Time Complexity of Heap | Hashmap and Heap | D S and Algorithms in JAVA",
+    "videoId": "VFLNBh0bK2A",
+    "lengthSeconds": 987
+  },
+  {
+    "index": 492,
+    "title": "Generic Heap - Comparable vs Comparator | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "DE835GvxZMQ",
+    "lengthSeconds": 1927
+  },
+  {
+    "index": 493,
+    "title": "Bubble Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "Jv-eGC2xmtU",
+    "lengthSeconds": 630
+  },
+  {
+    "index": 494,
+    "title": "Selection Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "EU9FIt1t-Is",
+    "lengthSeconds": 941
+  },
+  {
+    "index": 495,
+    "title": "Insertion Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "MMt2x6an_i8",
+    "lengthSeconds": 799
+  },
+  {
+    "index": 496,
+    "title": "Maximum Sum Non Adjacent Elements Dynamic Programming | Greedy Approach",
+    "videoId": "VT4bZV24QNo",
+    "lengthSeconds": 1765
+  },
+  {
+    "index": 497,
+    "title": "Paint House (Leetcode) Dynamic Programming | Explained with Code",
+    "videoId": "kh48JLieeW8",
+    "lengthSeconds": 786
+  },
+  {
+    "index": 498,
+    "title": "Paint House - 2 (Many Colors) Dynamic Programming | Explained with Code",
+    "videoId": "jGywRalvoRw",
+    "lengthSeconds": 1879
+  },
+  {
+    "index": 499,
+    "title": "Get Common Element 1 - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "HPSykge6EGw",
+    "lengthSeconds": 260
+  },
+  {
+    "index": 500,
+    "title": "Longest Consecutive Sequence - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA",
+    "videoId": "rb73tdVFjYE",
+    "lengthSeconds": 66
+  },
+  {
+    "index": 501,
+    "title": "Merge Two Sorted Arrays | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "WMxNhIBA92I",
+    "lengthSeconds": 347
+  },
+  {
+    "index": 502,
+    "title": "Merge sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "aiUHB-3EOg8",
+    "lengthSeconds": 374
+  },
+  {
+    "index": 503,
+    "title": "Partioning an Array | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "if40LxQ8_Xo",
+    "lengthSeconds": 1362
+  },
+  {
+    "index": 504,
+    "title": "Quick Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "kdO5Q0nmPjU",
+    "lengthSeconds": 712
+  },
+  {
+    "index": 505,
+    "title": "Quick Select | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "fnbImb8lo88",
+    "lengthSeconds": 498
+  },
+  {
+    "index": 506,
+    "title": "Count Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "p-OyKUgIrx4",
+    "lengthSeconds": 2202
+  },
+  {
+    "index": 507,
+    "title": "Sort 01 | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "jFrUwjx4eoA",
+    "lengthSeconds": 462
+  },
+  {
+    "index": 508,
+    "title": "Sort 012 | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "MbV26HWqxrs",
+    "lengthSeconds": 1177
+  },
+  {
+    "index": 509,
+    "title": "Paint Fence (Leetcode) Dynamic Programming | Explanation with Code",
+    "videoId": "ju8vrEAsa3Q",
+    "lengthSeconds": 1050
+  },
+  {
+    "index": 510,
+    "title": "Target Sum Pair | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "4t9jv9AkVdE",
+    "lengthSeconds": 540
+  },
+  {
+    "index": 511,
+    "title": "Pivot of Sorted Rotated Array | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "vF7gk4iaklA",
+    "lengthSeconds": 719
+  },
+  {
+    "index": 512,
+    "title": "Radix Sort | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "a5e7RgCdel0",
+    "lengthSeconds": 777
+  },
+  {
+    "index": 513,
+    "title": "Tiling with Dominoes Dynamic Programming | Explanation and Code",
+    "videoId": "dVT9JeUMMDE",
+    "lengthSeconds": 909
+  },
+  {
+    "index": 514,
+    "title": "Tiling with M x 1 Tiles Dynamic Programming | Explanation with Code",
+    "videoId": "_c_R-uIi-zU",
+    "lengthSeconds": 614
+  },
+  {
+    "index": 515,
+    "title": "Friends Pairing Problem Dynamic Programming | Explanation with Code",
+    "videoId": "SHDu0Ufjyk8",
+    "lengthSeconds": 1394
+  },
+  {
+    "index": 516,
+    "title": "Partition into Subsets Dynamic Programming | Explanation and Code",
+    "videoId": "IiAsqfjhZnY",
+    "lengthSeconds": 1718
+  },
+  {
+    "index": 517,
+    "title": "Best Time to Buy and Sell Stocks - One Transaction Allowed - Dynamic Programming",
+    "videoId": "4YjEHmw1MX0",
+    "lengthSeconds": 875
+  },
+  {
+    "index": 518,
+    "title": "Best Time to Buy and Sell Stocks - 2 (Infinite Transactions) Dynamic Programming",
+    "videoId": "HWJ9kIPpzXs",
+    "lengthSeconds": 886
+  },
+  {
+    "index": 519,
+    "title": "Best Time to Buy and Sell Stocks with Transaction Fee and Infinite Transactions Dynamic Programming",
+    "videoId": "pTQB9wbIpfU",
+    "lengthSeconds": 1859
+  },
+  {
+    "index": 520,
+    "title": "Best Time to Buy and Sell Stocks with Cool down - Infinite Transactions Dynamic Programming",
+    "videoId": "GY0O57llkKQ",
+    "lengthSeconds": 1497
+  },
+  {
+    "index": 521,
+    "title": "Best Time to Buy and Sell Stocks - Two Transaction Allowed (Hard) | Dynamic Programming",
+    "videoId": "wuzTpONbd-0",
+    "lengthSeconds": 2704
+  },
+  {
+    "index": 522,
+    "title": "Best Time to Buy and Sell Stocks - K Transaction Allowed Dynamic Programming",
+    "videoId": "3YILP-PdEJA",
+    "lengthSeconds": 2924
+  },
+  {
+    "index": 523,
+    "title": "Introduction to Graphs in Data Structures | Representation of Graphs in JAVA",
+    "videoId": "t0r04fYdT7U",
+    "lengthSeconds": 498
+  },
+  {
+    "index": 524,
+    "title": "How to Find Path in Graphs using Depth First Search | Graphs in Data Structures",
+    "videoId": "mlnnJd9k7oE",
+    "lengthSeconds": 1658
+  },
+  {
+    "index": 525,
+    "title": "How to Find All Paths in Graph using Depth First Search? | Data Structures",
+    "videoId": "DrQ-eTN2v3A",
+    "lengthSeconds": 2629
+  },
+  {
+    "index": 526,
+    "title": "Easily Solve Graph Problems with DFS!! | Data Structure and Algorithms",
+    "videoId": "PSy0yJQx050",
+    "lengthSeconds": 1465
+  },
+  {
+    "index": 527,
+    "title": "Get Connected Components of Graphs in JAVA | Data Structure and Algorithms",
+    "videoId": "8UBwFE8H4Mc",
+    "lengthSeconds": 893
+  },
+  {
+    "index": 528,
+    "title": "Is Graph Connected | Graphs | Data Structure and Algorithms",
+    "videoId": "dRqO3s14_2s",
+    "lengthSeconds": 183
+  },
+  {
+    "index": 529,
+    "title": "Count Number of Islands using Graphs | Data Structure and Algorithms",
+    "videoId": "ErPZFxugYkI",
+    "lengthSeconds": 1009
+  },
+  {
+    "index": 530,
+    "title": "Hamiltonian Path & Cycles in Graphs and Graph Theory",
+    "videoId": "nUgp0RG57wQ",
+    "lengthSeconds": 1463
+  },
+  {
+    "index": 531,
+    "title": "Introduction to Breadth First Traversal (BFS) in Graphs | Algorithms in JAVA",
+    "videoId": "GHnC5qHexsk",
+    "lengthSeconds": 671
+  },
+  {
+    "index": 532,
+    "title": "Is a Graph Cyclic? | Graph Data Structure | Cycles in Graphs in JAVA",
+    "videoId": "qbQq-k75bcY",
+    "lengthSeconds": 913
+  },
+  {
+    "index": 533,
+    "title": "Is a Graph Bipartite? | Bipartite Graph Algorithm in JAVA | Graph Algorithms",
+    "videoId": "ZBhZ1DXGrhA",
+    "lengthSeconds": 2496
+  },
+  {
+    "index": 534,
+    "title": "Spread Infection | Graphs | Data Structure and Algorithms",
+    "videoId": "3A1XJbRs_6A",
+    "lengthSeconds": 622
+  },
+  {
+    "index": 535,
+    "title": "Dijkstra Algorithm in Graphs | Single Source Shortest Path in Weights | Graphs Algorithms in JAVA",
+    "videoId": "sD0lLYlGCJE",
+    "lengthSeconds": 832
+  },
+  {
+    "index": 536,
+    "title": "Prim's Algorithm - Graphs | Minimum Spanning Tree(MST) in Graphs | Code and Implementation",
+    "videoId": "Vw-sktU1zmc",
+    "lengthSeconds": 1043
+  },
+  {
+    "index": 537,
+    "title": "Iterative Depth First Traversal | Iterative DFS in Graphs | DFS Code",
+    "videoId": "iUtmQ66IC_0",
+    "lengthSeconds": 973
+  },
+  {
+    "index": 538,
+    "title": "Perfect Friends Problem using Graphs | Data Structures in JAVA",
+    "videoId": "_q4hA01ZcVQ",
+    "lengthSeconds": 1214
+  },
+  {
+    "index": 539,
+    "title": "Topological Sort Algorithm with DFS | Course Schedule in JAVA | Code and Implementation",
+    "videoId": "6Vi5Td_a8B8",
+    "lengthSeconds": 2329
+  },
+  {
+    "index": 540,
+    "title": "Sort Dates | Time and Space | Data Structure and Algorithms in JAVA",
+    "videoId": "YdzCuP6LwVg",
+    "lengthSeconds": 1159
+  },
+  {
+    "index": 541,
+    "title": "How to Add Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA",
+    "videoId": "ptT_aX-Id6w",
+    "lengthSeconds": 35
+  },
+  {
+    "index": 542,
+    "title": "Reverse a Linked List - Pointer Iterative | Solution",
+    "videoId": "71NqKy7287g",
+    "lengthSeconds": 503
+  },
+  {
+    "index": 543,
+    "title": "Introduction to Strings, StringBuilders and Arraylists in JAVA",
+    "videoId": "4ZOV3PYe0y0",
+    "lengthSeconds": 1151
+  },
+  {
+    "index": 544,
+    "title": "Print all Palindromic Substrings | Strings and StringBuilders in JAVA",
+    "videoId": "_jM3iMT4k7g",
+    "lengthSeconds": 378
+  },
+  {
+    "index": 545,
+    "title": "String Interning and Immutability | Strings and StringBuilders in JAVA",
+    "videoId": "NcQd0cN0JC4",
+    "lengthSeconds": 1256
+  },
+  {
+    "index": 546,
+    "title": "String Builder - Usage and Performance | Strings and Arraylists",
+    "videoId": "OWVuQEs3xF8",
+    "lengthSeconds": 730
+  },
+  {
+    "index": 547,
+    "title": "String Compression Leetcode(Medium) in JAVA | Explanation and Code",
+    "videoId": "6W1MDK7nPZs",
+    "lengthSeconds": 449
+  },
+  {
+    "index": 548,
+    "title": "Remove prime numbers from Arraylist | Strings and Arraylists",
+    "videoId": "jj90JZ_wLoo",
+    "lengthSeconds": 359
+  },
+  {
+    "index": 549,
+    "title": "Toggle Case of Characters in a String | Explanation and JAVA Code",
+    "videoId": "VQnWqpHpKnE",
+    "lengthSeconds": 291
+  },
+  {
+    "index": 550,
+    "title": "String with ASCII difference of characters | Explanation and Code in JAVA",
+    "videoId": "PHtNm0B9Ig4",
+    "lengthSeconds": 240
+  },
+  {
+    "index": 551,
+    "title": "Permutations of a String - Iterative Solution | String and Stringbuilders in JAVA",
+    "videoId": "39SKIuA-ieY",
+    "lengthSeconds": 576
+  },
+  {
+    "index": 552,
+    "title": "Introduction to Arraylists in JAVA - Usage and Implementation | Arraylists Tutorial",
+    "videoId": "PjTHKWlkP6c",
+    "lengthSeconds": 372
+  },
+  {
+    "index": 553,
+    "title": "Arraylists, Stacks and Queues in JAVA | Java Tutorials for C++ Coders",
+    "videoId": "hg8GLWq3ftw",
+    "lengthSeconds": 852
+  }
+]

@@ -1,0 +1,554 @@
+V001 [  9:30] Introduction to Java Foundation | Basic Data Structures | Java Foundation Course | Pepcoding
+V002 [  8:30] How to Print Output in Java | Java Foundation Course | "Hello World" | Lecture -1
+V003 [  1:20] How to Print Z - Question | Java Foundation Course | Lecture 2
+V004 [  2:38] How to Print Z - Solution Video | Java Foundation Course | Lecture 3
+V005 [ 14:51] Variables in Java | Java Foundation Course | Lecture 4
+V006 [ 11:45] Conditional Statements | If, Else if and Else | Java Foundation Course | Lecture 5
+V007 [  1:53] Conditionals - Question | Grading System | Java Foundation Course | Lecture 6
+V008 [  3:32] Conditionals - Solution | Grading System | Java Foundation Course | Lecture 7
+V009 [ 10:32] Loops | Java Foundation Course | Lecture 8
+V010 [  8:18] Take Input | Java Foundation Course | Lecture 9
+V011 [  2:25] Is a number Prime? - Question | Java Foundation Course | Lecture 10
+V012 [ 18:20] Is a number Prime? - Solution | Java Foundation Course | Lecture 11
+V013 [  1:25] Print all Prime Numbers till N - Question | Java Foundation Course | Lecture 12
+V014 [  6:17] Print all Prime Numbers till N - Solution | Java Foundation Course | Lecture 13
+V015 [  1:28] Print all Fibonacci Numbers till N - Question | Java Foundation Course | Lecture 14
+V016 [  8:31] Print all Fibonacci Numbers till N - Solution | Java Foundation Course | Lecture 15
+V017 [  0:40] Count Digits in a Number - Question | Java Foundation Course | Lecture 16
+V018 [  3:19] Count Digits in a Number - Solution | Java Foundation Course | Lecture 17
+V019 [  0:40] Digits of a number - Question | Java Foundation Course | Lecture 18
+V020 [  9:20] Digits of a number - Solution | Java Foundation Course | Lecture 19
+V021 [  0:36] Reverse a number - Question | Java Foundation Course | Lecture 20
+V022 [  2:36] Reverse a number - Solution | Java Foundation Course | Lecture 21
+V023 [  4:20] Inverse of a number - Question | Java Foundation Course | Lecture 22
+V024 [ 15:05] Inverse of a number - Solution | Java Foundation Course | Lecture 23
+V025 [  4:00] Rotate a number - Question | Java Foundation Course | Lecture 24
+V026 [ 10:25] Rotate a number - Solution | Java Foundation Course | Lecture 25
+V027 [  1:00] GCD and LCM - Question | Java Foundation Course | Lecture 26
+V028 [  7:49] GCD and LCM - Solution | Java Foundation Course | Lecture 27
+V029 [  1:10] Prime Factorization - Question | Java Foundation Course | Lecture 28
+V030 [  8:00] Prime Factorization - Solution | Java Foundation Course | Lecture 29
+V031 [  1:00] Pythagorean Triplets - Question | Java Foundation Course
+V032 [  5:18] Pythagorean Triplets - Solution | Java Foundation Course
+V033 [  1:34] Benjamin Bulbs - Question | Java Foundation Course
+V034 [  8:27] Benjamin Bulbs - Solution | Java Foundation Course
+V035 [  0:33] Pattern-1 | Question | Java Foundation Course
+V036 [ 15:10] Pattern-1 | Solution | Java Foundation Course
+V037 [  0:40] Pattern-2 | Question | Java Foundation Course
+V038 [  8:48] Pattern-2 | Solution | Java Foundation Course
+V039 [  0:30] Pattern-3 | Question | Java Foundation Course
+V040 [  9:33] Pattern-3 | Solution | Java Foundation Course
+V041 [  0:33] Pattern-4 | Question | Java Foundation Course
+V042 [  7:41] Pattern-4 | Solution | Java Foundation Course
+V043 [  0:24] Pattern-5 | Question | Java Foundation Course
+V044 [  8:43] Pattern-5 | Solution | Java Foundation Course
+V045 [  1:24] Pattern-6 | Question | Java Foundation Course
+V046 [  6:12] Pattern-6 | Solution | Java Foundation Course
+V047 [  0:23] Pattern-7 | Question | Java Foundation Course
+V048 [  5:09] Pattern-7 | Solution | Java Foundation Course
+V049 [  0:22] Pattern-8 | Question | Java Foundation Course
+V050 [  3:56] Pattern-8 | Solution | Java Foundation Course
+V051 [  0:23] Pattern-9 | Question | Java Foundation Course
+V052 [  2:33] Pattern-9 | Solution | Java Foundation Course
+V053 [  1:04] Pattern-10 | Question | Java Foundation Course
+V054 [  9:44] Pattern-10 | Solution | Java Foundation Course
+V055 [  0:31] Pattern-11 | Question | Java Foundation Course
+V056 [  6:09] Pattern-11 | Solution | Java Foundation Course
+V057 [  0:28] Pattern-12 | Question | Java Foundation Course
+V058 [  3:06] Pattern-12 | Solution | Java Foundation Course
+V059 [  0:45] Pattern 13 | Question | Java Foundation Course
+V060 [ 11:26] Pattern-13 | Solution | Java Foundation Course
+V061 [  0:25] Pattern-14 | Question | Java Foundation Course
+V062 [  2:02] Pattern-14 | Solution | Java Foundation Course
+V063 [  4:05] Pattern-15 | Question | Java Foundation Course
+V064 [ 10:44] Pattern-15 | Solution | Java Foundation Course
+V065 [  1:47] Pattern-16 | Question | Java Foundation Course
+V066 [ 11:01] Pattern-16 | Solution | Java Foundation Course
+V067 [  1:17] Pattern-17 | Question | Java Foundation Course
+V068 [  6:08] Pattern-17 | Solution | Java Foundation Course
+V069 [  1:09] Pattern-18 | Question | Java Foundation Course
+V070 [  6:57] Pattern-18 | Solution | Java Foundation Course
+V071 [  0:33] Pattern-19 | Question | Java Foundation Course
+V072 [ 14:15] Pattern-19 | Solution | Java Foundation Course
+V073 [  0:16] Pattern-20 | Question | Java Foundation Course
+V074 [  4:06] Pattern-20 | Solution | Java Foundation Course
+V075 [ 19:28] Introduction to Functions
+V076 [  0:28] Digits Frequency | Question
+V077 [  3:49] Digits Frequency | Solution
+V078 [ 11:58] Introduction to Number System
+V079 [  0:48] Decimal to any Base | Question
+V080 [ 12:34] Decimal to any Base | Solution
+V081 [  1:01] Any base to decimal | Question
+V082 [  6:08] Any base to Decimal | Solution
+V083 [  0:37] Any base to any base | Question
+V084 [  3:33] Any base to any base | Solution
+V085 [  3:32] Any base addition | Question
+V086 [ 13:11] Any base Addition | Solution
+V087 [  1:54] Any base subtraction | Question
+V088 [  9:42] Any base subtraction | Solution
+V089 [  2:50] Any base multiplication | Question
+V090 [  8:57] Any base multiplication | Solution
+V091 [  6:21] Introduction to Arrays
+V092 [ 15:08] Arrays - Memory
+V093 [  0:57] Span of an Array | Question
+V094 [  5:45] Span of an Array | Solution
+V095 [  1:09] Find Element in Array | Question
+V096 [  3:53] Find element in an Array | Solution
+V097 [  0:54] Bar Chart | Question
+V098 [  7:36] Bar Chart | Solution
+V099 [  1:18] Sum of two arrays | Question
+V100 [ 11:23] Sum of two arrays | Solution
+V101 [  1:24] Difference of two arrays | Question
+V102 [ 15:56] Difference of two arrays | Solution
+V103 [ 11:31] Introduction to Stacks and its usage
+V104 [  2:33] Duplicate Brackets | Question
+V105 [  8:12] Duplicate Brackets | Solution
+V106 [  2:38] Balanced Brackets | Question
+V107 [ 12:33] Balanced Brackets | Solution
+V108 [  2:14] Next Greater Element on the Right | Question
+V109 [ 16:27] Next Greater element on the right | Solution
+V110 [ 13:39] Next Greater Element on the Right | Alternative Solution
+V111 [  3:01] Stock Span | Question
+V112 [  6:29] Stock Span | Solution
+V113 [  2:33] Largest Area Histogram | Question
+V114 [ 20:05] Largest Area Histogram | Solution
+V115 [  1:59] Sliding Window Maximum | Question
+V116 [ 21:15] Sliding Window Maximum | Solution
+V117 [  2:04] Infix Evaluation | Question
+V118 [ 23:03] Infix Evaluation | Solution
+V119 [ 16:50] Infix Conversions | Questions
+V120 [ 21:56] Infix Conversions | Solution
+V121 [  6:52] Postfix Evaluations and Conversions | Questions
+V122 [ 10:23] Postfix Expressions | Solution
+V123 [  5:00] Prefix Evaluations and Conversion | Question
+V124 [  9:54] Prefix Evaluation and Conversion | Solution
+V125 [  3:19] Celebrity Problem | Question
+V126 [ 11:53] Celebrity Problem | Solution
+V127 [  2:50] Merge Overlapping Intervals | Question
+V128 [ 14:12] Merge Overlapping Intervals | Solution
+V129 [  2:32] Smallest number following Pattern | Questions
+V130 [ 21:37] Smallest number following Pattern | Solution
+V131 [  9:14] OOP's - Classes and Objects
+V132 [  4:10] OOP's | Swap Game 1
+V133 [  4:16] OOP's | Swap Game 2
+V134 [  4:16] OOP's | Swap Game 2
+V135 [  5:22] OOP's | Swap Game 3
+V136 [ 11:05] OOP's | Constructors and This
+V137 [  2:03] Build Normal Stack | Question
+V138 [  6:11] Build Normal Stack | Solution
+V139 [  1:28] Build Dynamic Stack | Question
+V140 [  2:54] Build Dynamic Stack | Solution
+V141 [  1:05] Minimum Stack - 1 | Question
+V142 [  4:14] Minimum Stack - 1 | Solution
+V143 [  1:21] Minimum Stack - 2 | Question
+V144 [ 24:01] Minimum Stack - 2 | Solution
+V145 [  7:11] Queues | Introduction and Usage
+V146 [  2:15] Build Normal Queue | Question
+V147 [ 17:54] Build Normal Queue | Solution
+V148 [  1:03] Build Dynamic Queue | Question
+V149 [  2:36] Build Dynamic Queue | Solution
+V150 [  5:22] Linked Lists | Introduction
+V151 [  3:10] Data Members of a Linked List
+V152 [  1:47] Add Last in Linked List | Question
+V153 [  4:36] Add Last in Linked List | Solution
+V154 [  2:50] Display and Size of Linked List | Solution
+V155 [  0:32] Remove First from Linked List | Question
+V156 [  3:26] Remove First in Linked List | Solution
+V157 [  1:25] Get Value in Linked List | Question
+V158 [  3:03] Get Value in Linked List | Solution
+V159 [  0:43] Add First in Linked List | Question
+V160 [  3:27] Add First in Linked List | Solution
+V161 [  1:37] Add at Index in Linked List | Question
+V162 [  5:07] Add at Index in Linked List | Solution
+V163 [  1:18] Remove Last in Linked List | Question
+V164 [  2:23] Remove Last in Linked List | Solution
+V165 [  0:43] Remove at Index in Linked List | Question
+V166 [  3:30] Remove at Index in Linked List | Solution
+V167 [  1:13] Reverse a Linked List - Data Iterative | Question
+V168 [  2:32] Reverse a Linked List - Data Iterative | Solution
+V169 [  1:42] Reverse a Linked List - Pointer Iterative | Question
+V170 [  2:32] Reverse a Linked List - Pointer Iterative | Solution
+V171 [  0:45] Linked List to Stack Adapter | Question
+V172 [  6:50] Linked List to Stack Adapter | Solution
+V173 [  0:52] Linked List to Queue Adapter | Question
+V174 [  3:16] Linked List to Queue Adapter | Solution
+V175 [  1:08] Kth element from the end in Linked List | Question
+V176 [  2:33] Kth element from the end in Linked List | Solution
+V177 [  0:53] Middle of Linked List | Question
+V178 [  2:23] Middle of a Linked List | Solution
+V179 [  1:14] Merge two sorted Linked List | Question
+V180 [  3:48] Merge two sorted Linked List | Solution
+V181 [  4:45] Merge Sort a Linked List | Question
+V182 [  9:32] Merge Sort a Linked List | Solution
+V183 [  0:33] Remove duplicates in a sorted Linked List | Question
+V184 [  6:22] Remove duplicates from a sorted Linked List | Solution
+V185 [  0:53] Odd Even List | Question
+V186 [  7:00] Odd Even List | Solution
+V187 [  0:53] K Reverse in Linked List | Question
+V188 [  6:39] K Reverse in Linked List| Solution
+V189 [  0:56] Display Reverse Linked List - Recursive | Question
+V190 [  3:01] Display Reverse Linked List - Recursive | Solution
+V191 [  1:49] Reverse Linked List using Pointer - Recursive | Question
+V192 [  4:51] Reverse a Linked List using Pointers - Recursive | Solution
+V193 [  0:33] Queue to Stack Adapter - Pop Efficient | Question
+V194 [  5:28] Queue to Stack Adapter - Pop Efficient | Solution
+V195 [  0:52] Queue to Stack Adapter - Push Efficient | Question
+V196 [  6:24] Queue to Stack Adapter - Push Efficient | Solution
+V197 [  0:43] Stack to Queue Adapter - Remove Efficient | Question
+V198 [  4:17] Stack to Queue Adapter - Remove Efficient | Solution
+V199 [  0:47] Stack to Queue Adapter - Add Efficient | Question
+V200 [  5:11] Stack to Queue Adapter - Add Efficient | Solution
+V201 [  1:57] Two Stacks in an Array - Question
+V202 [  5:55] Two stack in an Array | Solution
+V203 [  1:04] Reverse a Linked List - Data Recursive | Question
+V204 [  1:04] Reverse a Linked List - Data Recursive | Question
+V205 [ 16:53] Reverse a Linked List - Data Recursive | Solution
+V206 [  1:00] Is a Linked List Palindrome | Question
+V207 [ 13:29] Is a Linked List Palindrome | Solution
+V208 [ 13:29] Is a Linked List Palindrome | Solution
+V209 [  1:00] Fold a Linked List | Question
+V210 [  1:00] Fold a Linked List | Question
+V211 [ 18:45] Fold a Linked List | Solution
+V212 [  2:04] Add two Linked Lists | Question
+V213 [  2:04] Add two Linked Lists | Question
+V214 [  5:03] Generic Tree - Introduction and Data Members
+V215 [  5:03] Generic Tree - Introduction and Data Members
+V216 [  0:38] Size of a Generic Tree | Question
+V217 [ 15:46] Add two Linked Lists | Solution
+V218 [ 15:46] Add two Linked Lists | Solution
+V219 [  0:58] Intersection point of Linked List | Question
+V220 [  0:58] Intersection point of Linked List | Question
+V221 [  3:02] Intersection point of Linked List | Solution
+V222 [  3:02] Intersection point of Linked List | Solution
+V223 [  3:02] Intersection point of Linked List | Solution
+V224 [  9:40] Generic Tree - Constructor
+V225 [  9:40] Generic Tree - Constructor
+V226 [  9:40] Generic Tree - Constructor
+V227 [ 17:21] Display a Generic Tree
+V228 [  7:28] Size of a Generic Tree | Solution
+V229 [  7:28] Size of a Generic Tree | Solution
+V230 [  0:22] Maximum in a Generic Tree | Question
+V231 [ 11:46] Maximum in a Generic Tree | Solution
+V232 [ 11:46] Maximum in a Generic Tree | Solution
+V233 [  1:43] Height of a Generic Tree | Question
+V234 [  1:43] Height of a Generic Tree | Question
+V235 [  9:15] Height of a Generic Tree | Solution
+V236 [  2:18] Traversal in Generic Tree | Question
+V237 [  2:18] Traversal in Generic Tree | Question
+V238 [ 13:33] Traversals in a Generic Tree | Solution
+V239 [ 13:33] Traversals in a Generic Tree | Solution
+V240 [  0:33] Level Order Traversal in a Generic Tree | Question
+V241 [  0:33] Level Order Traversal in a Generic Tree | Question
+V242 [  4:11] Level order traversal in Generic Tree | Solution
+V243 [  4:11] Level order traversal in Generic Tree | Solution
+V244 [  0:57] Level Order Linewise in Generic Tree | Question
+V245 [  4:10] Level Order Linewise in Generic Tree | Solution
+V246 [  0:57] Level Order Linewise - Zig Zag | Question
+V247 [  0:57] Level Order Linewise - Zig Zag | Question
+V248 [  9:02] Level Order line wise - Zig Zag | Solution
+V249 [  9:02] Level Order line wise - Zig Zag | Solution
+V250 [ 22:54] Level Order Traversals - More Approaches
+V251 [ 22:54] Level Order Traversals - More Approaches
+V252 [  1:11] Mirror a Generic Tree | Question
+V253 [  7:05] Mirror a Generic Tree | Solution
+V254 [  7:05] Mirror a Generic Tree | Solution
+V255 [  0:45] Remove Leaves from a Generic Trees | Question
+V256 [ 11:02] Removes leaves from a Generic Tree | Solution
+V257 [ 11:02] Removes leaves from a Generic Tree | Solution
+V258 [  1:40] Linearize a Generic Tree | Question
+V259 [  8:36] Linearize a Generic Tree | Solution
+V260 [  8:36] Linearize a Generic Tree | Solution
+V261 [  7:54] Linearize a Generic Tree | Efficient Approach
+V262 [  7:54] Linearize a Generic Tree | Efficient Approach
+V263 [  7:54] Linearize a Generic Tree | Efficient Approach
+V264 [  0:35] Find an element in a Generic Tree | Question
+V265 [  6:20] Find an element in Generic Tree | Solution
+V266 [  6:20] Find an element in Generic Tree | Solution
+V267 [  0:47] Node to Root Path | Question
+V268 [  0:47] Node to Root Path | Question
+V269 [  6:54] Node to Root Path | Solution
+V270 [  6:54] Node to Root Path | Solution
+V271 [  0:51] Lowest Common Ancestor | Question
+V272 [  4:10] Lowest Common Ancestor | Solution
+V273 [  4:10] Lowest Common Ancestor | Solution
+V274 [  0:45] Distance between Nodes in Generic Tree | Question
+V275 [  3:41] Distance between nodes | Solution
+V276 [  3:41] Distance between nodes | Solution
+V277 [  3:41] Distance between nodes | Solution
+V278 [  0:43] Are Trees Similar in Shape | Question
+V279 [  7:53] Are Trees Similar in Shape | Solution
+V280 [  7:53] Are Trees Similar in Shape | Solution
+V281 [  2:00] Are Trees Mirror in Shape | Question
+V282 [  9:53] Are Trees Mirror in Shape | Solution
+V283 [  9:53] Are Trees Mirror in Shape | Solution
+V284 [  1:36] Is Generic Tree Symmetric | Question
+V285 [  1:36] Is Generic Tree Symmetric | Question
+V286 [  8:23] Is Generic Tree Symmetric | Solution
+V287 [  8:23] Is Generic Tree Symmetric | Solution
+V288 [ 13:50] Generic Tree - Multisolver
+V289 [ 13:50] Generic Tree - Multisolver
+V290 [  2:10] Predecessor and Successor of an element | Question
+V291 [  7:19] Predecessor and Successor of an element | Solution
+V292 [  7:19] Predecessor and Successor of an element | Solution
+V293 [  7:19] Predecessor and Successor of an element | Solution
+V294 [  2:01] Ceil and Floor | Question
+V295 [  4:11] Ceil and Floor | Solution
+V296 [  4:11] Ceil and Floor | Solution
+V297 [  0:39] Kth Largest Element | Question
+V298 [  4:04] Kth Largest Element | Solution
+V299 [  2:27] Node with Maximum Subtree Sum | Question
+V300 [ 10:07] Node with Maximum Subtree Sum | Solution
+V301 [ 10:07] Node with Maximum Subtree Sum | Solution
+V302 [ 10:07] Node with Maximum Subtree Sum | Solution
+V303 [  1:21] Diameter of Generic Tree | Question
+V304 [  1:21] Diameter of Generic Tree | Question
+V305 [ 18:06] Diameter of a Generic Tree | Solution
+V306 [ 18:06] Diameter of a Generic Tree | Solution
+V307 [  1:32] Iterative Pre-order and Post-order Traversal | Question
+V308 [ 16:12] Iterative Pre-order and Post-order | Solution
+V309 [ 16:12] Iterative Pre-order and Post-order | Solution
+V310 [ 39:12] Iterable and Iterator
+V311 [  4:00] Introduction to Binary Trees | Data Structures and Algorithms
+V312 [  4:00] Introduction to Binary Trees | Data Structures and Algorithms
+V313 [  4:00] Introduction to Binary Trees | Data Structures and Algorithms
+V314 [ 16:29] Binary Tree - Constructor | Data Structure and Algorithms in Java
+V315 [ 10:17] Display a Binary Tree | Data Structures and Algorithms in JAVA
+V316 [  0:59] Size, Sum, Max and Height of a Binary Tree | Question | Data Structures and Algorithms in JAVA
+V317 [ 20:55] Size, Sum, Max and Height in a Binary Tree | Solution | Data Structures and Algorithms in JAVA
+V318 [ 17:40] Traversals in a Binary Tree | Data Structures and Algorithms in JAVA
+V319 [  0:46] Level Order Traversal in a Binary Tree | Question | Data Structure and Algorithms | Java and C++
+V320 [  4:07] Level Order Traversal in Binary Tree | Solution | Data Structure and Algorithms | Java and C++
+V321 [  2:08] Iterative Pre, Post and In-Order Traversal in Binary Tree | Data Structure and Algorithms | JAVA
+V322 [  9:56] Iterative Pre, Post and In-order traversal in Binary Tree | Solution | Data Structures and Algorithm
+V323 [  9:56] Iterative Pre, Post and In-order traversal in Binary Tree | Solution | Data Structures and Algorithm
+V324 [  0:40] Node to Root Path | Question | Data Structures and Algorithms | JAVA and C++
+V325 [  9:31] Node to Root Path | Solution | Data Structures and Algorithms | JAVA and C++
+V326 [  0:42] Print K Levels Down | Question | Data Structure and Algorithms | Binary Tree in JAVA
+V327 [  1:57] Print K Levels Down | Solution | Data Structure and Algorithms in JAVA | Binary Trees
+V328 [  3:00] Print Nodes K Level Far | Question | Binary Tree in JAVA | Data Structure and Algorithms
+V329 [ 14:16] Print Nodes K Level Far | Solution | Binary Tree in JAVA | Data Structure and Algorithms
+V330 [  0:55] Path to Leaf from Root | Question | Binary Tree in JAVA | Data Structures and Algorithms
+V331 [  4:17] Path to Leaf from Root | Solution | Binary tree in JAVA | Data Structures and Algorithms
+V332 [  1:15] Transform to Left Cloned Tree | Question | Binary Tree in JAVA | Data Structures and Algorithms
+V333 [ 14:04] Transform to Left Cloned Tree | Solution | Binary Tree in JAVA | Data Structures and Algorithms
+V334 [  0:57] Transform Back from a Left Cloned Tree | Question | Binary Tree in JAVA Data Structure and Algorithm
+V335 [ 11:00] Transform Back from a Left Cloned Tree | Solution | Binary Tree | Data Structure and Algorithm
+V336 [  1:01] Print Single Child Nodes | Question | Binary Trees | Data Structure and Algorithms in JAVA
+V337 [  2:46] Print Single Child Nodes | Solution | Binary Trees | Data Structures and Algorithms in JAVA
+V338 [  0:37] Remove Leaves | Question | Binary Tree | Data Structures and Algorithms in JAVA
+V339 [  5:54] Remove Leaves | Solution | Binary Trees | Data Structure and Algorithms in JAVA
+V340 [  1:25] Diameter of a Binary Tree | Question | Binary Trees in JAVA | Data Structure and Algorithms
+V341 [ 35:09] Diameter of a Binary Tree | Solution | Binary Tree | Data Structures and Algorithms in JAVA
+V342 [ 10:30] Introduction to 2-D Arrays | Data Structures and Algorithms in JAVA
+V343 [  3:08] Matrix Multiplication - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V344 [ 10:32] Matrix Multiplication - Solution | 2-D Arrays | Data Structure and Algorithms in JAVA
+V345 [  1:15] Wave Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V346 [  5:05] Wave Traversal - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V347 [  2:03] Spiral Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V348 [  1:57] Exit Point of a Matrix - Question | 2-D Arrays | Data Structure and Algorithms in JAVA
+V349 [ 17:16] Exit Point of a Matrix - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V350 [  1:05] Rotate by 90 degree - Question | 2-D Arrays | Data Structure and Algorithms in JAVA
+V351 [ 11:00] Rotate by 90 degree - Solution | 2-D Arrays | Data Structure and Algorithms in JAVA
+V352 [  3:03] Shell Rotate - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V353 [ 29:57] Shell Rotate - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V354 [  0:50] Diagonal Traversal - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V355 [  5:54] Diagonal Traversal - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V356 [  0:34] Saddle Point - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V357 [  8:46] Saddle Point - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V358 [  0:48] Search in sorted 2-D Array - Question | 2-D Arrays | Data Structures and Algorithms in JAVA
+V359 [  4:42] Search in a sorted 2-D Array - Solution | 2-D Arrays | Data Structures and Algorithms in JAVA
+V360 [  1:09] Reverse an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V361 [  2:41] Reverse an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V362 [  3:20] Rotate an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V363 [  9:24] Rotate an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V364 [  1:06] Inverse of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V365 [  2:47] Inverse of an Array - Solution | Functions and Array | Data Structures and Algorithms in JAVA
+V366 [  1:44] Subarrays of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V367 [  3:57] Subarrays of an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V368 [  1:35] Subsets of an Array - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V369 [ 10:32] Subsets of an Array - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V370 [  9:43] Binary Search Algorithm | Functions and Arrays | Data Structures and Algorithms in JAVA
+V371 [  1:00] Ceil and Floor - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V372 [  6:49] Ceil and Floor - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V373 [  1:13] First and Last Index - Question | Functions and Arrays | Data Structures and Algorithms in JAVA
+V374 [ 10:31] First and Last Index - Solution | Functions and Arrays | Data Structures and Algorithms in JAVA
+V375 [ 19:50] Introduction to Recursion - How Recursion Works | Print Decreasing using Recursion
+V376 [ 10:28] Recursion Motion - Basics of Recursion | Print Increasing using Recursion
+V377 [  1:14] Basics of Recursion | Print Decreasing Increasing Numbers using Recursion
+V378 [  7:06] Recursion Basics | Print Decreasing Increasing Solution using Recursion
+V379 [  0:34] Factorial - Question | Recursion | Data Structures and Algorithms in JAVA
+V380 [  6:13] Recursion Basics | Factorial of a number using Recursion in JAVA
+V381 [  6:01] Calculate Power (x,n) using Recursion - Solution | Recursion in JAVA
+V382 [ 13:54] Calculate Power using Recursion (Logarithmic) | Recursion in JAVA
+V383 [ 30:00] Print Zig-Zag | Recursion for Beginners | Algorithms in JAVA
+V384 [  3:53] Tower of Hanoi - Question | Recursion | Data Structures and Algorithms in JAVA
+V385 [ 26:21] Tower of Hanoi solved using Recursion | Recursion Euler Tree in JAVA
+V386 [  0:40] Display an Array - Question | Recursion | Data Structures and Algorithms in JAVA
+V387 [  6:36] Display Array Elements using Recursion | Algorithms in JAVA | Recursion Playlist
+V388 [  0:24] Display Array in Reverse - Question | Recursion | Data Structure and Algorithms in JAVA
+V389 [  5:58] Display Array in Reverse using Recursion | Algorithms in JAVA | Recursion Playlist
+V390 [  0:24] Maximum of an Array - Question | Recursion | Data Structures and Algorithms in JAVA
+V391 [  9:37] Find Maximum of an Array using Recursion | Algorithms in JAVA
+V392 [  0:51] First Index of occurrence - Question | Recursion | Data Structures and Algorithms in JAVA
+V393 [ 15:21] First Index of Occurrence in Array using Recursion | Algorithms in JAVA
+V394 [ 14:34] Last Index of Occurrence - Solution | Recursion | Data Structures and Algorithms in JAVA
+V395 [  0:49] Last Index of Occurrence - Question | Recursion | Data Structures and Algorithms in JAVA
+V396 [ 15:34] All Indices in Array - Solution | Recursion | Data Structures and Algorithms in JAVA
+V397 [  0:43] All Indices in Array - Question | Recursion | Data Structures and Algorithms in JAVA
+V398 [ 31:10] Get Subsequence - Introduction to Arraylists | Recursion | Data Structures and Algorithms in JAVA
+V399 [  3:03] Get Keypad Combination - Question | Recursion | Data Structures and Algorithms in JAVA
+V400 [ 24:07] Get Keypad Combination - Solution | Recursion | Data Structures and Algorithms in JAVA
+V401 [ 28:47] Get Stairs Path - Solution | Recursion | Data Structures and Algorithms in JAVA
+V402 [  1:12] Get Stairs Path - Question | Recursion | Data Structures and Algorithms in JAVA
+V403 [  2:52] Get Maze Paths - Question | Recursion | Data Structures and Algorithms in JAVA
+V404 [ 17:31] Get Maze Paths - Solution | Recursion | Data Structures and Algorithms in JAVA
+V405 [  1:56] Get Maze Paths with Jump - Question | Recursion | Data Structure and Algorithms in JAVA
+V406 [ 13:29] Get Maze Paths with Jump - Solution | Recursion | Data Structures and Algorithms in JAVA
+V407 [ 17:32] Print Subsequence | Recursion | Data Structures and Algorithms in JAVA
+V408 [ 13:27] Print Keypad Combination - Solution | Recursion | Data Structures and Algorithms in JAVA
+V409 [  1:17] Print Stair Paths - Question | Recursion | Data Structures and Algorithms in JAVA
+V410 [  9:49] Print Stair Paths - Solution | Recursion | Data Structure and Algorithms in JAVA
+V411 [  1:09] Print Maze Paths - Question | Recursion | Data Structure and Algorithms in JAVA
+V412 [ 10:52] Print Maze Paths - Solution | Recursion | Data Structure and Algorithms in JAVA
+V413 [  2:34] Print Maze Path with Jumps - Question | Recursion | Data Structure and Algorithms in JAVA
+V414 [  7:53] Print Maze Paths with Jumps - Solution | Recursion | Data Structures and Algorithms in JAVA
+V415 [  2:35] Print Permutations - Question | Recursion | Data Structure and Algorithms in JAVA
+V416 [  7:17] Print Permutations - Solution | Recursion | Data Structures and Algorithms in JAVA
+V417 [  4:39] Print Encodings - Question | Recursion | Data Structures and Algorithms in JAVA
+V418 [ 12:30] Print Encodings - Solution | Recursion | Data Structure and Algorithms in JAVA
+V419 [  3:34] Flood Fill - Question | Recursion | Data Structure and Algorithms in JAVA
+V420 [ 41:24] Flood Fill - Solution | Recursion | Data Structures and Algorithms in JAVA
+V421 [  0:59] Target Sum Subsets - Question | Recursion | Data Structure and Algorithms in JAVA
+V422 [  7:37] Target Sum Subsets - Solution | Recursion | Data Structures and Algorithms in JAVA
+V423 [  2:42] N Queens - Question | Recursion | Data Structures and Algorithms in JAVA
+V424 [ 30:08] N Queens - Solution | Recursion | Data Structures and Algorithms in JAVA
+V425 [  4:01] Knights Tour - Question | Recursion | Data Structures and Algorithms in JAVA
+V426 [ 13:46] Knights Tour - Solution | Recursion | Data Structures and Algorithms in JAVA
+V427 [ 25:31] Introduction to Dynamic Programming (DP) | Memoization in Dynamic Programming Algorithm
+V428 [ 19:19] Climbing Stairs - Dynamic Programming using Tabulation | Recursive Staircase Problem
+V429 [ 11:51] Climbing Stairs with Jumps using Dynamic Programming | Recursive Staircase Problem
+V430 [  1:42] Climb Stairs with Minimum Moves - Question | Dynamic Programming | Data Structure and Algorithms
+V431 [ 19:08] Climbing Stairs with Minimum Moves | Dynamic Programming Problem Explained
+V432 [  2:01] Tilt of Binary Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA
+V433 [  8:13] Tilt of a Binary Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA
+V434 [  1:46] Is a tree Binary Search Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA
+V435 [ 29:29] Is a tree Binary Search Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA
+V436 [  2:57] Balanced Binary Tree - Question | Binary Trees | Data Structure and Algorithms in JAVA
+V437 [ 10:11] Balanced Binary Tree - Solution | Binary Trees | Data Structure and Algorithms in JAVA
+V438 [  2:57] Largest BST Subtree - Question | Binary Trees | Data Structure and Algorithms in JAVA
+V439 [ 28:09] Largest BST Subtree - Solution | Binary Trees | Data Structure and Algorithms in JAVA
+V440 [  2:26] Minimum Cost Path - Question | Dynamic Programming Leetcode #64
+V441 [ 16:55] Minimum Cost Path Dynamic Programming Explained with Code | Leetcode #64
+V442 [ 14:26] Path with Maximum Gold - Dynamic Programming | Goldmine Problem Explained
+V443 [  1:29] Goldmine - Question | Dynamic Programming | Data Structure and Algorithms in JAVA
+V444 [  3:39] Introduction to Binary Search Tree | Data Structure and Algorithms in JAVA
+V445 [  7:12] Constructor of BST | Binary Search Tree | Data Structure and Algorithms in JAVA
+V446 [  0:28] Size, Sum, Max & Min in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V447 [  0:28] How to Add Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V448 [  3:29] How to Add Node in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V449 [  9:17] How to Remove Node in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V450 [  1:13] Replace Sum of Larger in BST - Question | Binary Search Tree| Data Structure and Algorithms in JAVA
+V451 [  3:42] Replace Sum of Larger in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V452 [  1:02] How to find LCA in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V453 [  3:48] How to find LCA in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V454 [  0:40] How to print in range in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V455 [  4:41] How to Print in range in BST - Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V456 [  1:02] Target Sum Pair in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V457 [  4:06] Target Sum Pair in BST - Solution |Binary Search Tree | Data Structure and Algorithms in JAVA
+V458 [ 25:02] Target Sum Pair in BST - More Approaches | Binary Search Tree | Data Structure and Algorithms
+V459 [  1:51] How to Remove Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V460 [  8:45] Introduction To Hashmap | Hashmap and Heaps | Data Structure and Algorithms in JAVA
+V461 [  0:34] Highest Frequency Character - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V462 [  4:36] Highest Frequency Character - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V463 [  0:59] Get Common Element 1 - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V464 [  0:52] Get Common Element 2 - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V465 [  3:29] Get Common Element 2 - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V466 [ 14:24] Longest Consecutive Sequence - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V467 [  5:46] Size, Sum, Max and Min in BST -Solution | Binary Search Tree | Data Structure and Algorithms in JAVA
+V468 [  4:53] Introduction to Heaps | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V469 [  0:43] How to find K Largest Elements in an Array - Question | Hashmap and Heap | DS and Algorithms in JAVA
+V470 [  3:28] How to find K Largest Elements in an Array - Solution | Hashmap and Heap | DS and Algorithms in JAVA
+V471 [  2:04] How to Sort a nearly Sorted Array - Question | Hashmap and Heap | D S and Algorithms in JAVA
+V472 [  6:55] How to Sort a nearly Sorted Array - Solution | Hashmap and Heap | D S and Algorithms in JAVA
+V473 [  2:19] Median Priority Queue - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V474 [ 17:13] Median Priority Queue - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V475 [  0:45] Merge K sorted Lists - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V476 [ 20:41] Merge K sorted Lists - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V477 [  5:50] Write Priority Queue using Heap- Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V478 [ 31:49] Write Priority Queue using Heap- Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V479 [  2:50] Target Sum Subsets - Question | Dynamic Programming | Data Structure and Algorithms in JAVA
+V480 [ 29:20] Target Sum Subsets Dynamic Programming | Subset Sum Problem
+V481 [  1:15] Coin Change Combination - Question | Dynamic Programming | Data Structure and Algorithms in JAVA
+V482 [ 21:52] Coin Change Combination Problem Dynamic Programming Explained | Coin Change Minimum Number of Coins
+V483 [ 24:14] Coin Change Permutations Problem Dynamic Programming | Total Number of Ways to Get Amount
+V484 [ 29:38] Coin Change Problems Analysis | Leetcode 322 v/s 518 Explained | Dynamic Programming In-Depth
+V485 [ 29:07] 0-1 Knapsack Problem Dynamic Programming Solved with Code | Dynamic Programming Interview Questions
+V486 [ 27:52] Unbounded Knapsack using Dynamic Programming Explained with Code
+V487 [ 17:23] Count Binary Strings | Binary Strings with no consecutive 0's | Dynamic Programming
+V488 [ 10:49] Arrange Buildings Dynamic Programming | Dynamic Programming Tutorials with Code
+V489 [ 31:45] Decode Ways Dynamic Programming | Total Ways to Decode a String | Count Encodings
+V490 [ 15:15] Count Subsequences of form A^i B^j C^k | Count A+ B+ C+ Subsequences Dynamic Programming
+V491 [ 44:00] How to implement Hashmap in Java | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V492 [ 16:27] Constructor for Linear Time Complexity of Heap | Hashmap and Heap | D S and Algorithms in JAVA
+V493 [ 32:07] Generic Heap - Comparable vs Comparator | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V494 [ 10:30] Bubble Sort | Time and Space | Data Structure and Algorithms in JAVA
+V495 [ 15:41] Selection Sort | Time and Space | Data Structure and Algorithms in JAVA
+V496 [ 13:19] Insertion Sort | Time and Space | Data Structure and Algorithms in JAVA
+V497 [ 29:25] Maximum Sum Non Adjacent Elements Dynamic Programming | Greedy Approach
+V498 [ 13:06] Paint House (Leetcode) Dynamic Programming | Explained with Code
+V499 [ 31:19] Paint House - 2 (Many Colors) Dynamic Programming | Explained with Code
+V500 [  4:20] Get Common Element 1 - Solution | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V501 [  1:06] Longest Consecutive Sequence - Question | Hashmap and Heap | Data Structure and Algorithms in JAVA
+V502 [  5:47] Merge Two Sorted Arrays | Time and Space | Data Structure and Algorithms in JAVA
+V503 [  6:14] Merge sort | Time and Space | Data Structure and Algorithms in JAVA
+V504 [ 22:42] Partioning an Array | Time and Space | Data Structure and Algorithms in JAVA
+V505 [ 11:52] Quick Sort | Time and Space | Data Structure and Algorithms in JAVA
+V506 [  8:18] Quick Select | Time and Space | Data Structure and Algorithms in JAVA
+V507 [ 36:42] Count Sort | Time and Space | Data Structure and Algorithms in JAVA
+V508 [  7:42] Sort 01 | Time and Space | Data Structure and Algorithms in JAVA
+V509 [ 19:37] Sort 012 | Time and Space | Data Structure and Algorithms in JAVA
+V510 [ 17:30] Paint Fence (Leetcode) Dynamic Programming | Explanation with Code
+V511 [  9:00] Target Sum Pair | Time and Space | Data Structure and Algorithms in JAVA
+V512 [ 11:59] Pivot of Sorted Rotated Array | Time and Space | Data Structure and Algorithms in JAVA
+V513 [ 12:57] Radix Sort | Time and Space | Data Structure and Algorithms in JAVA
+V514 [ 15:09] Tiling with Dominoes Dynamic Programming | Explanation and Code
+V515 [ 10:14] Tiling with M x 1 Tiles Dynamic Programming | Explanation with Code
+V516 [ 23:14] Friends Pairing Problem Dynamic Programming | Explanation with Code
+V517 [ 28:38] Partition into Subsets Dynamic Programming | Explanation and Code
+V518 [ 14:35] Best Time to Buy and Sell Stocks - One Transaction Allowed - Dynamic Programming
+V519 [ 14:46] Best Time to Buy and Sell Stocks - 2 (Infinite Transactions) Dynamic Programming
+V520 [ 30:59] Best Time to Buy and Sell Stocks with Transaction Fee and Infinite Transactions Dynamic Programming
+V521 [ 24:57] Best Time to Buy and Sell Stocks with Cool down - Infinite Transactions Dynamic Programming
+V522 [ 45:04] Best Time to Buy and Sell Stocks - Two Transaction Allowed (Hard) | Dynamic Programming
+V523 [ 48:44] Best Time to Buy and Sell Stocks - K Transaction Allowed Dynamic Programming
+V524 [  8:18] Introduction to Graphs in Data Structures | Representation of Graphs in JAVA
+V525 [ 27:38] How to Find Path in Graphs using Depth First Search | Graphs in Data Structures
+V526 [ 43:49] How to Find All Paths in Graph using Depth First Search? | Data Structures
+V527 [ 24:25] Easily Solve Graph Problems with DFS!! | Data Structure and Algorithms
+V528 [ 14:53] Get Connected Components of Graphs in JAVA | Data Structure and Algorithms
+V529 [  3:03] Is Graph Connected | Graphs | Data Structure and Algorithms
+V530 [ 16:49] Count Number of Islands using Graphs | Data Structure and Algorithms
+V531 [ 24:23] Hamiltonian Path & Cycles in Graphs and Graph Theory
+V532 [ 11:11] Introduction to Breadth First Traversal (BFS) in Graphs | Algorithms in JAVA
+V533 [ 15:13] Is a Graph Cyclic? | Graph Data Structure | Cycles in Graphs in JAVA
+V534 [ 41:36] Is a Graph Bipartite? | Bipartite Graph Algorithm in JAVA | Graph Algorithms
+V535 [ 10:22] Spread Infection | Graphs | Data Structure and Algorithms
+V536 [ 13:52] Dijkstra Algorithm in Graphs | Single Source Shortest Path in Weights | Graphs Algorithms in JAVA
+V537 [ 17:23] Prim's Algorithm - Graphs | Minimum Spanning Tree(MST) in Graphs | Code and Implementation
+V538 [ 16:13] Iterative Depth First Traversal | Iterative DFS in Graphs | DFS Code
+V539 [ 20:14] Perfect Friends Problem using Graphs | Data Structures in JAVA
+V540 [ 38:49] Topological Sort Algorithm with DFS | Course Schedule in JAVA | Code and Implementation
+V541 [ 19:19] Sort Dates | Time and Space | Data Structure and Algorithms in JAVA
+V542 [  0:35] How to Add Node in BST - Question | Binary Search Tree | Data Structure and Algorithms in JAVA
+V543 [  8:23] Reverse a Linked List - Pointer Iterative | Solution
+V544 [ 19:11] Introduction to Strings, StringBuilders and Arraylists in JAVA
+V545 [  6:18] Print all Palindromic Substrings | Strings and StringBuilders in JAVA
+V546 [ 20:56] String Interning and Immutability | Strings and StringBuilders in JAVA
+V547 [ 12:10] String Builder - Usage and Performance | Strings and Arraylists
+V548 [  7:29] String Compression Leetcode(Medium) in JAVA | Explanation and Code
+V549 [  5:59] Remove prime numbers from Arraylist | Strings and Arraylists
+V550 [  4:51] Toggle Case of Characters in a String | Explanation and JAVA Code
+V551 [  4:00] String with ASCII difference of characters | Explanation and Code in JAVA
+V552 [  9:36] Permutations of a String - Iterative Solution | String and Stringbuilders in JAVA
+V553 [  6:12] Introduction to Arraylists in JAVA - Usage and Implementation | Arraylists Tutorial
+V554 [ 14:12] Arraylists, Stacks and Queues in JAVA | Java Tutorials for C++ Coders
