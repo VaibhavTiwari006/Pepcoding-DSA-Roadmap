@@ -78,6 +78,45 @@ input:focus, select:focus, textarea:focus {
   background: var(--bg-subtle);
 }
 
+
+/* Global View Switcher */
+.global-view-switch {
+  display: inline-flex;
+  align-items: center;
+  background: #12131a;
+  border: 1px solid #232533;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 3px;
+}
+
+.switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #9aa1b5;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.switch-btn:hover {
+  color: #ffffff;
+}
+
+.switch-btn.active {
+  background: #232533;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.switch-btn .icon {
+  font-size: 13px;
+}
+
 /* Layout */
 .app-container {
   max-width: 880px;
@@ -891,9 +930,19 @@ input:focus, select:focus, textarea:focus {
       <span class="brand-meta">Spaced Repetition &middot; Asia/Kolkata</span>
     </div>
     <div class="header-links">
-      <a href="./roadmap.html" class="nav-link" title="Open complete 15-phase Pepcoding syllabus">&larr; Roadmap (777 Videos)</a>
-      <button type="button" class="nav-link" id="exportDataBtn" title="Backup all records to JSON">Export</button>
-      <button type="button" class="nav-link" id="importDataBtn" title="Restore records from JSON">Import</button>
+      <!-- Switcher Pill -->
+      <div class="global-view-switch" role="tablist">
+        <a href="./index.html" class="switch-btn active" title="Active Spaced Repetition Practice">
+          <span class="icon">⏰</span>
+          <span>DSA Revise</span>
+        </a>
+        <a href="./roadmap.html" class="switch-btn" title="Complete 15-Phase Pepcoding Roadmap">
+          <span class="icon">🗺️</span>
+          <span>DSA Architecture</span>
+        </a>
+      </div>
+      <button type="button" class="btn-secondary" id="exportDataBtn" title="Backup all records to JSON">Export</button>
+      <button type="button" class="btn-secondary" id="importDataBtn" title="Restore records from JSON">Import</button>
       <input type="file" id="fileInput" accept=".json" style="display: none;">
     </div>
   </header>

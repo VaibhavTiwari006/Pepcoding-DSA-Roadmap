@@ -77,6 +77,47 @@ body {
   color: var(--text-muted);
 }
 
+
+/* Global View Switcher */
+.global-view-switch {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-elevated, #171a24);
+  border: 1px solid var(--border, #282d3f);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 6px;
+  color: var(--text-muted, #8a8f9e);
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.switch-btn:hover {
+  color: var(--text, #edeff5);
+}
+
+.switch-btn.active {
+  background: var(--bg-station, #1c2030);
+  color: #ffffff;
+  border: 1px solid var(--border, #282d3f);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.switch-btn .icon {
+  font-size: 14px;
+}
+
 /* ── Header ── */
 header { margin-bottom: 28px; }
 .eyebrow {
@@ -943,6 +984,18 @@ footer {
 <div class="wrap">
   
     <header>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div class="global-view-switch">
+          <a href="./index.html" class="switch-btn" title="Open Daily Spaced Repetition Practice">
+            <span class="icon">⏰</span>
+            <span>DSA Revise</span>
+          </a>
+          <a href="./roadmap.html" class="switch-btn active" title="Complete 15-Phase Pepcoding Roadmap">
+            <span class="icon">🗺️</span>
+            <span>DSA Architecture</span>
+          </a>
+        </div>
+      </div>
       <p class="eyebrow">Pepcoding · Beginner to Advanced</p>
       <h1>Master DSA Architecture</h1>
       <p class="sub">A structured 15-phase roadmap covering 777 Pepcoding videos (L1+L2) with 550+ curated LeetCode practice problems mapped to each topic.</p>
