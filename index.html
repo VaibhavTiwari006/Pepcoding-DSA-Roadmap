@@ -1293,13 +1293,13 @@ input:focus, select:focus, textarea:focus {
    Deterministic, Local-First, Asia/Kolkata Calendar Dates
    ========================================================================== */
 
-const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v3";
+const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v4";
 const STORAGE_KEY_PRACTICE = "dsa-master-practice-v3"; // Existing roadmap progress compatibility
 const STORAGE_KEY_V3 = "dsa-master-roadmap-v3";
 
 // State
 
-// Map every known question to its prerequisite order in the Pepcoding roadmap
+// Pre-calculate exact prerequisite ordering from Pepcoding DSA Architecture
 const ROADMAP_PHASE_ORDER = {};
 if (typeof DSA_CATALOG !== 'undefined') {
   DSA_CATALOG.forEach((q, idx) => {
@@ -1309,9 +1309,32 @@ if (typeof DSA_CATALOG !== 'undefined') {
   });
 }
 
-function getQuestionRoadmapRank(lcId) {
-  if (ROADMAP_PHASE_ORDER[lcId] !== undefined) return ROADMAP_PHASE_ORDER[lcId];
-  return 9999;
+const TOPIC_PREREQUISITE_WEIGHTS = {
+  'Math & Number Theory': 1,
+  'Arrays & Strings': 2,
+  '2D Arrays / Matrices': 3,
+  'Searching & Sorting': 4,
+  'Bit Manipulation': 5,
+  'Stacks & Parsing': 6,
+  'Hashmaps & Sets': 7,
+  'Trees & BST': 8,
+  'Intervals & Geometry': 9,
+  'Dynamic Programming': 10
+};
+
+function getQuestionRoadmapRank(qOrId) {
+  const lcId = typeof qOrId === 'string' ? qOrId : (qOrId ? qOrId.lcId : '');
+  const qObj = typeof qOrId === 'object' ? qOrId : (questions[lcId] || null);
+
+  if (ROADMAP_PHASE_ORDER[lcId] !== undefined) {
+    return ROADMAP_PHASE_ORDER[lcId];
+  }
+  if (qObj) {
+    const tWeight = TOPIC_PREREQUISITE_WEIGHTS[qObj.topic] || 50;
+    const num = parseInt(qObj.numId, 10) || 5000;
+    return tWeight * 1000 + num;
+  }
+  return 99999;
 }
 
 let questions = {}; // keyed by lcId (lowercase slug)
@@ -1370,10 +1393,11 @@ function extractLcSlug(input) {
 
 // Storage operations
 function loadQuestions() {
-  // Clear any legacy v1/v2 storage that contained past dates or overdue items
+  // Clear any legacy storage that had all 125 dumped into a single day
   try {
     localStorage.removeItem("dsa_revise_questions_v1");
     localStorage.removeItem("dsa_revise_questions_v2");
+    localStorage.removeItem("dsa_revise_questions_v3");
   } catch (_) {}
 
   const raw = localStorage.getItem(STORAGE_KEY_QUESTIONS);
@@ -1423,9 +1447,18 @@ function seedFromExistingRoadmap() {
   let addedCount = 0;
 
   // 1. Seed user's 125 solved questions categorized by pattern and topic
+  // Paced strictly: earliest 2 questions due today, remaining staggered across subsequent days
   if (typeof PRELOADED_USER_125 !== 'undefined' && Array.isArray(PRELOADED_USER_125)) {
-    PRELOADED_USER_125.forEach(q => {
+    // Sort all questions by roadmap architecture prerequisite order first
+    const sorted125 = [...PRELOADED_USER_125].sort((a, b) => getQuestionRoadmapRank(a) - getQuestionRoadmapRank(b));
+
+    sorted125.forEach((q, index) => {
       if (!questions[q.lcId]) {
+        // First 2 questions due today; question 3 & 4 due tomorrow; question 5 & 6 due in 2 days, etc.
+        const dayOffset = Math.floor(index / 2);
+        const scheduledDate = addCalendarDays(todayStr, dayOffset);
+        const isToday = (dayOffset === 0);
+
         questions[q.lcId] = {
           lcId: q.lcId,
           numId: q.numId,
@@ -1433,10 +1466,11 @@ function seedFromExistingRoadmap() {
           url: q.url,
           topic: q.topic,
           pattern: q.pattern,
+          diff: q.diff || "Easy",
           pepVideo: q.pepVideo || "",
           solvingDate: q.solvingDate || todayStr,
-          status: "due_today", // Starts revision from 1st Nov
-          nextDueDate: todayStr,
+          status: isToday ? "due_today" : "scheduled",
+          nextDueDate: scheduledDate,
           cycleStep: "initial",
           criticalStage: 0,
           attempts: [],
@@ -1444,10 +1478,10 @@ function seedFromExistingRoadmap() {
         };
         addedCount++;
       } else {
-        // Ensure pattern and topic classification is preserved and accurate
         if (q.pattern && (!questions[q.lcId].pattern || questions[q.lcId].pattern === "Unclassified" || questions[q.lcId].pattern === "General")) {
           questions[q.lcId].pattern = q.pattern;
           questions[q.lcId].topic = q.topic;
+          questions[q.lcId].diff = q.diff || questions[q.lcId].diff || "Easy";
           addedCount++;
         }
       }
@@ -1720,7 +1754,7 @@ function renderTodayView() {
   const combinedQueue = [...criticalItems, ...overdueItems, ...dueTodayItems];
   const totalDue = combinedQueue.length;
 
-  summaryEl.innerHTML = `<strong>${totalDue}</strong> questions queued &middot; ${criticalItems.length} critical, ${overdueItems.length} overdue, ${dueTodayItems.length} due (Ordered by Roadmap Architecture)`;
+  summaryEl.innerHTML = `<strong>${Math.min(todayPracticeLimit, totalDue)} of ${totalDue}</strong> questions for today's session &middot; Ordered by Roadmap Architecture`;
 
   if (totalDue === 0) {
     listEl.innerHTML = `
@@ -2175,8 +2209,9 @@ function initEvents() {
 
   // Today view show more
   document.getElementById("todayShowMoreBtn").onclick = () => {
-    showAllToday = true;
+    todayPracticeLimit += 2;
     renderTodayView();
+    showToast("Added next question from roadmap queue!");
   };
 
   // Attempt screen exits & reveals
