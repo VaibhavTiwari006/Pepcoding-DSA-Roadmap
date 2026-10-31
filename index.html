@@ -1189,7 +1189,7 @@ input:focus, select:focus, textarea:focus {
    Deterministic, Local-First, Asia/Kolkata Calendar Dates
    ========================================================================== */
 
-const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v2";
+const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v3";
 const STORAGE_KEY_PRACTICE = "dsa-master-practice-v3"; // Existing roadmap progress compatibility
 const STORAGE_KEY_V3 = "dsa-master-roadmap-v3";
 
@@ -1250,11 +1250,10 @@ function extractLcSlug(input) {
 
 // Storage operations
 function loadQuestions() {
-  // Clear any legacy v1 storage that had past dates or old overdue questions
+  // Clear any legacy v1/v2 storage that contained past dates or overdue items
   try {
-    if (localStorage.getItem("dsa_revise_questions_v1")) {
-      localStorage.removeItem("dsa_revise_questions_v1");
-    }
+    localStorage.removeItem("dsa_revise_questions_v1");
+    localStorage.removeItem("dsa_revise_questions_v2");
   } catch (_) {}
 
   const raw = localStorage.getItem(STORAGE_KEY_QUESTIONS);
@@ -1268,22 +1267,24 @@ function loadQuestions() {
     questions = {};
   }
 
-  // Clean all question dates: start clean from 1st November 2026
-  const baselineDate = "2026-11-01";
+  // Strictly eliminate all overdue items and align to today (or later)
+  const todayStr = getKolkataDateString();
   let updated = false;
   Object.values(questions).forEach(q => {
-    if (q.nextDueDate && q.nextDueDate < baselineDate) {
-      q.nextDueDate = baselineDate;
-      q.status = "due_today";
-      updated = true;
-    }
-    if (q.solvingDate && q.solvingDate < baselineDate) {
-      q.solvingDate = baselineDate;
-      updated = true;
-    }
     if (q.status === "overdue") {
       q.status = "due_today";
-      q.nextDueDate = baselineDate;
+      q.nextDueDate = todayStr;
+      updated = true;
+    }
+    if (q.nextDueDate && q.nextDueDate < todayStr) {
+      q.nextDueDate = todayStr;
+      if (q.status !== "critical" && q.status !== "completed" && q.status !== "unscheduled") {
+        q.status = "due_today";
+      }
+      updated = true;
+    }
+    if (q.solvingDate && q.solvingDate < todayStr) {
+      q.solvingDate = todayStr;
       updated = true;
     }
   });
@@ -1374,10 +1375,10 @@ function evaluateDueStatus(q) {
 
   if (q.isCritical) {
     q.status = "critical";
-  } else if (diff < 0) {
-    q.status = "overdue";
-  } else if (diff === 0) {
+  } else if (diff <= 0) {
+    // If due today or earlier in this starting period, treat as due today (never overdue)
     q.status = "due_today";
+    q.nextDueDate = todayStr;
   } else {
     q.status = "scheduled";
   }
