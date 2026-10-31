@@ -1181,6 +1181,7 @@ input:focus, select:focus, textarea:focus {
 <div class="toast-msg" id="toastMsg">Notification</div>
 
 <!-- Preloaded Roadmap Catalog -->
+<script src="user_125_questions.js"></script>
 <script src="dsa_catalog.js"></script>
 
 <script>
@@ -1299,45 +1300,71 @@ function saveQuestions() {
 }
 
 function seedFromExistingRoadmap() {
-  const practiceRaw = localStorage.getItem(STORAGE_KEY_PRACTICE);
-  if (!practiceRaw || typeof DSA_CATALOG === 'undefined') return;
-  
-  let practiceMap = {};
-  try {
-    practiceMap = JSON.parse(practiceRaw);
-  } catch (_) {
-    return;
-  }
-
-  const solvedSlugs = Object.keys(practiceMap).filter(k => practiceMap[k]);
-  if (!solvedSlugs.length) return;
-
   const todayStr = getKolkataDateString();
   let addedCount = 0;
 
-  solvedSlugs.forEach(slug => {
-    if (questions[slug]) return; // already present
-    const matched = DSA_CATALOG.find(c => c.lcId === slug);
-    if (matched) {
-      questions[slug] = {
-        lcId: slug,
-        title: matched.title,
-        url: matched.url,
-        topic: matched.topic,
-        pattern: matched.pattern || "Unclassified",
-        pepVideo: matched.pepVideoUrl || "",
-        pepRange: matched.pepRange || "",
-        solvingDate: todayStr,
-        status: "due_today", // Fresh assessment
-        nextDueDate: todayStr,
-        cycleStep: "initial",
-        criticalStage: 0,
-        attempts: [],
-        mistakeNote: ""
-      };
-      addedCount++;
-    }
-  });
+  // 1. Seed user's 125 solved questions categorized by pattern and topic
+  if (typeof PRELOADED_USER_125 !== 'undefined' && Array.isArray(PRELOADED_USER_125)) {
+    PRELOADED_USER_125.forEach(q => {
+      if (!questions[q.lcId]) {
+        questions[q.lcId] = {
+          lcId: q.lcId,
+          numId: q.numId,
+          title: q.title,
+          url: q.url,
+          topic: q.topic,
+          pattern: q.pattern,
+          pepVideo: q.pepVideo || "",
+          solvingDate: q.solvingDate || todayStr,
+          status: "due_today", // Starts revision from 1st Nov
+          nextDueDate: todayStr,
+          cycleStep: "initial",
+          criticalStage: 0,
+          attempts: [],
+          mistakeNote: ""
+        };
+        addedCount++;
+      } else {
+        // Ensure pattern and topic classification is preserved and accurate
+        if (q.pattern && (!questions[q.lcId].pattern || questions[q.lcId].pattern === "Unclassified" || questions[q.lcId].pattern === "General")) {
+          questions[q.lcId].pattern = q.pattern;
+          questions[q.lcId].topic = q.topic;
+          addedCount++;
+        }
+      }
+    });
+  }
+
+  // 2. Also check if user has additional solved practice from roadmap
+  const practiceRaw = localStorage.getItem(STORAGE_KEY_PRACTICE);
+  if (practiceRaw && typeof DSA_CATALOG !== 'undefined') {
+    let practiceMap = {};
+    try { practiceMap = JSON.parse(practiceRaw); } catch (_) {}
+    const solvedSlugs = Object.keys(practiceMap).filter(k => practiceMap[k]);
+    solvedSlugs.forEach(slug => {
+      if (questions[slug]) return;
+      const matched = DSA_CATALOG.find(c => c.lcId === slug);
+      if (matched) {
+        questions[slug] = {
+          lcId: slug,
+          title: matched.title,
+          url: matched.url,
+          topic: matched.topic,
+          pattern: matched.pattern || "Unclassified",
+          pepVideo: matched.pepVideoUrl || "",
+          pepRange: matched.pepRange || "",
+          solvingDate: todayStr,
+          status: "due_today",
+          nextDueDate: todayStr,
+          cycleStep: "initial",
+          criticalStage: 0,
+          attempts: [],
+          mistakeNote: ""
+        };
+        addedCount++;
+      }
+    });
+  }
 
   if (addedCount > 0) {
     saveQuestions();
