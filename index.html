@@ -9,23 +9,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0f1117;
-  --bg-card: #161822;
-  --bg-card-hover: #1c1f2e;
-  --bg-subtle: #1e2230;
-  --border: #262a3b;
-  --border-focus: #3b4259;
-  --text: #e6e8ee;
-  --text-muted: #8b92a5;
-  --text-faint: #565d73;
-  --accent: #4f8ff7;
-  --accent-soft: rgba(79, 143, 247, 0.12);
-  --critical: #ef4444;
-  --critical-soft: rgba(239, 68, 68, 0.12);
-  --overdue: #f59e0b;
-  --overdue-soft: rgba(245, 158, 11, 0.12);
-  --success: #10b981;
-  --success-soft: rgba(16, 185, 129, 0.12);
+  --bg: #090a0f;
+  --bg-card: #12131a;
+  --bg-card-hover: #191b24;
+  --bg-subtle: #171822;
+  --border: #232533;
+  --border-focus: #3e4259;
+  --text: #f0f2f8;
+  --text-muted: #9aa1b5;
+  --text-faint: #5a6075;
+  --accent: #5e9eff;
+  --accent-soft: rgba(94, 158, 255, 0.12);
+  --critical: #ff5252;
+  --critical-soft: rgba(255, 82, 82, 0.12);
+  --overdue: #ffb020;
+  --overdue-soft: rgba(255, 176, 32, 0.12);
+  --success: #1cd095;
+  --success-soft: rgba(28, 208, 149, 0.12);
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
@@ -70,19 +70,20 @@ input, select, textarea {
   border-radius: 6px;
   padding: 8px 12px;
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, background-color 0.15s;
 }
 
 input:focus, select:focus, textarea:focus {
   border-color: var(--accent);
+  background: var(--bg-subtle);
 }
 
 /* Layout */
 .app-container {
-  max-width: 860px;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
-  padding: 32px 20px 80px;
+  padding: 36px 20px 80px;
   flex: 1;
 }
 
@@ -91,60 +92,64 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 28px;
-  padding-bottom: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--border);
 }
 
 .brand {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 12px;
 }
 
 .brand-title {
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 
 .brand-meta {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--text-muted);
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .header-links {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
 }
 
 .nav-link {
-  font-size: 12px;
+  font-size: 12.5px;
+  font-weight: 500;
   color: var(--text-muted);
   transition: color 0.15s;
 }
 
 .nav-link:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 
 /* Tabs */
 .tabs-nav {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .tab-btn {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13.5px;
+  font-weight: 600;
   color: var(--text-muted);
-  padding: 8px 14px;
+  padding: 8px 16px;
   border-radius: 6px;
   transition: all 0.15s;
   display: flex;
@@ -153,19 +158,21 @@ input:focus, select:focus, textarea:focus {
 }
 
 .tab-btn:hover {
-  color: var(--text);
+  color: #ffffff;
   background: var(--bg-card);
 }
 
 .tab-btn.active {
-  color: var(--text);
+  color: #ffffff;
   background: var(--bg-card);
+  border: 1px solid var(--border);
 }
 
 .tab-badge {
   font-family: var(--font-mono);
   font-size: 11px;
-  padding: 1px 6px;
+  font-weight: 600;
+  padding: 1px 7px;
   border-radius: 10px;
   background: var(--bg-subtle);
   color: var(--text-muted);
@@ -192,7 +199,7 @@ input:focus, select:focus, textarea:focus {
 
 /* Empty States */
 .empty-state {
-  padding: 48px 20px;
+  padding: 56px 20px;
   text-align: center;
   color: var(--text-muted);
   background: var(--bg-card);
@@ -203,15 +210,15 @@ input:focus, select:focus, textarea:focus {
 
 .empty-state h3 {
   font-size: 15px;
-  font-weight: 500;
-  color: var(--text);
+  font-weight: 600;
+  color: #ffffff;
   margin-bottom: 6px;
 }
 
 .empty-state p {
   font-size: 13px;
   color: var(--text-muted);
-  max-width: 420px;
+  max-width: 440px;
   margin: 0 auto;
 }
 
@@ -220,8 +227,8 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 10px 14px;
+  margin-bottom: 18px;
+  padding: 12px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -233,7 +240,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .summary-text strong {
-  color: var(--text);
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -241,25 +248,26 @@ input:focus, select:focus, textarea:focus {
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--text-faint);
+  letter-spacing: 0.03em;
 }
 
 /* Question Rows */
 .question-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .question-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 14px;
+  padding: 14px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
   transition: all 0.15s;
-  gap: 12px;
+  gap: 14px;
 }
 
 .question-row:hover {
@@ -278,7 +286,7 @@ input:focus, select:focus, textarea:focus {
 .question-main {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
   flex: 1;
 }
@@ -286,41 +294,47 @@ input:focus, select:focus, textarea:focus {
 .status-indicator {
   font-size: 11px;
   font-family: var(--font-mono);
-  padding: 2px 7px;
+  padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .status-indicator.critical {
   background: var(--critical-soft);
   color: var(--critical);
+  border: 1px solid rgba(255, 82, 82, 0.25);
 }
 
 .status-indicator.overdue {
   background: var(--overdue-soft);
   color: var(--overdue);
+  border: 1px solid rgba(255, 176, 32, 0.25);
 }
 
 .status-indicator.due-today {
   background: var(--accent-soft);
   color: var(--accent);
+  border: 1px solid rgba(94, 158, 255, 0.25);
 }
 
 .status-indicator.scheduled {
   background: var(--bg-subtle);
   color: var(--text-muted);
+  border: 1px solid var(--border);
 }
 
 .status-indicator.unscheduled {
   background: var(--bg-subtle);
   color: var(--text-faint);
+  border: 1px solid var(--border);
 }
 
 .status-indicator.completed {
   background: var(--success-soft);
   color: var(--success);
+  border: 1px solid rgba(28, 208, 149, 0.25);
 }
 
 .question-details {
@@ -332,16 +346,17 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   align-items: baseline;
   gap: 8px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .question-title {
-  font-size: 13.5px;
-  font-weight: 500;
-  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: color 0.15s;
 }
 
 .question-title:hover {
@@ -360,6 +375,7 @@ input:focus, select:focus, textarea:focus {
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .topic-tag {
@@ -370,7 +386,7 @@ input:focus, select:focus, textarea:focus {
   font-size: 11.5px;
   color: var(--text-muted);
   font-style: italic;
-  margin-top: 3px;
+  margin-top: 4px;
   display: block;
 }
 
@@ -382,55 +398,59 @@ input:focus, select:focus, textarea:focus {
 }
 
 .btn-start {
-  background: var(--accent);
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   font-size: 12px;
-  font-weight: 500;
-  padding: 6px 14px;
+  font-weight: 600;
+  padding: 7px 16px;
   border-radius: 6px;
-  transition: opacity 0.15s;
+  transition: all 0.15s;
+  letter-spacing: 0.02em;
 }
 
 .btn-start:hover {
-  opacity: 0.9;
+  background: #e6e8ee;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
   background: var(--bg-subtle);
   color: var(--text-muted);
-  font-size: 12px;
-  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 7px 14px;
   border-radius: 6px;
   border: 1px solid var(--border);
   transition: all 0.15s;
 }
 
 .btn-secondary:hover {
-  color: var(--text);
+  color: #ffffff;
   border-color: var(--border-focus);
 }
 
 .btn-icon {
-  padding: 6px;
+  padding: 6px 8px;
   color: var(--text-faint);
   border-radius: 4px;
   transition: color 0.15s;
 }
 
 .btn-icon:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 
 /* Pagination / Show Remaining */
 .show-more-bar {
   text-align: center;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .btn-show-more {
-  font-size: 12.5px;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--accent);
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 6px;
   transition: background 0.15s;
 }
@@ -444,44 +464,45 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .search-input {
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .select-filter {
-  min-width: 130px;
+  min-width: 140px;
 }
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 500;
-  padding: 8px 14px;
+  font-weight: 600;
+  padding: 8px 16px;
   border-radius: 6px;
-  transition: opacity 0.15s;
+  transition: all 0.15s;
 }
 
 .btn-primary:hover {
   opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 /* Patterns Tab */
 .patterns-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
 }
 
 .pattern-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 16px 18px;
   cursor: pointer;
   transition: all 0.15s;
 }
@@ -495,13 +516,13 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .pattern-name {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text);
+  color: #ffffff;
 }
 
 .pattern-total {
@@ -512,7 +533,7 @@ input:focus, select:focus, textarea:focus {
 
 .pattern-metrics {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   font-family: var(--font-mono);
   font-size: 11px;
 }
@@ -526,11 +547,12 @@ input:focus, select:focus, textarea:focus {
   color: var(--text-faint);
   font-size: 9.5px;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
-.metric-val.independent { color: var(--success); font-weight: 500; }
-.metric-val.needs-rev { color: var(--overdue); font-weight: 500; }
-.metric-val.unassessed { color: var(--text-muted); font-weight: 500; }
+.metric-val.independent { color: var(--success); font-weight: 600; }
+.metric-val.needs-rev { color: var(--overdue); font-weight: 600; }
+.metric-val.unassessed { color: var(--text-muted); font-weight: 600; }
 
 /* Attempt Screen (Distraction-Free) */
 .attempt-screen {
@@ -538,8 +560,8 @@ input:focus, select:focus, textarea:focus {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 28px 24px;
-  margin-bottom: 24px;
+  padding: 32px 28px;
+  margin-bottom: 28px;
 }
 
 .attempt-screen.active {
@@ -550,15 +572,15 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   gap: 16px;
 }
 
 .attempt-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 4px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
 }
 
 .attempt-status-pill {
@@ -571,15 +593,17 @@ input:focus, select:focus, textarea:focus {
 .attempt-link-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-  padding: 10px 14px;
+  gap: 14px;
+  margin-bottom: 26px;
+  padding: 12px 16px;
   background: var(--bg-subtle);
+  border: 1px solid var(--border);
   border-radius: 6px;
 }
 
 .lc-link {
   font-size: 13px;
+  font-weight: 600;
   color: var(--accent);
   display: inline-flex;
   align-items: center;
@@ -591,12 +615,12 @@ input:focus, select:focus, textarea:focus {
 }
 
 .pep-link {
-  font-size: 12px;
+  font-size: 12.5px;
   color: var(--text-muted);
 }
 
 .pep-link:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 
 /* Progressive Reveal Accordions */
@@ -610,9 +634,9 @@ input:focus, select:focus, textarea:focus {
 .reveal-btn {
   width: 100%;
   text-align: left;
-  padding: 10px 14px;
-  font-size: 12.5px;
-  font-weight: 500;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--text-muted);
   background: var(--bg-subtle);
   display: flex;
@@ -621,12 +645,12 @@ input:focus, select:focus, textarea:focus {
 }
 
 .reveal-btn:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 
 .reveal-content {
   display: none;
-  padding: 12px 14px;
+  padding: 14px 16px;
   font-size: 13px;
   color: var(--text);
   background: var(--bg-card);
@@ -650,31 +674,31 @@ input:focus, select:focus, textarea:focus {
 
 /* Outcome Actions */
 .outcome-section {
-  margin-top: 28px;
-  padding-top: 20px;
+  margin-top: 30px;
+  padding-top: 22px;
   border-top: 1px solid var(--border);
 }
 
 .outcome-title {
-  font-size: 12.5px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-faint);
+  margin-bottom: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .outcome-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 8px;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
 .btn-outcome {
-  padding: 10px 12px;
+  padding: 12px 14px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--bg-subtle);
@@ -712,14 +736,15 @@ input:focus, select:focus, textarea:focus {
 }
 
 .mistake-box {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .mistake-box label {
   display: block;
-  font-size: 11.5px;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--text-muted);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .mistake-box input {
@@ -740,7 +765,8 @@ input:focus, select:focus, textarea:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(4px);
   z-index: 100;
   align-items: center;
   justify-content: center;
@@ -757,7 +783,7 @@ input:focus, select:focus, textarea:focus {
   border-radius: 10px;
   max-width: 520px;
   width: 100%;
-  padding: 24px;
+  padding: 26px;
   max-height: 90vh;
   overflow-y: auto;
 }
@@ -766,29 +792,30 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .modal-title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .modal-close {
   color: var(--text-muted);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .form-group {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
   display: block;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-muted);
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .form-group input, .form-group select, .form-group textarea {
@@ -807,8 +834,8 @@ input:focus, select:focus, textarea:focus {
 .form-actions {
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 22px;
 }
 
 /* Toast */
@@ -818,11 +845,12 @@ input:focus, select:focus, textarea:focus {
   right: 24px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  color: var(--text);
-  padding: 10px 16px;
+  color: #ffffff;
+  padding: 12px 18px;
   border-radius: 6px;
   font-size: 13px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.2s ease;
@@ -837,7 +865,7 @@ input:focus, select:focus, textarea:focus {
 /* Footer */
 .app-footer {
   text-align: center;
-  padding: 24px 20px;
+  padding: 28px 20px;
   font-size: 12px;
   color: var(--text-faint);
   border-top: 1px solid var(--border);
@@ -849,7 +877,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .app-footer a:hover {
-  color: var(--text);
+  color: #ffffff;
 }
 </style>
 </head>
@@ -1161,7 +1189,7 @@ input:focus, select:focus, textarea:focus {
    Deterministic, Local-First, Asia/Kolkata Calendar Dates
    ========================================================================== */
 
-const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v1";
+const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v2";
 const STORAGE_KEY_PRACTICE = "dsa-master-practice-v3"; // Existing roadmap progress compatibility
 const STORAGE_KEY_V3 = "dsa-master-roadmap-v3";
 
@@ -1222,6 +1250,13 @@ function extractLcSlug(input) {
 
 // Storage operations
 function loadQuestions() {
+  // Clear any legacy v1 storage that had past dates or old overdue questions
+  try {
+    if (localStorage.getItem("dsa_revise_questions_v1")) {
+      localStorage.removeItem("dsa_revise_questions_v1");
+    }
+  } catch (_) {}
+
   const raw = localStorage.getItem(STORAGE_KEY_QUESTIONS);
   if (raw) {
     try {
@@ -1233,7 +1268,28 @@ function loadQuestions() {
     questions = {};
   }
 
-  // Also check if user has existing solved practice from roadmap that can seed library
+  // Clean all question dates: start clean from 1st November 2026
+  const baselineDate = "2026-11-01";
+  let updated = false;
+  Object.values(questions).forEach(q => {
+    if (q.nextDueDate && q.nextDueDate < baselineDate) {
+      q.nextDueDate = baselineDate;
+      q.status = "due_today";
+      updated = true;
+    }
+    if (q.solvingDate && q.solvingDate < baselineDate) {
+      q.solvingDate = baselineDate;
+      updated = true;
+    }
+    if (q.status === "overdue") {
+      q.status = "due_today";
+      q.nextDueDate = baselineDate;
+      updated = true;
+    }
+  });
+  if (updated) saveQuestions();
+
+  // Seed from roadmap practice records
   seedFromExistingRoadmap();
 }
 
