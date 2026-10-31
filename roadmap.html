@@ -5093,6 +5093,64 @@ function renderRoadmap() {
       const qid = e.target.dataset.qid;
       practiceProgress[qid] = e.target.checked;
       saveProgress();
+
+      // Automatically sync newly solved LeetCode question directly into DSA Revision Engine
+      if (e.target.checked) {
+        try {
+          const revKey = "dsa_revise_questions_v3";
+          let revQuestions = {};
+          const rawRev = localStorage.getItem(revKey);
+          if (rawRev) {
+            try { revQuestions = JSON.parse(rawRev); } catch (_) {}
+          }
+          if (!revQuestions[qid]) {
+            let title = qid.replace(/-/g, ' ');
+            title = title.charAt(0).toUpperCase() + title.slice(1);
+            let url = "https://leetcode.com/problems/" + qid + "/";
+            let topic = "General";
+            let pattern = "Unclassified";
+            let diff = "Easy";
+
+            const item = e.target.closest(".practice-item");
+            if (item) {
+              const link = item.querySelector(".practice-link");
+              if (link) {
+                title = link.textContent.trim();
+                url = link.href;
+              }
+              const group = item.closest(".practice-group");
+              if (group) {
+                if (group.querySelector(".practice-group-title.easy")) diff = "Easy";
+                else if (group.querySelector(".practice-group-title.medium")) diff = "Medium";
+                else if (group.querySelector(".practice-group-title.hard")) diff = "Hard";
+              }
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            const d = new Date();
+            d.setDate(d.getDate() + 3);
+            const day3 = d.toISOString().split('T')[0];
+
+            revQuestions[qid] = {
+              lcId: qid,
+              title: title,
+              url: url,
+              topic: topic,
+              pattern: pattern,
+              diff: diff,
+              solvingDate: today,
+              status: "scheduled",
+              nextDueDate: day3,
+              cycleStep: "day3",
+              criticalStage: 0,
+              attempts: [],
+              mistakeNote: ""
+            };
+            localStorage.setItem(revKey, JSON.stringify(revQuestions));
+            showToast("✓ Solved! Auto-scheduled for revision in 3 days.");
+          }
+        } catch (_) {}
+      }
       // Update the item's done class
       const item = e.target.closest(".practice-item");
       if (item) item.classList.toggle("done", e.target.checked);

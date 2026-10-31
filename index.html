@@ -227,6 +227,60 @@ input:focus, select:focus, textarea:focus {
   color: var(--critical);
 }
 
+
+/* Difficulty Badges */
+.diff-badge {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.diff-badge.easy {
+  color: var(--success);
+  background: var(--success-soft);
+  border: 1px solid rgba(28, 208, 149, 0.25);
+}
+.diff-badge.medium, .diff-badge.med {
+  color: var(--overdue);
+  background: var(--overdue-soft);
+  border: 1px solid rgba(255, 176, 32, 0.25);
+}
+.diff-badge.hard {
+  color: var(--critical);
+  background: var(--critical-soft);
+  border: 1px solid rgba(255, 82, 82, 0.25);
+}
+
+/* Daily Goal Complete Banner */
+.daily-goal-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.daily-goal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.daily-goal-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.daily-goal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 /* Views */
 .tab-view {
   display: none;
@@ -1244,6 +1298,22 @@ const STORAGE_KEY_PRACTICE = "dsa-master-practice-v3"; // Existing roadmap progr
 const STORAGE_KEY_V3 = "dsa-master-roadmap-v3";
 
 // State
+
+// Map every known question to its prerequisite order in the Pepcoding roadmap
+const ROADMAP_PHASE_ORDER = {};
+if (typeof DSA_CATALOG !== 'undefined') {
+  DSA_CATALOG.forEach((q, idx) => {
+    if (q.lcId && ROADMAP_PHASE_ORDER[q.lcId] === undefined) {
+      ROADMAP_PHASE_ORDER[q.lcId] = idx;
+    }
+  });
+}
+
+function getQuestionRoadmapRank(lcId) {
+  if (ROADMAP_PHASE_ORDER[lcId] !== undefined) return ROADMAP_PHASE_ORDER[lcId];
+  return 9999;
+}
+
 let questions = {}; // keyed by lcId (lowercase slug)
 let activeTab = "today";
 let activeAttempt = null;
@@ -1621,7 +1691,11 @@ function renderApp() {
   }
 }
 
-// Render: Today View
+// Track daily completed questions for focused batch session
+let sessionCompletedCount = 0;
+let todayPracticeLimit = 2; // Starts with focused 2 questions
+
+// Render: Today View (Organized in Roadmap Prerequisite Order, 2 at a time)
 function renderTodayView() {
   const listEl = document.getElementById("todayQuestionList");
   const summaryEl = document.getElementById("todaySummaryText");
@@ -1630,45 +1704,86 @@ function renderTodayView() {
 
   document.getElementById("currentDateIndicator").textContent = todayStr + " (Asia/Kolkata)";
 
-  // Filter items for today
-  // Priority: 1. Critical, 2. Overdue, 3. Due Today
+  // Filter items due today
+  // Prioritized by: 1. Critical, 2. Overdue, 3. Earliest in Pepcoding Roadmap Architecture
   const allItems = Object.values(questions);
 
   const criticalItems = allItems.filter(q => q.status === "critical")
-    .sort((a, b) => (a.nextDueDate || "").localeCompare(b.nextDueDate || ""));
+    .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
 
   const overdueItems = allItems.filter(q => q.status === "overdue")
-    .sort((a, b) => (a.nextDueDate || "").localeCompare(b.nextDueDate || ""));
+    .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
 
   const dueTodayItems = allItems.filter(q => q.status === "due_today")
-    .sort((a, b) => a.title.localeCompare(b.title));
+    .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
 
   const combinedQueue = [...criticalItems, ...overdueItems, ...dueTodayItems];
   const totalDue = combinedQueue.length;
 
-  summaryEl.innerHTML = `<strong>${totalDue}</strong> questions to revise today &middot; ${criticalItems.length} critical, ${overdueItems.length} overdue, ${dueTodayItems.length} due`;
+  summaryEl.innerHTML = `<strong>${totalDue}</strong> questions queued &middot; ${criticalItems.length} critical, ${overdueItems.length} overdue, ${dueTodayItems.length} due (Ordered by Roadmap Architecture)`;
 
   if (totalDue === 0) {
     listEl.innerHTML = `
       <div class="empty-state">
-        <h3>All caught up for today!</h3>
-        <p>No questions are due for revision right now. Solve new questions on LeetCode or check the Questions library to practice ahead.</p>
+        <h3>🎉 All caught up for today!</h3>
+        <p>You have completed your revision goals. Any newly solved LeetCode problem will appear here automatically when due.</p>
       </div>
     `;
     showMoreBar.style.display = "none";
     return;
   }
 
-  // Display initial 5 or all
-  const itemsToRender = showAllToday ? combinedQueue : combinedQueue.slice(0, 5);
+  // Focused 2-question batch display
+  const itemsToRender = showAllToday ? combinedQueue : combinedQueue.slice(0, todayPracticeLimit);
 
-  listEl.innerHTML = itemsToRender.map(q => renderQuestionRow(q, true)).join('');
+  let bannerHtml = "";
+  if (!showAllToday && sessionCompletedCount >= 2 && combinedQueue.length > 0) {
+    bannerHtml = `
+      <div class="daily-goal-box">
+        <div class="daily-goal-title">🎯 Goal Complete: 2 Questions Revised!</div>
+        <div class="daily-goal-desc">Great job! Would you like to practice more questions today, or put remaining questions for tomorrow?</div>
+        <div class="daily-goal-actions">
+          <button class="btn-primary" id="practiceMoreBtn">+ Practice 2 More Questions</button>
+          <button class="btn-secondary" id="deferTomorrowBtn">Save Remaining for Tomorrow</button>
+        </div>
+      </div>
+    `;
+  }
 
-  if (combinedQueue.length > 5 && !showAllToday) {
+  listEl.innerHTML = bannerHtml + itemsToRender.map(q => renderQuestionRow(q, true)).join('');
+
+  if (combinedQueue.length > todayPracticeLimit && !showAllToday) {
     showMoreBar.style.display = "block";
-    document.getElementById("todayShowMoreBtn").textContent = `View remaining ${combinedQueue.length - 5} questions in queue &darr;`;
+    document.getElementById("todayShowMoreBtn").textContent = `View remaining ${combinedQueue.length - todayPracticeLimit} questions in queue &darr;`;
   } else {
     showMoreBar.style.display = "none";
+  }
+
+  // Wire goal complete buttons
+  const moreBtn = document.getElementById("practiceMoreBtn");
+  if (moreBtn) {
+    moreBtn.onclick = () => {
+      todayPracticeLimit += 2;
+      renderTodayView();
+      showToast("Added 2 more questions to today's practice session!");
+    };
+  }
+
+  const deferBtn = document.getElementById("deferTomorrowBtn");
+  if (deferBtn) {
+    deferBtn.onclick = () => {
+      const tomorrowStr = addCalendarDays(todayStr, 1);
+      // Defer all questions beyond the current completed batch to tomorrow
+      combinedQueue.slice(todayPracticeLimit).forEach(q => {
+        if (!q.isCritical) {
+          q.nextDueDate = tomorrowStr;
+          q.status = "scheduled";
+        }
+      });
+      saveQuestions();
+      renderApp();
+      showToast("Remaining questions deferred to tomorrow!");
+    };
   }
 
   wireRowEvents(listEl);
@@ -1753,6 +1868,7 @@ function renderQuestionRow(q, isTodayScreen = false) {
         <span class="status-indicator ${statusClass}">${statusText}</span>
         <div class="question-details">
           <div class="question-title-line">
+            <span class="diff-badge ${(q.diff || 'Easy').toLowerCase()}">${q.diff || 'Easy'}</span>
             <a href="${q.url || '#'}" target="_blank" rel="noopener noreferrer" class="question-title" title="${escapeHtml(q.title)}">
               ${escapeHtml(q.title)}
             </a>
@@ -2084,6 +2200,7 @@ function initEvents() {
       const mistake = document.getElementById("attemptMistakeInput").value;
       const target = activeAttempt;
       closeAttempt();
+      sessionCompletedCount++;
       processAttemptOutcome(target, outcome, mistake);
     };
   });
