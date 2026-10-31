@@ -281,6 +281,89 @@ input:focus, select:focus, textarea:focus {
   gap: 12px;
 }
 
+
+/* Revision Queue Checkbox & Completed Row */
+.rev-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-focus);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: inline-grid;
+  place-content: center;
+  transition: all 0.15s ease;
+}
+.rev-checkbox:hover {
+  border-color: var(--accent);
+}
+.rev-checkbox:checked {
+  background: var(--success);
+  border-color: var(--success);
+}
+.rev-checkbox:checked::after {
+  content: "✓";
+  font-size: 11px;
+  font-weight: 800;
+  color: #000;
+}
+.question-row.row-done {
+  opacity: 0.65;
+  background: rgba(22, 24, 34, 0.5);
+}
+.question-row.row-done .question-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+.rev-stage-badge {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: rgba(94, 158, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(94, 158, 255, 0.25);
+  white-space: nowrap;
+}
+.rev-stage-badge.done {
+  background: rgba(28, 208, 149, 0.1);
+  color: var(--success);
+  border-color: rgba(28, 208, 149, 0.25);
+}
+.rev-stage-badge.crit {
+  background: rgba(255, 82, 82, 0.1);
+  color: var(--critical);
+  border-color: rgba(255, 82, 82, 0.25);
+}
+.schedule-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.schedule-group-header {
+  padding: 12px 16px;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.schedule-group-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.schedule-group-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
 /* Views */
 .tab-view {
   display: none;
@@ -1007,8 +1090,12 @@ input:focus, select:focus, textarea:focus {
       Today
       <span class="tab-badge" id="todayBadge">0</span>
     </button>
+    <button class="tab-btn" data-tab="schedule">
+      Calendar Schedule
+      <span class="tab-badge" id="scheduleBadge">0</span>
+    </button>
     <button class="tab-btn" data-tab="questions">
-      Questions
+      Questions Library
       <span class="tab-badge" id="questionsBadge">0</span>
     </button>
     <button class="tab-btn" data-tab="patterns">
@@ -1059,15 +1146,7 @@ input:focus, select:focus, textarea:focus {
       </div>
     </div>
 
-    <div class="reveal-box">
-      <button type="button" class="reveal-btn" id="toggleJavaHintBtn">
-        <span>Java Implementation Hint</span>
-        <span class="toggle-icon">&darr;</span>
-      </button>
-      <div class="reveal-content" id="javaHintContent">
-        <p id="attJavaHintText">Think carefully about base cases, loop invariants, and pointer adjustments.</p>
-      </div>
-    </div>
+    
 
     <!-- Outcome Evaluation -->
     <div class="outcome-section">
@@ -1111,6 +1190,21 @@ input:focus, select:focus, textarea:focus {
 
     <div class="show-more-bar" id="todayShowMoreBar" style="display: none;">
       <button class="btn-show-more" id="todayShowMoreBtn">View remaining questions in queue &darr;</button>
+    </div>
+  </div>
+
+  
+  <!-- TAB: CALENDAR SCHEDULE -->
+  <div class="tab-view" id="view-schedule">
+    <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+      <div>
+        <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 4px;">📅 Revision Calendar & Timeline</h3>
+        <p style="font-size: 13px; color: var(--text-muted);">See exactly which questions are coming up today, tomorrow, and after 3 or 7 days.</p>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-faint);">Asia/Kolkata</div>
+    </div>
+    <div id="scheduleTimelineContainer" style="display: flex; flex-direction: column; gap: 24px;">
+      <!-- Populated via JS -->
     </div>
   </div>
 
@@ -1577,62 +1671,70 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
     mistake: mistakeNote || ""
   });
 
+  q.doneTodaySession = true;
+
   if (outcome === "independent") {
-    // Independent success
+    // Independent success: questions stay visible with checked box, next review scheduled
     if (q.isCritical) {
-      // Critical Recovery Mode: 1 -> 3 -> 7
       if (q.criticalStage === 1) {
-        // Step 1 cleared (1d) -> schedule 3d from today
         q.criticalStage = 2;
         q.nextDueDate = addCalendarDays(todayStr, 3);
         q.status = "scheduled";
-        showToast("Step 1 of recovery cleared! Next due in 3 days.");
+        showToast("✓ Solved! Next recovery review in 3 days (" + q.nextDueDate + ")");
       } else if (q.criticalStage === 2) {
-        // Step 2 cleared (3d) -> schedule 7d from today
         q.criticalStage = 3;
         q.nextDueDate = addCalendarDays(todayStr, 7);
         q.status = "scheduled";
-        showToast("Step 2 of recovery cleared! Next due in 7 days.");
-      } else if (q.criticalStage === 3) {
-        // Step 3 cleared (7d) -> Leaves critical status, completes cycle!
+        showToast("✓ Solved! Final recovery review in 7 days (" + q.nextDueDate + ")");
+      } else {
         q.isCritical = false;
         q.criticalStage = 0;
         q.status = "completed";
         q.nextDueDate = null;
-        showToast("Critical recovery complete! Marked completed.");
+        showToast("🎉 Mastered! Question successfully cleared all review intervals.");
       }
     } else {
-      // Normal Spaced Repetition Cycle
       if (q.cycleStep === "initial") {
-        // Fresh assessment -> schedule Day 3
         q.cycleStep = "day3";
         q.nextDueDate = addCalendarDays(todayStr, 3);
         q.status = "scheduled";
-        showToast("Independent! Scheduled for Day 3 review.");
+        showToast("✓ Checked! Coming back after 3 days (" + q.nextDueDate + ")");
       } else if (q.cycleStep === "day3") {
-        // Day 3 passed -> Prompt if they want Day 7
         promptDay7Review(q);
-        return; // Will be handled in modal callback
+        return;
       } else if (q.cycleStep === "day7") {
-        // Day 7 passed -> completes cycle
         q.status = "completed";
         q.nextDueDate = null;
         q.cycleStep = "done";
-        showToast("Day 7 review complete! Cycle finished.");
+        showToast("🎉 Mastered! Solved on Day 7.");
       } else {
-        q.status = "completed";
-        q.nextDueDate = null;
-        showToast("Review complete!");
+        q.cycleStep = "day3";
+        q.nextDueDate = addCalendarDays(todayStr, 3);
+        q.status = "scheduled";
+        showToast("✓ Checked! Scheduled for Day 3 review (" + q.nextDueDate + ")");
       }
     }
-  } else {
-    // Hint, Solution, or Could Not Implement
-    // Marks question CRITICAL and schedules for tomorrow (1 day)
-    q.isCritical = true;
-    q.criticalStage = 1;
+  } else if (outcome === "hint") {
+    // HINT NEEDED: Not critical! Schedule review for tomorrow to reinforce
+    q.isCritical = false;
     q.nextDueDate = addCalendarDays(todayStr, 1);
-    q.status = "critical";
-    showToast("Marked Critical. Scheduled for tomorrow's recovery review.");
+    q.status = "scheduled";
+    showToast("Hint recorded. Scheduled for tomorrow to practice independently.");
+  } else {
+    // SOLUTION NEEDED or COULD NOT IMPLEMENT:
+    // Only mark critical if it continues to fail after previous revision attempts
+    const previousFails = (q.attempts || []).filter(a => a.outcome === "solution" || a.outcome === "could_not_implement").length;
+    if (previousFails >= 2) {
+      q.isCritical = true;
+      q.criticalStage = 1;
+      q.status = "critical";
+      showToast("Critical: Still struggling after review. Scheduled for 1-day recovery.");
+    } else {
+      q.isCritical = false;
+      q.status = "scheduled";
+      showToast("Recorded. Scheduled for tomorrow to re-attempt independently.");
+    }
+    q.nextDueDate = addCalendarDays(todayStr, 1);
   }
 
   evaluateDueStatus(q);
@@ -1715,9 +1817,15 @@ function renderApp() {
   const uniquePatterns = new Set(Object.values(questions).map(q => q.pattern || "Unclassified"));
   document.getElementById("patternsBadge").textContent = uniquePatterns.size;
 
+  // Schedule badge
+  const scheduleCount = Object.values(questions).filter(q => q.nextDueDate && q.status !== 'completed').length;
+  document.getElementById("scheduleBadge").textContent = scheduleCount;
+
   // Render view
   if (activeTab === "today") {
     renderTodayView();
+  } else if (activeTab === "schedule") {
+    renderScheduleView();
   } else if (activeTab === "questions") {
     renderQuestionsView();
   } else if (activeTab === "patterns") {
@@ -1878,7 +1986,7 @@ function renderQuestionRow(q, isTodayScreen = false) {
 
   if (q.status === "critical") {
     statusClass = "critical";
-    statusText = "Critical";
+    statusText = "Critical (Needs Revision)";
   } else if (q.status === "overdue") {
     statusClass = "overdue";
     const diff = Math.abs(daysDiff(q.nextDueDate, getKolkataDateString()));
@@ -1891,14 +1999,30 @@ function renderQuestionRow(q, isTodayScreen = false) {
     statusText = "Not Scheduled";
   } else if (q.status === "completed") {
     statusClass = "completed";
-    statusText = "Completed";
+    statusText = "Mastered ✓";
+  }
+
+  // Next revision pill
+  let nextCycleText = "";
+  if (q.status === "completed") {
+    nextCycleText = '<span class="rev-stage-badge done">Mastered</span>';
+  } else if (q.isCritical) {
+    nextCycleText = '<span class="rev-stage-badge crit">Critical: 1d Recovery</span>';
+  } else if (q.cycleStep === "day3") {
+    nextCycleText = `<span class="rev-stage-badge">Next: Day 7 (${formatDisplayDate(q.nextDueDate)})</span>`;
+  } else if (q.cycleStep === "day7") {
+    nextCycleText = '<span class="rev-stage-badge">Final Step: Day 7</span>';
+  } else {
+    nextCycleText = `<span class="rev-stage-badge">Next: In 3 Days (${formatDisplayDate(q.nextDueDate)})</span>`;
   }
 
   const rowCriticalClass = q.isCritical ? "is-critical" : (q.status === "overdue" ? "is-overdue" : "");
+  const isDoneToday = q.doneTodaySession;
 
   return `
-    <div class="question-row ${rowCriticalClass}" data-lcid="${q.lcId}">
+    <div class="question-row ${rowCriticalClass} ${isDoneToday ? 'row-done' : ''}" data-lcid="${q.lcId}">
       <div class="question-main">
+        <input type="checkbox" class="rev-checkbox" data-lcid="${q.lcId}" ${isDoneToday ? 'checked' : ''} title="Mark solved independently for this session">
         <span class="status-indicator ${statusClass}">${statusText}</span>
         <div class="question-details">
           <div class="question-title-line">
@@ -1906,12 +2030,13 @@ function renderQuestionRow(q, isTodayScreen = false) {
             <a href="${q.url || '#'}" target="_blank" rel="noopener noreferrer" class="question-title" title="${escapeHtml(q.title)}">
               ${escapeHtml(q.title)}
             </a>
+            ${nextCycleText}
           </div>
           <div class="question-meta">
             <span class="pattern-tag">${escapeHtml(q.pattern || 'Unclassified')}</span>
             <span>&middot;</span>
             <span class="topic-tag">${escapeHtml(q.topic || 'General')}</span>
-            ${q.nextDueDate ? `<span>&middot;</span><span>Due ${formatDisplayDate(q.nextDueDate)}</span>` : ''}
+            ${q.nextDueDate ? `<span>&middot;</span><span>Scheduled: ${formatDisplayDate(q.nextDueDate)}</span>` : ''}
           </div>
           ${q.mistakeNote ? `<span class="mistake-preview">&ldquo;${escapeHtml(q.mistakeNote)}&rdquo;</span>` : ''}
         </div>
@@ -1928,6 +2053,23 @@ function renderQuestionRow(q, isTodayScreen = false) {
 
 // Wire Event Listeners for Question Rows
 function wireRowEvents(container) {
+  container.querySelectorAll('.rev-checkbox').forEach(cb => {
+    cb.onchange = (e) => {
+      e.stopPropagation();
+      const lcid = cb.dataset.lcid;
+      const q = questions[lcid];
+      if (!q) return;
+
+      if (cb.checked) {
+        processAttemptOutcome(q, "independent", "");
+      } else {
+        q.doneTodaySession = false;
+        saveQuestions();
+        renderApp();
+      }
+    };
+  });
+
   container.querySelectorAll('[data-action="start"]').forEach(btn => {
     btn.onclick = (e) => {
       e.stopPropagation();
@@ -1946,6 +2088,74 @@ function wireRowEvents(container) {
 }
 
 // Render: Patterns View
+
+// Render: Calendar Schedule View (Grouped chronologically by scheduled date)
+function renderScheduleView() {
+  const container = document.getElementById("scheduleTimelineContainer");
+  const todayStr = getKolkataDateString();
+
+  // Group all scheduled and due questions by nextDueDate
+  const groups = {};
+  const unscheduled = [];
+  const completed = [];
+
+  Object.values(questions).forEach(q => {
+    if (q.status === "completed") {
+      completed.push(q);
+    } else if (q.status === "unscheduled" || !q.nextDueDate) {
+      unscheduled.push(q);
+    } else {
+      const dt = q.nextDueDate;
+      if (!groups[dt]) groups[dt] = [];
+      groups[dt].push(q);
+    }
+  });
+
+  const sortedDates = Object.keys(groups).sort();
+  let html = "";
+
+  sortedDates.forEach(dt => {
+    const qList = groups[dt];
+    const diff = daysDiff(dt, todayStr);
+    let title = "";
+    if (diff === 0) title = "🔥 Due Today (" + dt + ")";
+    else if (diff === 1) title = "⚡ Tomorrow (" + dt + ")";
+    else if (diff === 3) title = "⏳ In 3 Days (" + dt + ") &middot; Day 3 Review";
+    else if (diff === 7) title = "🎯 In 7 Days (" + dt + ") &middot; Day 7 Final Review";
+    else if (diff < 0) title = "⚠️ Overdue (" + dt + " - " + Math.abs(diff) + "d ago)";
+    else title = "📅 " + dt + " (in " + diff + " days)";
+
+    html += `
+      <div class="schedule-group">
+        <div class="schedule-group-header">
+          <span class="schedule-group-title">${title}</span>
+          <span class="schedule-group-count">${qList.length} questions</span>
+        </div>
+        <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          ${qList.map(q => renderQuestionRow(q, false)).join('')}
+        </div>
+      </div>
+    `;
+  });
+
+  if (completed.length > 0) {
+    html += `
+      <div class="schedule-group">
+        <div class="schedule-group-header">
+          <span class="schedule-group-title">🏆 Mastered / Completed Questions</span>
+          <span class="schedule-group-count">${completed.length} questions</span>
+        </div>
+        <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          ${completed.map(q => renderQuestionRow(q, false)).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  container.innerHTML = html;
+  wireRowEvents(container);
+}
+
 function renderPatternsView() {
   const gridEl = document.getElementById("patternsGrid");
   const patternStats = {};
