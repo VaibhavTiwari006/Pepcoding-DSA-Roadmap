@@ -2539,7 +2539,6 @@ function startAttempt(lcId) {
   document.getElementById("attPatternText").textContent = q.pattern || "Unclassified";
   document.getElementById("attTopicText").textContent = q.topic || "General";
   document.getElementById("attMistakeText").textContent = q.mistakeNote || "No previous mistake recorded.";
-  document.getElementById("attJavaHintText").textContent = generateJavaHint(q);
 
   // Status Badge
   const badge = document.getElementById("attStatusBadge");
@@ -2726,9 +2725,7 @@ function initEvents() {
   document.getElementById("toggleMistakeBtn").onclick = () => {
     document.getElementById("mistakeContent").classList.toggle("open");
   };
-  document.getElementById("toggleJavaHintBtn").onclick = () => {
-    document.getElementById("javaHintContent").classList.toggle("open");
-  };
+
 
   // Attempt outcome buttons
   document.querySelectorAll('.btn-outcome').forEach(btn => {
