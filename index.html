@@ -2354,6 +2354,77 @@ function renderScheduleView() {
   wireRowEvents(container);
 }
 
+function renderQuestionsView() {
+  const listEl = document.getElementById("libraryQuestionList");
+  if (!listEl) return;
+
+  const searchInput = document.getElementById("searchQuestionsInput");
+  const statusSelect = document.getElementById("filterStatusSelect");
+  const patternSelect = document.getElementById("filterPatternSelect");
+
+  const search = (searchInput ? searchInput.value : "").toLowerCase().trim();
+  const statusFilter = statusSelect ? statusSelect.value : "all";
+  const patternFilter = patternSelect ? patternSelect.value : "all";
+
+  // Populate pattern select options if only 'all' exists
+  if (patternSelect && patternSelect.options.length <= 1) {
+    const patterns = Array.from(new Set(Object.values(questions).map(q => q.pattern || "Unclassified"))).sort();
+    patterns.forEach(pat => {
+      const opt = document.createElement("option");
+      opt.value = pat;
+      opt.textContent = pat;
+      patternSelect.appendChild(opt);
+    });
+  }
+
+  let filtered = Object.values(questions);
+
+  if (search) {
+    filtered = filtered.filter(q => 
+      (q.title && q.title.toLowerCase().includes(search)) || 
+      (q.topic && q.topic.toLowerCase().includes(search)) ||
+      (q.pattern && q.pattern.toLowerCase().includes(search)) ||
+      (q.lcId && q.lcId.includes(search)) ||
+      (q.diff && q.diff.toLowerCase().includes(search))
+    );
+  }
+
+  if (statusFilter !== "all") {
+    filtered = filtered.filter(q => q.status === statusFilter);
+  }
+
+  if (patternFilter !== "all") {
+    filtered = filtered.filter(q => (q.pattern || "Unclassified") === patternFilter);
+  }
+
+  // Sort by roadmap prerequisite rank then title
+  filtered.sort((a, b) => {
+    const rankDiff = getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId);
+    if (rankDiff !== 0) return rankDiff;
+    return (a.title || "").localeCompare(b.title || "");
+  });
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <h3>No questions match your filter</h3>
+        <p>Try searching for a different keyword or change your filter selection.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const headerHtml = `
+    <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; padding: 0 4px;">
+      <span>Showing <strong>${filtered.length}</strong> of <strong>${Object.keys(questions).length}</strong> questions</span>
+      <span style="font-size: 11.5px; color: var(--text-faint);">Sorted by Pepcoding Architecture</span>
+    </div>
+  `;
+
+  listEl.innerHTML = headerHtml + filtered.map(q => renderQuestionRow(q, false)).join('');
+  wireRowEvents(listEl);
+}
+
 function renderPatternsView() {
   const gridEl = document.getElementById("patternsGrid");
   const patternStats = {};
