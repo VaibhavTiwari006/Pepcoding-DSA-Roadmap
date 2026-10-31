@@ -1055,6 +1055,83 @@ input:focus, select:focus, textarea:focus {
 .app-footer a:hover {
   color: #ffffff;
 }
+
+/* Completed / Struck-through Row */
+.question-row.row-done {
+  opacity: 0.72;
+  background: rgba(18, 19, 26, 0.45);
+  border-color: rgba(35, 37, 51, 0.6);
+}
+
+.question-row.row-done .question-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.badge-user-sched {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(255, 176, 32, 0.12);
+  color: #ffb830;
+  border: 1px solid rgba(255, 176, 32, 0.28);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  letter-spacing: 0.02em;
+}
+
+.schedule-subtabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.schedule-subtab-btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.schedule-subtab-btn:hover {
+  color: #ffffff;
+  background: var(--bg-card);
+}
+
+.schedule-subtab-btn.active {
+  background: var(--bg-card);
+  color: #ffffff;
+  border-color: var(--border);
+}
+
+.nearest-preview-card {
+  margin-top: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 </style>
 </head>
 <body>
@@ -1091,7 +1168,7 @@ input:focus, select:focus, textarea:focus {
       <span class="tab-badge" id="todayBadge">0</span>
     </button>
     <button class="tab-btn" data-tab="schedule">
-      Calendar Schedule
+      Upcoming & Scheduled
       <span class="tab-badge" id="scheduleBadge">0</span>
     </button>
     <button class="tab-btn" data-tab="questions">
@@ -1196,14 +1273,28 @@ input:focus, select:focus, textarea:focus {
   
   <!-- TAB: CALENDAR SCHEDULE -->
   <div class="tab-view" id="view-schedule">
-    <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: baseline;">
+    <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: baseline;">
       <div>
-        <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 4px;">📅 Revision Calendar & Timeline</h3>
-        <p style="font-size: 13px; color: var(--text-muted);">See exactly which questions are coming up today, tomorrow, and after 3 or 7 days.</p>
+        <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 4px;">📅 Upcoming Dates & Scheduled Revisions</h3>
+        <p style="font-size: 13px; color: var(--text-muted);">Exact calendar dates for the nearest 3 days and all questions scheduled by you.</p>
       </div>
       <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-faint);">Asia/Kolkata</div>
     </div>
-    <div id="scheduleTimelineContainer" style="display: flex; flex-direction: column; gap: 24px;">
+
+    <!-- Sub-tabs for Schedule View -->
+    <div class="schedule-subtabs">
+      <button class="schedule-subtab-btn active" id="subtab-nearest3" onclick="switchScheduleSubTab('nearest3')">
+        📅 Nearest 3 Days (Tomorrow to 3 Days)
+      </button>
+      <button class="schedule-subtab-btn" id="subtab-mysched" onclick="switchScheduleSubTab('mysched')">
+        ⭐ Scheduled by Me <span class="tab-badge" id="mySchedCountBadge" style="margin-left: 4px;">0</span>
+      </button>
+      <button class="schedule-subtab-btn" id="subtab-all" onclick="switchScheduleSubTab('all')">
+        📋 Full Timeline
+      </button>
+    </div>
+
+    <div id="scheduleTimelineContainer" style="display: flex; flex-direction: column; gap: 20px;">
       <!-- Populated via JS -->
     </div>
   </div>
@@ -1387,9 +1478,31 @@ input:focus, select:focus, textarea:focus {
    Deterministic, Local-First, Asia/Kolkata Calendar Dates
    ========================================================================== */
 
-const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v4";
+const STORAGE_KEY_QUESTIONS = "dsa_revise_questions_v5";
 const STORAGE_KEY_PRACTICE = "dsa-master-practice-v3"; // Existing roadmap progress compatibility
 const STORAGE_KEY_V3 = "dsa-master-roadmap-v3";
+
+let scheduleActiveSubTab = 'nearest3';
+
+function switchScheduleSubTab(tab) {
+  scheduleActiveSubTab = tab;
+  document.querySelectorAll('.schedule-subtab-btn').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.getElementById('subtab-' + tab);
+  if (activeBtn) activeBtn.classList.add('active');
+  renderScheduleView();
+}
+
+function formatCalendarDate(dateStr) {
+  if (!dateStr) return "";
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const dayName = days[dt.getUTCDay()];
+  const monthName = months[dt.getUTCMonth()];
+  const dayNum = String(d).padStart(2, '0');
+  return `${dayName}, ${dayNum} ${monthName}`;
+}
 
 // State
 
@@ -1487,49 +1600,75 @@ function extractLcSlug(input) {
 
 // Storage operations
 function loadQuestions() {
-  // Clear any legacy storage that had all 125 dumped into a single day
+  const todayStr = getKolkataDateString();
+  let loaded = null;
+
   try {
-    localStorage.removeItem("dsa_revise_questions_v1");
-    localStorage.removeItem("dsa_revise_questions_v2");
-    localStorage.removeItem("dsa_revise_questions_v3");
+    const rawV5 = localStorage.getItem(STORAGE_KEY_QUESTIONS);
+    if (rawV5) {
+      loaded = JSON.parse(rawV5);
+    } else {
+      // Migrate from v4 or earlier
+      const rawV4 = localStorage.getItem("dsa_revise_questions_v4");
+      if (rawV4) loaded = JSON.parse(rawV4);
+    }
   } catch (_) {}
 
-  const raw = localStorage.getItem(STORAGE_KEY_QUESTIONS);
-  if (raw) {
-    try {
-      questions = JSON.parse(raw);
-    } catch (_) {
-      questions = {};
-    }
-  } else {
-    questions = {};
-  }
+  questions = loaded || {};
 
-  // Strictly eliminate all overdue items and align to today (or later)
-  const todayStr = getKolkataDateString();
-  let updated = false;
-  Object.values(questions).forEach(q => {
-    if (q.status === "overdue") {
-      q.status = "due_today";
-      q.nextDueDate = todayStr;
-      updated = true;
-    }
-    if (q.nextDueDate && q.nextDueDate < todayStr) {
-      q.nextDueDate = todayStr;
-      if (q.status !== "critical" && q.status !== "completed" && q.status !== "unscheduled") {
-        q.status = "due_today";
+  // Preserve user-scheduled items and cleanly pace remaining untouched questions across calendar days
+  const sorted125 = (typeof PRELOADED_USER_125 !== 'undefined' && Array.isArray(PRELOADED_USER_125))
+    ? [...PRELOADED_USER_125].sort((a, b) => getQuestionRoadmapRank(a) - getQuestionRoadmapRank(b))
+    : [];
+
+  let unattemptedIndex = 0;
+  sorted125.forEach(baseQ => {
+    const existing = questions[baseQ.lcId];
+    const isUserTouched = existing && (
+      (existing.attempts && existing.attempts.length > 0) ||
+      existing.completedOnDate ||
+      existing.doneTodaySession ||
+      existing.isCritical ||
+      existing.userScheduled ||
+      (existing.mistakeNote && existing.mistakeNote.trim().length > 0)
+    );
+
+    if (isUserTouched) {
+      existing.userScheduled = true;
+      if (existing.completedOnDate === todayStr) {
+        existing.doneTodaySession = true;
       }
-      updated = true;
-    }
-    if (q.solvingDate && q.solvingDate < todayStr) {
-      q.solvingDate = todayStr;
-      updated = true;
+    } else {
+      // Untouched: pace 2 questions per day starting today
+      const dayOffset = Math.floor(unattemptedIndex / 2);
+      const scheduledDate = addCalendarDays(todayStr, dayOffset);
+      const isToday = (dayOffset === 0);
+
+      questions[baseQ.lcId] = {
+        lcId: baseQ.lcId,
+        numId: baseQ.numId,
+        title: baseQ.title,
+        url: baseQ.url,
+        topic: baseQ.topic,
+        pattern: baseQ.pattern,
+        diff: baseQ.diff || "Easy",
+        pepVideo: baseQ.pepVideo || "",
+        solvingDate: baseQ.solvingDate || todayStr,
+        status: isToday ? "due_today" : "scheduled",
+        nextDueDate: scheduledDate,
+        cycleStep: "initial",
+        criticalStage: 0,
+        attempts: [],
+        mistakeNote: "",
+        userScheduled: false,
+        doneTodaySession: false,
+        completedOnDate: null
+      };
+      unattemptedIndex++;
     }
   });
-  if (updated) saveQuestions();
 
-  // Seed from roadmap practice records
-  seedFromExistingRoadmap();
+  saveQuestions();
 }
 
 function saveQuestions() {
@@ -1672,6 +1811,8 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
   });
 
   q.doneTodaySession = true;
+  q.completedOnDate = todayStr;
+  q.userScheduled = true; // Clearly marked as scheduled by user
 
   if (outcome === "independent") {
     // Independent success: questions stay visible with checked box, next review scheduled
@@ -1680,12 +1821,12 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
         q.criticalStage = 2;
         q.nextDueDate = addCalendarDays(todayStr, 3);
         q.status = "scheduled";
-        showToast("✓ Solved! Next recovery review in 3 days (" + q.nextDueDate + ")");
+        showToast("✓ Solved! Next recovery review on " + formatCalendarDate(q.nextDueDate));
       } else if (q.criticalStage === 2) {
         q.criticalStage = 3;
         q.nextDueDate = addCalendarDays(todayStr, 7);
         q.status = "scheduled";
-        showToast("✓ Solved! Final recovery review in 7 days (" + q.nextDueDate + ")");
+        showToast("✓ Solved! Final recovery review on " + formatCalendarDate(q.nextDueDate));
       } else {
         q.isCritical = false;
         q.criticalStage = 0;
@@ -1698,7 +1839,7 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
         q.cycleStep = "day3";
         q.nextDueDate = addCalendarDays(todayStr, 3);
         q.status = "scheduled";
-        showToast("✓ Checked! Coming back after 3 days (" + q.nextDueDate + ")");
+        showToast("✓ Checked! Coming back after 3 days (" + formatCalendarDate(q.nextDueDate) + ")");
       } else if (q.cycleStep === "day3") {
         promptDay7Review(q);
         return;
@@ -1711,7 +1852,7 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
         q.cycleStep = "day3";
         q.nextDueDate = addCalendarDays(todayStr, 3);
         q.status = "scheduled";
-        showToast("✓ Checked! Scheduled for Day 3 review (" + q.nextDueDate + ")");
+        showToast("✓ Checked! Scheduled for Day 3 review (" + formatCalendarDate(q.nextDueDate) + ")");
       }
     }
   } else if (outcome === "hint") {
@@ -1719,7 +1860,7 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
     q.isCritical = false;
     q.nextDueDate = addCalendarDays(todayStr, 1);
     q.status = "scheduled";
-    showToast("Hint recorded. Scheduled for tomorrow to practice independently.");
+    showToast("Hint recorded. Scheduled for tomorrow (" + formatCalendarDate(q.nextDueDate) + ") to practice independently.");
   } else {
     // SOLUTION NEEDED or COULD NOT IMPLEMENT:
     // Only mark critical if it continues to fail after previous revision attempts
@@ -1732,7 +1873,7 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
     } else {
       q.isCritical = false;
       q.status = "scheduled";
-      showToast("Recorded. Scheduled for tomorrow to re-attempt independently.");
+      showToast("Recorded. Scheduled for tomorrow (" + formatCalendarDate(q.nextDueDate) + ") to re-attempt independently.");
     }
     q.nextDueDate = addCalendarDays(todayStr, 1);
   }
@@ -1742,7 +1883,6 @@ function processAttemptOutcome(q, outcome, mistakeNote) {
   renderApp();
 }
 
-// Day 7 Confirmation Modal Handler
 function promptDay7Review(q) {
   const modal = document.getElementById("confirmModal");
   const title = document.getElementById("confirmModalTitle");
@@ -1844,185 +1984,166 @@ function renderTodayView() {
   const showMoreBar = document.getElementById("todayShowMoreBar");
   const todayStr = getKolkataDateString();
 
-  document.getElementById("currentDateIndicator").textContent = todayStr + " (Asia/Kolkata)";
+  document.getElementById("currentDateIndicator").textContent = formatCalendarDate(todayStr) + " · Today";
 
-  // Filter items due today
-  // Prioritized by: 1. Critical, 2. Overdue, 3. Earliest in Pepcoding Roadmap Architecture
   const allItems = Object.values(questions);
 
-  const criticalItems = allItems.filter(q => q.status === "critical")
+  // 1. Questions completed today (MUST NOT DISAPPEAR)
+  const completedTodayItems = allItems.filter(q => q.completedOnDate === todayStr || q.doneTodaySession)
     .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
 
-  const overdueItems = allItems.filter(q => q.status === "overdue")
-    .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
+  // 2. Questions due today that are pending
+  const pendingDueItems = allItems.filter(q => {
+    if (q.completedOnDate === todayStr || q.doneTodaySession) return false;
+    if (q.status === "completed" || q.status === "unscheduled") return false;
+    return q.status === "critical" || q.status === "due_today" || (q.nextDueDate && q.nextDueDate <= todayStr);
+  }).sort((a, b) => {
+    if (a.isCritical && !b.isCritical) return -1;
+    if (!a.isCritical && b.isCritical) return 1;
+    return getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId);
+  });
 
-  const dueTodayItems = allItems.filter(q => q.status === "due_today")
-    .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
+  const totalCompleted = completedTodayItems.length;
+  const totalPending = pendingDueItems.length;
 
-  const combinedQueue = [...criticalItems, ...overdueItems, ...dueTodayItems];
-  const totalDue = combinedQueue.length;
+  // In today's session batch: keep all completed questions visible, plus pending batch
+  const pendingToShowCount = showAllToday ? totalPending : Math.max(0, todayPracticeLimit - totalCompleted);
+  const visiblePending = pendingDueItems.slice(0, pendingToShowCount);
+  const itemsToRender = [...completedTodayItems, ...visiblePending];
 
-  summaryEl.innerHTML = `<strong>${Math.min(todayPracticeLimit, totalDue)} of ${totalDue}</strong> questions for today's session &middot; Ordered by Roadmap Architecture`;
+  const totalTodayCount = totalCompleted + visiblePending.length;
 
-  if (totalDue === 0) {
-    listEl.innerHTML = `
-      <div class="empty-state">
-        <h3>🎉 All caught up for today!</h3>
-        <p>You have completed your revision goals. Any newly solved LeetCode problem will appear here automatically when due.</p>
-      </div>
-    `;
-    showMoreBar.style.display = "none";
-    return;
+  if (totalCompleted > 0 && visiblePending.length === 0) {
+    summaryEl.innerHTML = `<strong>✓ All ${totalCompleted} questions completed for today!</strong> &middot; Next revisions scheduled`;
+  } else {
+    summaryEl.innerHTML = `<strong>${totalCompleted} of ${totalTodayCount} completed</strong> &middot; Today's Revision Batch (Ordered by Roadmap Architecture)`;
   }
 
-  // Focused 2-question batch display
-  const itemsToRender = showAllToday ? combinedQueue : combinedQueue.slice(0, todayPracticeLimit);
-
   let bannerHtml = "";
-  if (!showAllToday && sessionCompletedCount >= 2 && combinedQueue.length > 0) {
+  if (totalCompleted >= 2 || (totalCompleted > 0 && visiblePending.length === 0)) {
     bannerHtml = `
       <div class="daily-goal-box">
-        <div class="daily-goal-title">🎯 Goal Complete: 2 Questions Revised!</div>
-        <div class="daily-goal-desc">Great job! Would you like to practice more questions today, or put remaining questions for tomorrow?</div>
+        <div class="daily-goal-title">🎯 Goal Reached: ${totalCompleted} Question${totalCompleted > 1 ? 's' : ''} Revised Today!</div>
+        <div class="daily-goal-desc">Your completed questions are checked and lined out below with their next scheduled dates. Would you like to practice 2 more?</div>
         <div class="daily-goal-actions">
           <button class="btn-primary" id="practiceMoreBtn">+ Practice 2 More Questions</button>
-          <button class="btn-secondary" id="deferTomorrowBtn">Save Remaining for Tomorrow</button>
+          <button class="btn-secondary" onclick="switchTab('schedule')">View Upcoming Revisions &rarr;</button>
         </div>
       </div>
     `;
   }
 
-  listEl.innerHTML = bannerHtml + itemsToRender.map(q => renderQuestionRow(q, true)).join('');
+  // Mini preview of nearest 3 days
+  const tomorrowStr = addCalendarDays(todayStr, 1);
+  const day2Str = addCalendarDays(todayStr, 2);
+  const day3Str = addCalendarDays(todayStr, 3);
+  const tomorrowCount = allItems.filter(q => q.nextDueDate === tomorrowStr).length;
+  const day2Count = allItems.filter(q => q.nextDueDate === day2Str).length;
+  const day3Count = allItems.filter(q => q.nextDueDate === day3Str).length;
 
-  if (combinedQueue.length > todayPracticeLimit && !showAllToday) {
+  const nearestPreviewHtml = `
+    <div class="nearest-preview-card">
+      <div>
+        <div style="font-size: 13.5px; font-weight: 600; color: #fff; margin-bottom: 3px;">📅 Upcoming Revisions (Nearest 3 Days)</div>
+        <div style="font-size: 12px; color: var(--text-muted); display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px;">
+          <span>Tomorrow (${formatCalendarDate(tomorrowStr)}): <strong style="color:#fff;">${tomorrowCount} due</strong></span>
+          <span>In 2 Days (${formatCalendarDate(day2Str)}): <strong style="color:#fff;">${day2Count} due</strong></span>
+          <span>In 3 Days (${formatCalendarDate(day3Str)}): <strong style="color:#fff;">${day3Count} due</strong></span>
+        </div>
+      </div>
+      <button class="btn-secondary" style="font-size: 12px; padding: 5px 12px;" onclick="switchTab('schedule')">Open Upcoming &rarr;</button>
+    </div>
+  `;
+
+  if (itemsToRender.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <h3>🎉 All caught up for today!</h3>
+        <p>No questions currently due. You can view upcoming dates or add more practice below.</p>
+      </div>
+      ${nearestPreviewHtml}
+    `;
+    showMoreBar.style.display = "none";
+    return;
+  }
+
+  listEl.innerHTML = bannerHtml + itemsToRender.map(q => renderQuestionRow(q, true)).join('') + nearestPreviewHtml;
+
+  // Toggle show more bar if there are remaining pending questions
+  if (pendingDueItems.length > pendingToShowCount && !showAllToday) {
     showMoreBar.style.display = "block";
-    document.getElementById("todayShowMoreBtn").textContent = `View remaining ${combinedQueue.length - todayPracticeLimit} questions in queue &darr;`;
+    showMoreBar.querySelector("button").textContent = `View remaining ${pendingDueItems.length - pendingToShowCount} questions in queue &darr;`;
   } else {
     showMoreBar.style.display = "none";
   }
 
-  // Wire goal complete buttons
-  const moreBtn = document.getElementById("practiceMoreBtn");
-  if (moreBtn) {
-    moreBtn.onclick = () => {
+  wireRowEvents(listEl);
+
+  const practiceMoreBtn = document.getElementById("practiceMoreBtn");
+  if (practiceMoreBtn) {
+    practiceMoreBtn.onclick = () => {
       todayPracticeLimit += 2;
       renderTodayView();
-      showToast("Added 2 more questions to today's practice session!");
+      showToast("Added 2 more questions to today's active practice!");
     };
   }
-
-  const deferBtn = document.getElementById("deferTomorrowBtn");
-  if (deferBtn) {
-    deferBtn.onclick = () => {
-      const tomorrowStr = addCalendarDays(todayStr, 1);
-      // Defer all questions beyond the current completed batch to tomorrow
-      combinedQueue.slice(todayPracticeLimit).forEach(q => {
-        if (!q.isCritical) {
-          q.nextDueDate = tomorrowStr;
-          q.status = "scheduled";
-        }
-      });
-      saveQuestions();
-      renderApp();
-      showToast("Remaining questions deferred to tomorrow!");
-    };
-  }
-
-  wireRowEvents(listEl);
 }
 
-// Render: Questions Library View
-function renderQuestionsView() {
-  const listEl = document.getElementById("libraryQuestionList");
-  const search = document.getElementById("searchQuestionsInput").value.toLowerCase().trim();
-  const statusFilter = document.getElementById("filterStatusSelect").value;
-  const patternFilter = document.getElementById("filterPatternSelect").value;
-
-  let filtered = Object.values(questions);
-
-  if (search) {
-    filtered = filtered.filter(q => 
-      q.title.toLowerCase().includes(search) || 
-      (q.topic && q.topic.toLowerCase().includes(search)) ||
-      (q.pattern && q.pattern.toLowerCase().includes(search)) ||
-      q.lcId.includes(search)
-    );
-  }
-
-  if (statusFilter !== "all") {
-    filtered = filtered.filter(q => q.status === statusFilter);
-  }
-
-  if (patternFilter !== "all") {
-    filtered = filtered.filter(q => (q.pattern || "Unclassified") === patternFilter);
-  }
-
-  // Sort by priority then title
-  filtered.sort((a, b) => {
-    const order = { critical: 1, overdue: 2, due_today: 3, scheduled: 4, unscheduled: 5, completed: 6 };
-    const diff = (order[a.status] || 99) - (order[b.status] || 99);
-    if (diff !== 0) return diff;
-    return a.title.localeCompare(b.title);
-  });
-
-  if (filtered.length === 0) {
-    listEl.innerHTML = `
-      <div class="empty-state">
-        <h3>No questions match your filter</h3>
-        <p>Try searching for a different keyword or click "+ Add Question" to record one.</p>
-      </div>
-    `;
-    return;
-  }
-
-  listEl.innerHTML = filtered.map(q => renderQuestionRow(q, false)).join('');
-  wireRowEvents(listEl);
-}
-
-// Render: Single Question Row
 function renderQuestionRow(q, isTodayScreen = false) {
+  const todayStr = getKolkataDateString();
+  const isDoneToday = Boolean(q.completedOnDate === todayStr || q.doneTodaySession);
+  const isUserScheduled = Boolean(q.userScheduled || (q.attempts && q.attempts.length > 0) || q.cycleStep !== 'initial' || isDoneToday);
+
   let statusClass = "scheduled";
   let statusText = "Scheduled";
 
-  if (q.status === "critical") {
+  if (isDoneToday) {
+    statusClass = "completed";
+    statusText = "Completed Today ✓";
+  } else if (q.status === "critical") {
     statusClass = "critical";
     statusText = "Critical (Needs Revision)";
   } else if (q.status === "overdue") {
     statusClass = "overdue";
-    const diff = Math.abs(daysDiff(q.nextDueDate, getKolkataDateString()));
+    const diff = Math.abs(daysDiff(q.nextDueDate, todayStr));
     statusText = `${diff}d Overdue`;
-  } else if (q.status === "due_today") {
+  } else if (q.status === "due_today" || (q.nextDueDate && q.nextDueDate <= todayStr)) {
     statusClass = "due-today";
     statusText = "Due Today";
-  } else if (q.status === "unscheduled") {
-    statusClass = "unscheduled";
-    statusText = "Not Scheduled";
   } else if (q.status === "completed") {
     statusClass = "completed";
     statusText = "Mastered ✓";
   }
 
-  // Next revision pill
+  // Next revision pill with exact readable date
   let nextCycleText = "";
-  if (q.status === "completed") {
+  if (q.status === "completed" && !isDoneToday) {
     nextCycleText = '<span class="rev-stage-badge done">Mastered</span>';
+  } else if (isDoneToday) {
+    const diff = q.nextDueDate ? daysDiff(q.nextDueDate, todayStr) : 3;
+    nextCycleText = `<span class="rev-stage-badge done">✓ Solved Today &middot; Next: ${formatCalendarDate(q.nextDueDate)} (in ${diff}d)</span>`;
   } else if (q.isCritical) {
-    nextCycleText = '<span class="rev-stage-badge crit">Critical: 1d Recovery</span>';
+    nextCycleText = `<span class="rev-stage-badge crit">Critical: 1d Recovery (${formatCalendarDate(q.nextDueDate)})</span>`;
   } else if (q.cycleStep === "day3") {
-    nextCycleText = `<span class="rev-stage-badge">Next: Day 7 (${formatDisplayDate(q.nextDueDate)})</span>`;
+    nextCycleText = `<span class="rev-stage-badge">Next: Day 7 (${formatCalendarDate(q.nextDueDate)})</span>`;
   } else if (q.cycleStep === "day7") {
     nextCycleText = '<span class="rev-stage-badge">Final Step: Day 7</span>';
   } else {
-    nextCycleText = `<span class="rev-stage-badge">Next: In 3 Days (${formatDisplayDate(q.nextDueDate)})</span>`;
+    const diff = q.nextDueDate ? daysDiff(q.nextDueDate, todayStr) : 0;
+    if (diff === 1) {
+      nextCycleText = `<span class="rev-stage-badge">Tomorrow (${formatCalendarDate(q.nextDueDate)})</span>`;
+    } else if (diff > 1) {
+      nextCycleText = `<span class="rev-stage-badge">in ${diff}d (${formatCalendarDate(q.nextDueDate)})</span>`;
+    }
   }
 
+  const userSchedTag = isUserScheduled ? '<span class="badge-user-sched">⭐ Scheduled by You</span>' : '';
   const rowCriticalClass = q.isCritical ? "is-critical" : (q.status === "overdue" ? "is-overdue" : "");
-  const isDoneToday = q.doneTodaySession;
 
   return `
     <div class="question-row ${rowCriticalClass} ${isDoneToday ? 'row-done' : ''}" data-lcid="${q.lcId}">
       <div class="question-main">
-        <input type="checkbox" class="rev-checkbox" data-lcid="${q.lcId}" ${isDoneToday ? 'checked' : ''} title="Mark solved independently for this session">
+        <input type="checkbox" class="rev-checkbox" data-lcid="${q.lcId}" ${isDoneToday ? 'checked' : ''} title="Mark completed / pending for today">
         <span class="status-indicator ${statusClass}">${statusText}</span>
         <div class="question-details">
           <div class="question-title-line">
@@ -2030,28 +2151,28 @@ function renderQuestionRow(q, isTodayScreen = false) {
             <a href="${q.url || '#'}" target="_blank" rel="noopener noreferrer" class="question-title" title="${escapeHtml(q.title)}">
               ${escapeHtml(q.title)}
             </a>
+            ${userSchedTag}
             ${nextCycleText}
           </div>
           <div class="question-meta">
             <span class="pattern-tag">${escapeHtml(q.pattern || 'Unclassified')}</span>
             <span>&middot;</span>
-            <span class="topic-tag">${escapeHtml(q.topic || 'General')}</span>
-            ${q.nextDueDate ? `<span>&middot;</span><span>Scheduled: ${formatDisplayDate(q.nextDueDate)}</span>` : ''}
+            <span>${escapeHtml(q.topic || 'General')}</span>
+            ${q.mistakeNote ? `<span>&middot;</span><span class="mistake-text">Mistake: ${escapeHtml(q.mistakeNote)}</span>` : ''}
           </div>
-          ${q.mistakeNote ? `<span class="mistake-preview">&ldquo;${escapeHtml(q.mistakeNote)}&rdquo;</span>` : ''}
         </div>
       </div>
       <div class="question-actions">
-        <button class="btn-start" data-action="start" data-lcid="${q.lcId}">Start</button>
-        ${!isTodayScreen ? `
-          <button class="btn-icon" data-action="edit" data-lcid="${q.lcId}" title="Edit">&vellip;</button>
-        ` : ''}
+        ${isDoneToday 
+          ? `<button class="btn-secondary" style="font-size: 12px; padding: 4px 10px;" data-action="start">${q.attempts.length > 0 ? 'Review' : 'Redo'}</button>` 
+          : `<button class="btn-primary" data-action="start">Start</button>`
+        }
+        <button class="btn-icon" data-action="edit" title="Edit Question Details">&#9998;</button>
       </div>
     </div>
   `;
 }
 
-// Wire Event Listeners for Question Rows
 function wireRowEvents(container) {
   container.querySelectorAll('.rev-checkbox').forEach(cb => {
     cb.onchange = (e) => {
@@ -2060,12 +2181,19 @@ function wireRowEvents(container) {
       const q = questions[lcid];
       if (!q) return;
 
+      const todayStr = getKolkataDateString();
+
       if (cb.checked) {
         processAttemptOutcome(q, "independent", "");
       } else {
+        // Uncheck: Return question to pending state in today's active queue
         q.doneTodaySession = false;
+        q.completedOnDate = null;
+        q.status = "due_today";
+        q.nextDueDate = todayStr;
         saveQuestions();
         renderApp();
+        showToast("Question unmarked & returned to today's active queue.");
       }
     };
   });
@@ -2087,69 +2215,139 @@ function wireRowEvents(container) {
   });
 }
 
-// Render: Patterns View
-
-// Render: Calendar Schedule View (Grouped chronologically by scheduled date)
 function renderScheduleView() {
   const container = document.getElementById("scheduleTimelineContainer");
+  const mySchedCountBadge = document.getElementById("mySchedCountBadge");
   const todayStr = getKolkataDateString();
 
-  // Group all scheduled and due questions by nextDueDate
-  const groups = {};
-  const unscheduled = [];
-  const completed = [];
+  const allList = Object.values(questions);
+  const myScheduledList = allList.filter(q => q.userScheduled || (q.attempts && q.attempts.length > 0) || q.cycleStep !== 'initial' || q.completedOnDate);
 
-  Object.values(questions).forEach(q => {
-    if (q.status === "completed") {
-      completed.push(q);
-    } else if (q.status === "unscheduled" || !q.nextDueDate) {
-      unscheduled.push(q);
-    } else {
-      const dt = q.nextDueDate;
-      if (!groups[dt]) groups[dt] = [];
-      groups[dt].push(q);
-    }
-  });
+  if (mySchedCountBadge) {
+    mySchedCountBadge.textContent = myScheduledList.length;
+  }
 
-  const sortedDates = Object.keys(groups).sort();
+  // Update schedule badge in main tabs nav
+  const upcomingCount = allList.filter(q => q.nextDueDate && q.nextDueDate > todayStr).length;
+  const schedBadge = document.getElementById("scheduleBadge");
+  if (schedBadge) schedBadge.textContent = myScheduledList.length > 0 ? myScheduledList.length : upcomingCount;
+
   let html = "";
 
-  sortedDates.forEach(dt => {
-    const qList = groups[dt];
-    const diff = daysDiff(dt, todayStr);
-    let title = "";
-    if (diff === 0) title = "🔥 Due Today (" + dt + ")";
-    else if (diff === 1) title = "⚡ Tomorrow (" + dt + ")";
-    else if (diff === 3) title = "⏳ In 3 Days (" + dt + ") &middot; Day 3 Review";
-    else if (diff === 7) title = "🎯 In 7 Days (" + dt + ") &middot; Day 7 Final Review";
-    else if (diff < 0) title = "⚠️ Overdue (" + dt + " - " + Math.abs(diff) + "d ago)";
-    else title = "📅 " + dt + " (in " + diff + " days)";
+  if (scheduleActiveSubTab === 'mysched') {
+    // VIEW 1: Scheduled by Me (Active Spaced Reviews)
+    if (myScheduledList.length === 0) {
+      html = `
+        <div class="empty-state">
+          <h3>⭐ No Questions Scheduled by You Yet</h3>
+          <p>When you solve or revise questions in the <strong>Today</strong> tab, they will automatically be scheduled here for their <strong>Day 3</strong> and <strong>Day 7</strong> spaced reviews.</p>
+          <button class="btn-primary" style="margin-top: 14px;" onclick="switchTab('today')">Go to Today's Queue &rarr;</button>
+        </div>
+      `;
+    } else {
+      // Sort by nextDueDate
+      const sortedMySched = [...myScheduledList].sort((a, b) => {
+        if (!a.nextDueDate) return 1;
+        if (!b.nextDueDate) return -1;
+        return a.nextDueDate.localeCompare(b.nextDueDate);
+      });
 
-    html += `
-      <div class="schedule-group">
-        <div class="schedule-group-header">
-          <span class="schedule-group-title">${title}</span>
-          <span class="schedule-group-count">${qList.length} questions</span>
+      html = `
+        <div class="schedule-group">
+          <div class="schedule-group-header">
+            <span class="schedule-group-title">⭐ Questions Scheduled by You (${sortedMySched.length} Active Reviews)</span>
+            <span class="schedule-group-count">Spaced Repetition Tracking</span>
+          </div>
+          <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            ${sortedMySched.map(q => renderQuestionRow(q, false)).join('')}
+          </div>
         </div>
-        <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
-          ${qList.map(q => renderQuestionRow(q, false)).join('')}
-        </div>
-      </div>
-    `;
-  });
+      `;
+    }
+  } else if (scheduleActiveSubTab === 'nearest3') {
+    // VIEW 2: Nearest 3 Days (Tomorrow to 3 Days) with exact calendar dates
+    const day1Str = addCalendarDays(todayStr, 1);
+    const day2Str = addCalendarDays(todayStr, 2);
+    const day3Str = addCalendarDays(todayStr, 3);
 
-  if (completed.length > 0) {
-    html += `
-      <div class="schedule-group">
-        <div class="schedule-group-header">
-          <span class="schedule-group-title">🏆 Mastered / Completed Questions</span>
-          <span class="schedule-group-count">${completed.length} questions</span>
+    const nearestDays = [
+      { date: day1Str, title: "⚡ Tomorrow &middot; " + formatCalendarDate(day1Str), diff: 1 },
+      { date: day2Str, title: "🗓️ In 2 Days &middot; " + formatCalendarDate(day2Str), diff: 2 },
+      { date: day3Str, title: "⏳ In 3 Days &middot; " + formatCalendarDate(day3Str) + " (Day 3 Spaced Reviews)", diff: 3 }
+    ];
+
+    nearestDays.forEach(nd => {
+      const dayQuestions = allList.filter(q => q.nextDueDate === nd.date)
+        .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
+
+      html += `
+        <div class="schedule-group">
+          <div class="schedule-group-header">
+            <span class="schedule-group-title">${nd.title}</span>
+            <span class="schedule-group-count">${dayQuestions.length} questions scheduled</span>
+          </div>
+          <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            ${dayQuestions.length > 0 
+              ? dayQuestions.map(q => renderQuestionRow(q, false)).join('')
+              : '<div style="font-size: 13px; color: var(--text-faint); padding: 8px 4px;">No questions scheduled for this day yet.</div>'
+            }
+          </div>
         </div>
-        <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
-          ${completed.map(q => renderQuestionRow(q, false)).join('')}
+      `;
+    });
+  } else {
+    // VIEW 3: Full Timeline across all scheduled dates
+    const groups = {};
+    const completed = [];
+
+    allList.forEach(q => {
+      if (q.status === "completed") {
+        completed.push(q);
+      } else if (q.nextDueDate) {
+        if (!groups[q.nextDueDate]) groups[q.nextDueDate] = [];
+        groups[q.nextDueDate].push(q);
+      }
+    });
+
+    const sortedDates = Object.keys(groups).sort();
+    sortedDates.forEach(dt => {
+      const qList = groups[dt];
+      const diff = daysDiff(dt, todayStr);
+      let title = "";
+      if (diff === 0) title = "🔥 Due Today &middot; " + formatCalendarDate(dt);
+      else if (diff === 1) title = "⚡ Tomorrow &middot; " + formatCalendarDate(dt);
+      else if (diff === 2) title = "🗓️ In 2 Days &middot; " + formatCalendarDate(dt);
+      else if (diff === 3) title = "⏳ In 3 Days &middot; " + formatCalendarDate(dt) + " (Day 3 Review)";
+      else if (diff === 7) title = "🎯 In 7 Days &middot; " + formatCalendarDate(dt) + " (Day 7 Final Review)";
+      else if (diff < 0) title = "⚠️ Overdue (" + Math.abs(diff) + "d ago)";
+      else title = "📅 " + formatCalendarDate(dt) + " (in " + diff + " days)";
+
+      html += `
+        <div class="schedule-group">
+          <div class="schedule-group-header">
+            <span class="schedule-group-title">${title}</span>
+            <span class="schedule-group-count">${qList.length} questions</span>
+          </div>
+          <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            ${qList.map(q => renderQuestionRow(q, false)).join('')}
+          </div>
         </div>
-      </div>
-    `;
+      `;
+    });
+
+    if (completed.length > 0) {
+      html += `
+        <div class="schedule-group">
+          <div class="schedule-group-header">
+            <span class="schedule-group-title">🏆 Mastered / Completed Questions</span>
+            <span class="schedule-group-count">${completed.length} questions</span>
+          </div>
+          <div style="padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            ${completed.map(q => renderQuestionRow(q, false)).join('')}
+          </div>
+        </div>
+      `;
+    }
   }
 
   container.innerHTML = html;
