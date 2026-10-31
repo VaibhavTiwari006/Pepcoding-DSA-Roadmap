@@ -1405,6 +1405,32 @@ input:focus, select:focus, textarea:focus {
         </div>
       </div>
 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="formDiff">Difficulty</label>
+          <select id="formDiff">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-group" id="editNextDueGroup" style="display: none;">
+          <label for="formNextDueDate">Next Revision Date</label>
+          <input type="date" id="formNextDueDate">
+        </div>
+      </div>
+
+      <div class="form-group" id="editStatusGroup" style="display: none;">
+        <label for="formStatus">Revision Status</label>
+        <select id="formStatus">
+          <option value="due_today">Due Today</option>
+          <option value="scheduled">Scheduled</option>
+          <option value="critical">Critical (1-Day Recovery)</option>
+          <option value="completed">Mastered ✓</option>
+          <option value="unscheduled">Unscheduled</option>
+        </select>
+      </div>
+
       <div class="form-group">
         <label for="formMistake">Short Mistake Note</label>
         <input type="text" id="formMistake" placeholder="e.g. Forgot (sum - k) in hashmap before adding sum" maxlength="120">
@@ -2190,7 +2216,7 @@ function renderQuestionRow(q, isTodayScreen = false) {
           ? `<button class="btn-secondary" style="font-size: 12px; padding: 4px 10px;" data-action="start">${q.attempts.length > 0 ? 'Review' : 'Redo'}</button>` 
           : `<button class="btn-primary" data-action="start">Start</button>`
         }
-        <button class="btn-icon" data-action="edit" title="Edit Question Details">&#9998;</button>
+        <button class="btn-icon" data-action="edit" data-lcid="${q.lcId}" title="Edit Question Details">&#9998;</button>
       </div>
     </div>
   `;
@@ -2232,8 +2258,10 @@ function wireRowEvents(container) {
   container.querySelectorAll('[data-action="edit"]').forEach(btn => {
     btn.onclick = (e) => {
       e.stopPropagation();
-      const lcid = btn.dataset.lcid;
-      openEditModal(lcid);
+      const lcid = btn.dataset.lcid || btn.closest('.question-row')?.dataset.lcid;
+      if (lcid) {
+        openEditModal(lcid);
+      }
     };
   });
 }
@@ -2581,38 +2609,48 @@ function generateJavaHint(q) {
 function openAddModal() {
   document.getElementById("modalTitle").textContent = "Record Solved Question";
   document.getElementById("formEditLcId").value = "";
-  document.getElementById("formTitle").value = "";
-  document.getElementById("formLcId").value = "";
-  document.getElementById("formUrl").value = "";
-  document.getElementById("formTopic").value = "";
-  document.getElementById("formPattern").value = "Unclassified";
+  document.getElementById("questionForm").reset();
+  document.getElementById("formLcId").disabled = false;
+  document.getElementById("formDiff").value = "Easy";
   document.getElementById("formSolvedDate").value = getKolkataDateString();
-  document.getElementById("formPepVideo").value = "";
-  document.getElementById("formMistake").value = "";
   document.getElementById("schedulePromptBox").style.display = "block";
+  document.getElementById("editStatusGroup").style.display = "none";
+  document.getElementById("editNextDueGroup").style.display = "none";
   document.getElementById("questionModal").classList.add("open");
 }
 
 function openEditModal(lcId) {
   const q = questions[lcId];
-  if (!q) return;
+  if (!q) {
+    console.error("openEditModal: question not found for ID", lcId);
+    return;
+  }
 
-  document.getElementById("modalTitle").textContent = "Edit Question";
+  document.getElementById("modalTitle").textContent = "Edit Question Details";
   document.getElementById("formEditLcId").value = q.lcId;
-  document.getElementById("formTitle").value = q.title;
+  document.getElementById("formTitle").value = q.title || "";
   document.getElementById("formLcId").value = q.lcId;
-  document.getElementById("formLcId").disabled = true; // no changing key
-  document.getElementById("formUrl").value = q.url || "";
+  document.getElementById("formLcId").disabled = true; // cannot change slug ID
+  document.getElementById("formUrl").value = q.url || `https://leetcode.com/problems/${q.lcId}/`;
   document.getElementById("formTopic").value = q.topic || "";
   document.getElementById("formPattern").value = q.pattern || "Unclassified";
+  document.getElementById("formDiff").value = q.diff || "Easy";
   document.getElementById("formSolvedDate").value = q.solvingDate || getKolkataDateString();
+  document.getElementById("formNextDueDate").value = q.nextDueDate || "";
+  document.getElementById("formStatus").value = q.status || "scheduled";
   document.getElementById("formPepVideo").value = q.pepVideo || "";
   document.getElementById("formMistake").value = q.mistakeNote || "";
+
   document.getElementById("schedulePromptBox").style.display = "none";
+  document.getElementById("editStatusGroup").style.display = "block";
+  document.getElementById("editNextDueGroup").style.display = "block";
   document.getElementById("questionModal").classList.add("open");
 }
 
 function closeModal() {
+  document.getElementById("questionModal").classList.remove("open");
+  document.getElementById("formLcId").disabled = false;
+} {
   document.getElementById("questionModal").classList.remove("open");
   document.getElementById("formLcId").disabled = false;
 }
@@ -2804,38 +2842,56 @@ function initEvents() {
     const url = document.getElementById("formUrl").value.trim() || `https://leetcode.com/problems/${slug}/`;
     const topic = document.getElementById("formTopic").value.trim();
     const pattern = document.getElementById("formPattern").value;
+    const diff = document.getElementById("formDiff").value || "Easy";
     const solvingDate = document.getElementById("formSolvedDate").value || getKolkataDateString();
     const pepVideo = document.getElementById("formPepVideo").value.trim();
     const mistakeNote = document.getElementById("formMistake").value.trim();
-
     const reviseChoice = document.querySelector('input[name="formReviseChoice"]:checked')?.value || "yes";
 
     if (editId) {
-      // Editing existing
+      // Editing existing question
       const q = questions[editId];
       if (q) {
         q.title = title;
         q.url = url;
         q.topic = topic;
         q.pattern = pattern;
+        q.diff = diff;
         q.solvingDate = solvingDate;
         q.pepVideo = pepVideo;
         q.mistakeNote = mistakeNote;
+
+        const newStatus = document.getElementById("formStatus").value;
+        const newDueDate = document.getElementById("formNextDueDate").value;
+        if (newStatus) {
+          q.status = newStatus;
+          q.isCritical = (newStatus === "critical");
+          if (newStatus === "completed") {
+            q.nextDueDate = null;
+          }
+        }
+        if (newDueDate && newStatus !== "completed") {
+          q.nextDueDate = newDueDate;
+        }
+
+        evaluateDueStatus(q);
         saveQuestions();
-        showToast("Question updated successfully.");
+        showToast("✓ Question details updated successfully!");
       }
     } else {
-      // Adding new
+      // Adding new question
       if (questions[slug]) {
         showToast("A question with this LeetCode slug already exists.");
         return;
       }
       const q = {
         lcId: slug,
+        numId: "",
         title: title,
         url: url,
         topic: topic,
         pattern: pattern,
+        diff: diff,
         pepVideo: pepVideo,
         solvingDate: solvingDate,
         status: "scheduled",
@@ -2843,12 +2899,15 @@ function initEvents() {
         cycleStep: "initial",
         criticalStage: 0,
         attempts: [],
-        mistakeNote: mistakeNote
+        mistakeNote: mistakeNote,
+        userScheduled: true,
+        doneTodaySession: false,
+        completedOnDate: null
       };
       scheduleNewQuestion(q, reviseChoice);
       questions[slug] = q;
       saveQuestions();
-      showToast("Question recorded successfully!");
+      showToast("✓ New question recorded successfully!");
     }
 
     closeModal();
