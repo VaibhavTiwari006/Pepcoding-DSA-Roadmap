@@ -1633,6 +1633,15 @@ function loadQuestions() {
   const todayStr = getKolkataDateString();
   let loaded = null;
 
+  // Day rollover detection: resets daily practice limit and completed counter on a fresh calendar day
+  const lastActiveDateKey = "dsa_last_active_date_v1";
+  const savedLastDate = localStorage.getItem(lastActiveDateKey);
+  if (savedLastDate !== todayStr) {
+    todayPracticeLimit = 2;
+    sessionCompletedCount = 0;
+    localStorage.setItem(lastActiveDateKey, todayStr);
+  }
+
   try {
     const rawV6 = localStorage.getItem(STORAGE_KEY_QUESTIONS);
     if (rawV6) {
@@ -1671,7 +1680,6 @@ function loadQuestions() {
     const isUserTouched = existing && (
       (existing.attempts && existing.attempts.length > 0) ||
       existing.completedOnDate ||
-      existing.doneTodaySession ||
       existing.isCritical ||
       existing.userScheduled ||
       (existing.mistakeNote && existing.mistakeNote.trim().length > 0)
@@ -1684,9 +1692,9 @@ function loadQuestions() {
       existing.topic = baseQ.topic;
       existing.pattern = baseQ.pattern;
       existing.diff = baseQ.diff || existing.diff || "Easy";
-      if (existing.completedOnDate === todayStr) {
-        existing.doneTodaySession = true;
-      }
+      
+      // Only mark doneTodaySession if actually completed on TODAY's exact calendar date
+      existing.doneTodaySession = (existing.completedOnDate === todayStr);
     } else {
       // Untouched: pace 2 questions per day starting today
       const dayOffset = Math.floor(unattemptedIndex / 2);
@@ -1715,6 +1723,14 @@ function loadQuestions() {
       };
       unattemptedIndex++;
     }
+  });
+
+  // Re-evaluate due status for all items on current calendar date
+  Object.values(questions).forEach(q => {
+    if (q.completedOnDate !== todayStr) {
+      q.doneTodaySession = false;
+    }
+    evaluateDueStatus(q);
   });
 
   saveQuestions();
@@ -2037,13 +2053,13 @@ function renderTodayView() {
 
   const allItems = Object.values(questions);
 
-  // 1. Questions completed today (MUST NOT DISAPPEAR)
-  const completedTodayItems = allItems.filter(q => q.completedOnDate === todayStr || q.doneTodaySession)
+  // 1. Questions completed TODAY (strictly matches today's date)
+  const completedTodayItems = allItems.filter(q => q.completedOnDate === todayStr)
     .sort((a, b) => getQuestionRoadmapRank(a.lcId) - getQuestionRoadmapRank(b.lcId));
 
-  // 2. Questions due today that are pending
+  // 2. Questions due today that are pending practice
   const pendingDueItems = allItems.filter(q => {
-    if (q.completedOnDate === todayStr || q.doneTodaySession) return false;
+    if (q.completedOnDate === todayStr) return false;
     if (q.status === "completed" || q.status === "unscheduled") return false;
     return q.status === "critical" || q.status === "due_today" || (q.nextDueDate && q.nextDueDate <= todayStr);
   }).sort((a, b) => {
@@ -2055,25 +2071,25 @@ function renderTodayView() {
   const totalCompleted = completedTodayItems.length;
   const totalPending = pendingDueItems.length;
 
-  // In today's session batch: keep all completed questions visible, plus pending batch
+  // In today's session batch: show completed items plus the active pending batch up to todayPracticeLimit
   const pendingToShowCount = showAllToday ? totalPending : Math.max(0, todayPracticeLimit - totalCompleted);
   const visiblePending = pendingDueItems.slice(0, pendingToShowCount);
   const itemsToRender = [...completedTodayItems, ...visiblePending];
 
   const totalTodayCount = totalCompleted + visiblePending.length;
 
-  if (totalCompleted > 0 && visiblePending.length === 0) {
+  if (totalCompleted > 0 && visiblePending.length === 0 && totalPending === 0) {
     summaryEl.innerHTML = `<strong>✓ All ${totalCompleted} questions completed for today!</strong> &middot; Next revisions scheduled`;
   } else {
     summaryEl.innerHTML = `<strong>${totalCompleted} of ${totalTodayCount} completed</strong> &middot; Today's Revision Batch (Ordered by Roadmap Architecture)`;
   }
 
   let bannerHtml = "";
-  if (totalCompleted >= 2 || (totalCompleted > 0 && visiblePending.length === 0)) {
+  if (totalCompleted >= 2 && visiblePending.length === 0) {
     bannerHtml = `
       <div class="daily-goal-box">
-        <div class="daily-goal-title">🎯 Goal Reached: ${totalCompleted} Question${totalCompleted > 1 ? 's' : ''} Revised Today!</div>
-        <div class="daily-goal-desc">Your completed questions are checked and lined out below with their next scheduled dates. Would you like to practice 2 more?</div>
+        <div class="daily-goal-title">🎯 Goal Reached: ${totalCompleted} Questions Revised Today!</div>
+        <div class="daily-goal-desc">Your completed questions are checked and lined out below with their next scheduled review dates. Would you like to practice 2 more?</div>
         <div class="daily-goal-actions">
           <button class="btn-primary" id="practiceMoreBtn">+ Practice 2 More Questions</button>
           <button class="btn-secondary" onclick="switchTab('schedule')">View Upcoming Revisions &rarr;</button>
@@ -2140,7 +2156,7 @@ function renderTodayView() {
 
 function renderQuestionRow(q, isTodayScreen = false) {
   const todayStr = getKolkataDateString();
-  const isDoneToday = Boolean(q.completedOnDate === todayStr || q.doneTodaySession);
+  const isDoneToday = Boolean(q.completedOnDate === todayStr);
   const isUserScheduled = Boolean(q.userScheduled || (q.attempts && q.attempts.length > 0) || q.cycleStep !== 'initial' || isDoneToday);
 
   let statusClass = "scheduled";
